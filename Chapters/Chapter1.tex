@@ -134,9 +134,11 @@ Grouping the different forms of a word offers the advantage of  reducing the dim
 
 Lemmatization and stemming are the two techniques used to find the canonical form of a word. Lemmatization uses a knowledge base containing the different inflected forms corresponding to the different possible lemmas. Thus, the inflected forms of a noun will be replaced by the singular masculine form while the different inflected forms of a verb will be replaced by the infinitive form. Lemmatization requires the use of a dictionary of inflected forms of language as well as a grammar labeler. An efficient algorithm, named TreeTagger \citep{schmid1994probabilistic}, has been developed for thirteen different languages: German, English, French, Italian, Dutch, Spanish, Bulgarian, Russian, Greek, French Portuguese, Chinese, Swahili and Old French. Stemming uses a knowledge base of syntactic and morphological rules and to transform words into their roots. One of the most well-known stemming algorithms for the English language is Porter's algorithm \citep{porter1980algorithm}. Lemmatization is more complicated to implement since it depends on the grammatical labellers. In addition, it is more sensitive to misspellings than stemming.
 
-\begin{lstlisting}
+\begin{lstlisting}[language=Python, caption=Python example]
 def stem(word):
-    for suffix in ["ing","ly","ed","ious","ies","ive","es","s","ment"]:
+    Suffix_list = ["ing","ly","ed","ious",\
+				"ies","ive","es","s","ment"]
+    for suffix in Suffix_list:
         if word.endswith(suffix):
             return word[:-len(suffix)]
     return word
