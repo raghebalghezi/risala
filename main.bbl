@@ -1193,52 +1193,31 @@
     \field{year}{2001}
   \endentry
 
-  \entry{rocchio_xxiii._nodate}{article}{}
+  \entry{rocchio1971relevance}{article}{}
     \name{author}{1}{}{%
-      {{hash=RJ}{%
+      {{hash=RJJ}{%
          family={Rocchio},
          familyi={R\bibinitperiod},
-         given={J},
-         giveni={J},
+         given={Joseph\bibnamedelima John},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {en}%
+    \list{publisher}{1}{%
+      {Prentice-Hall Inc.}%
     }
-    \strng{namehash}{RJ1}
-    \strng{fullhash}{RJ1}
+    \strng{namehash}{RJJ1}
+    \strng{fullhash}{RJJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{1971}
+    \field{labeldatesource}{year}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \field{abstract}{%
-    In evaluating the performance of a document retrieval system one must
-  attempt to isolate the critical variables which determine system behavior.
-  For this purpose a model is introduced which identifies indexing, search
-  request formulation,, and request-document matching as the three primary
-  functions of an automatic retrieval system. Search request formulation,, the
-  responsibility of the users of the system, Is considered to be the variable
-  with the greatest potential variance. In view of this, the idea of the
-  optimization of search requests is believed to constitute a primary
-  possibility toward better control In evaluating indexing and request-document
-  matching. Investigation into request optimality leads In turn to a method for
-  improving search requests in an operational framework. For this purpose the
-  notion of interaction between a user and an information retrieval system by
-  means of relevance feedback is introduced. A process of request modifications
-  is developed based on a sequence of retrieval operations, such that after
-  each operation the user Is allowed to communicate his evaluation to the
-  system. This information Is used as a basis for altering the user's query.
-  The modification algorithm is developed below and some preliminary results
-  are presented.%
-    }
-    \field{pages}{18}
-    \field{title}{{XXIII}. {RELEVANCE} {FEEDBACK} {IN} {INFORMATION}
-  {RETRIEVAL}}
-    \verb{file}
-    \verb Rocchio - XXIII. RELEVANCE FEEDBACK IN INFORMATION RETRIEVAL.pdf:/Use
-    \verb rs/raghebal-ghezi/Zotero/storage/3ZYDE3ZY/Rocchio - XXIII. RELEVANCE
-    \verb FEEDBACK IN INFORMATION RETRIEVAL.pdf:application/pdf
-    \endverb
+    \field{pages}{313\bibrangedash 323}
+    \field{title}{Relevance feedback in information retrieval}
+    \field{journaltitle}{The SMART retrieval system: experiments in automatic
+  document processing}
+    \field{year}{1971}
   \endentry
 
   \entry{sable2001using}{inproceedings}{}
