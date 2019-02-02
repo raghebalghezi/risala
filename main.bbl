@@ -1,0 +1,1794 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{apte_towards_1994}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=AC}{%
+         family={Apté},
+         familyi={A\bibinitperiod},
+         given={Chidanand},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={Damerau},
+         familyi={D\bibinitperiod},
+         given={Fred},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WSM}{%
+         family={Weiss},
+         familyi={W\bibinitperiod},
+         given={Sholom\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=CBW}{%
+         family={Croft},
+         familyi={C\bibinitperiod},
+         given={Bruce\bibnamedelima W.},
+         giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=vRCJ}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Rijsbergen},
+         familyi={R\bibinitperiod},
+         given={C.\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {Springer London}%
+    }
+    \keyw{Breakeven Point, Document Classification, News Story, Rule Induction,
+  Training Case}
+    \strng{namehash}{ACDFWSM1}
+    \strng{fullhash}{ACDFWSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    We describe the results of extensive machine learning experiments on large
+  collections of Reuters’ English and German newswires. The goal of these
+  experiments was to automatically discover classification patterns that can be
+  used for assignment of topics to the individual newswires. Our results with
+  the English newswire collection show a very large gain in performance as
+  compared to published benchmarks, while our initial results with the German
+  newswires appear very promising. We present our methodology, which seems to
+  be insensitive to the language of the document collections, and discuss
+  issues related to the differences in results that we have obtained for the
+  two collections.%
+    }
+    \field{booktitle}{{SIGIR} ’94}
+    \field{isbn}{978-1-4471-2099-5}
+    \field{pages}{23\bibrangedash 30}
+    \field{title}{Towards {Language} {Independent} {Automated} {Learning} of
+  {Text} {Categorization} {Models}}
+    \field{year}{1994}
+  \endentry
+
+  \entry{baker1998distributional}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BLD}{%
+         family={Baker},
+         familyi={B\bibinitperiod},
+         given={L\bibnamedelima Douglas},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MAK}{%
+         family={McCallum},
+         familyi={M\bibinitperiod},
+         given={Andrew\bibnamedelima Kachites},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{BLDMAK1}
+    \strng{fullhash}{BLDMAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Proceedings of the 21st annual international ACM SIGIR
+  conference on Research and development in information retrieval}
+    \field{pages}{96\bibrangedash 103}
+    \field{title}{Distributional clustering of words for text classification}
+    \field{year}{1998}
+  \endentry
+
+  \entry{bang_hierarchical_2006}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BSL}{%
+         family={Bang},
+         familyi={B\bibinitperiod},
+         given={Sun\bibnamedelima Lee},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=YJD}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Jae\bibnamedelima Dong},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=YHJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Hyung\bibnamedelima Jeong},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{-NN, Classification, Document categorization, Thesaurus}
+    \strng{namehash}{BSLYJDYHJ1}
+    \strng{fullhash}{BSLYJDYHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In this paper, we propose a new algorithm, which incorporates the
+  relationships of concept-based thesauri into the document categorization
+  using the k-NN classifier (k-NN). k-NN is one of the most popular document
+  categorization methods because it shows relatively good performance in spite
+  of its simplicity. However, it significantly degrades precision when
+  ambiguity arises, i.e., when there exist more than one candidate category to
+  which a document can be assigned. To remedy the drawback, we employ
+  concept-based thesauri in the categorization. Employing the thesaurus entails
+  structuring categories into hierarchies, since their structure needs to be
+  conformed to that of the thesaurus for capturing relationships between
+  categories. By referencing various relationships in the thesaurus
+  corresponding to the structured categories, k-NN can be prominently improved,
+  removing the ambiguity. In this paper, we first perform the document
+  categorization by using k-NN and then employ the relationships to reduce the
+  ambiguity. Experimental results show that this method improves the precision
+  of k-NN up to 13.86\% without compromising its recall.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ipm.2005.04.003
+    \endverb
+    \field{issn}{0306-4573}
+    \field{number}{2}
+    \field{pages}{387\bibrangedash 406}
+    \field{title}{Hierarchical document categorization with k-{NN} and
+  concept-based thesauri}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0306457305000579
+    \endverb
+    \field{volume}{42}
+    \verb{file}
+    \verb ScienceDirect Snapshot:/Users/raghebal-ghezi/Zotero/storage/PLELP2IW/
+    \verb S0306457305000579.html:text/html
+    \endverb
+    \field{journaltitle}{Information Processing \& Management}
+    \field{month}{03}
+    \field{year}{2006}
+    \field{urlday}{09}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{bellman2015adaptive}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BRE}{%
+         family={Bellman},
+         familyi={B\bibinitperiod},
+         given={Richard\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton university press}%
+    }
+    \strng{namehash}{BRE1}
+    \strng{fullhash}{BRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Adaptive control processes: a guided tour}
+    \field{volume}{2045}
+    \field{year}{2015}
+  \endentry
+
+  \entry{brucher2002document}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BH}{%
+         family={Br{\"u}cher},
+         familyi={B\bibinitperiod},
+         given={Heide},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Knolmayer},
+         familyi={K\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Mittermayer},
+         familyi={M\bibinitperiod},
+         given={Marc-Andr{\'e}},
+         giveni={M\bibinitperiod-A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Institute of Information Systems}%
+    }
+    \strng{namehash}{BHKGMMA1}
+    \strng{fullhash}{BHKGMMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Document classification methods for organizing explicit
+  knowledge}
+    \field{year}{2002}
+  \endentry
+
+  \entry{caropreso2001learner}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CMF}{%
+         family={Caropreso},
+         familyi={C\bibinitperiod},
+         given={Maria\bibnamedelima Fernanda},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Matwin},
+         familyi={M\bibinitperiod},
+         given={Stan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sebastiani},
+         familyi={S\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{CMFMSSF1}
+    \strng{fullhash}{CMFMSSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{78\bibrangedash 102}
+    \field{title}{A learner-independent evaluation of the usefulness of
+  statistical phrases for automated text categorization}
+    \field{volume}{5478}
+    \field{journaltitle}{Text databases and document management: Theory and
+  practice}
+    \field{year}{2001}
+  \endentry
+
+  \entry{chang_using_2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CM}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PCK}{%
+         family={Poon},
+         familyi={P\bibinitperiod},
+         given={Chung\bibnamedelima Keung},
+         giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \keyw{Document classification, Email, Naive Bayes, Nearest-neighbour,
+  Resemblance}
+    \strng{namehash}{CMPCK1}
+    \strng{fullhash}{CMPCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    In this paper, we report our experience on the use of phrases as basic
+  features in the email classification problem. We performed extensive
+  empirical evaluation using our large email collections and tested with three
+  text classification algorithms, namely, a naive Bayes classifier and two k-NN
+  classifiers using TF–IDF weighting and resemblance respectively. The
+  investigation includes studies on the effect of phrase size, the size of
+  local and global sampling, the neighbourhood size, and various methods to
+  improve the classification accuracy. We determined suitable settings for
+  various parameters of the classifiers and performed a comparison among the
+  classifiers with their best settings. Our result shows that no classifier
+  dominates the others in terms of classification accuracy. Also, we made a
+  number of observations on the special characteristics of emails. In
+  particular, we observed that public emails are easier to classify than
+  private ones.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.jss.2009.01.013
+    \endverb
+    \field{issn}{0164-1212}
+    \field{number}{6}
+    \field{pages}{1036\bibrangedash 1045}
+    \field{title}{Using phrases as features in email classification}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0164121209000089
+    \endverb
+    \field{volume}{82}
+    \verb{file}
+    \verb ScienceDirect Snapshot:/Users/raghebal-ghezi/Zotero/storage/L7BXDP32/
+    \verb S0164121209000089.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Systems and Software}
+    \field{month}{06}
+    \field{year}{2009}
+    \field{urlday}{09}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{deerwester1990indexing}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DS}{%
+         family={Deerwester},
+         familyi={D\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DST}{%
+         family={Dumais},
+         familyi={D\bibinitperiod},
+         given={Susan\bibnamedelima T},
+         giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=FGW}{%
+         family={Furnas},
+         familyi={F\bibinitperiod},
+         given={George\bibnamedelima W},
+         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=LTK}{%
+         family={Landauer},
+         familyi={L\bibinitperiod},
+         given={Thomas\bibnamedelima K},
+         giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Harshman},
+         familyi={H\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{DS+1}
+    \strng{fullhash}{DSDSTFGWLTKHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{6}
+    \field{pages}{391\bibrangedash 407}
+    \field{title}{Indexing by latent semantic analysis}
+    \field{volume}{41}
+    \field{journaltitle}{Journal of the American society for information
+  science}
+    \field{year}{1990}
+  \endentry
+
+  \entry{DBLP:journals/corr/abs-1810-04805}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DJ}{%
+         family={Devlin},
+         familyi={D\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Ming{-}Wei},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kenton},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Toutanova},
+         familyi={T\bibinitperiod},
+         given={Kristina},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJCMLKTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{eprint}
+    \verb 1810.04805
+    \endverb
+    \field{title}{{BERT:} Pre-training of Deep Bidirectional Transformers for
+  Language Understanding}
+    \verb{url}
+    \verb http://arxiv.org/abs/1810.04805
+    \endverb
+    \field{volume}{abs/1810.04805}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+  \endentry
+
+  \entry{noauthor_english_nodate}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{English {Profile} - {EGP} {Online}}
+    \verb{url}
+    \verb http://www.englishprofile.org/english-grammar-profile/egp-online
+    \endverb
+    \verb{file}
+    \verb English Profile - EGP Online:/Users/raghebal-ghezi/Zotero/storage/CDD
+    \verb GDZ7R/egp-online.html:text/html
+    \endverb
+    \field{urlday}{29}
+    \field{urlmonth}{01}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{firth1957synopsis}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FJR}{%
+         family={Firth},
+         familyi={F\bibinitperiod},
+         given={John\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Basil Blackwell}%
+    }
+    \strng{namehash}{FJR1}
+    \strng{fullhash}{FJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1957}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{A synopsis of linguistic theory, 1930-1955}
+    \field{journaltitle}{Studies in linguistic analysis}
+    \field{year}{1957}
+  \endentry
+
+  \entry{citeulike:13797746}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=FWN}{%
+         family={Francis},
+         familyi={F\bibinitperiod},
+         given={W.\bibnamedelima Nelson},
+         giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kucera},
+         familyi={K\bibinitperiod},
+         given={Henry},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{proposal}
+    \strng{namehash}{FWNKH1}
+    \strng{fullhash}{FWNKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1979}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{note}{Brown University Liguistics Department}
+    \field{title}{The Brown Corpus: A Standard Corpus of {Present-Day} Edited
+  American English}
+    \field{year}{1979}
+  \endentry
+
+  \entry{fuhr1991probabilistic}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FN}{%
+         family={Fuhr},
+         familyi={F\bibinitperiod},
+         given={Norbert},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Buckley},
+         familyi={B\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{FNBC1}
+    \strng{fullhash}{FNBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1991}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{3}
+    \field{pages}{223\bibrangedash 248}
+    \field{title}{A probabilistic learning approach for document indexing}
+    \field{volume}{9}
+    \field{journaltitle}{ACM Transactions on Information Systems (TOIS)}
+    \field{year}{1991}
+  \endentry
+
+  \entry{DBLP:journals/corr/abs-1808-05759}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HM}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Minghao},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Furu},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PY}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Yuxing},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HZ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Zhen},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=YN}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Nan},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HM+1}
+    \strng{fullhash}{HMWFPYHZYNZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{eprint}
+    \verb 1808.05759
+    \endverb
+    \field{title}{Read + Verify: Machine Reading Comprehension with
+  Unanswerable Questions}
+    \verb{url}
+    \verb http://arxiv.org/abs/1808.05759
+    \endverb
+    \field{volume}{abs/1808.05759}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+  \endentry
+
+  \entry{isa_text_2008}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ID}{%
+         family={Isa},
+         familyi={I\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LLH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={L.\bibnamedelima H.},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KVP}{%
+         family={Kallimani},
+         familyi={K\bibinitperiod},
+         given={V.\bibnamedelima P.},
+         giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={RajKumar},
+         familyi={R\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{classification, Applications {\textless}, Bayes methods,
+  Classification tree analysis, Classifier design and evaluation {\textless},
+  Classifier design and evaluation {\textless}Design Methodology
+  {\textless}Pattern Recognition {\textless}Computing Methodologies, Computing
+  Methodologies, Decision trees, Design Methodology {\textless}, Document
+  analysis, Document and Text Processing {\textless}, Document and Text
+  Processing {\textless}Computing Methodologies, Electronic mail, Filtering,
+  Instruction sets, Multidimensional systems, naive Bayes classifier, pattern
+  classification, Pattern Recognition {\textless}, probability distribution,
+  Probability distribution, statistical distributions, support vector machine,
+  Support vector machine classification, support vector machines, Support
+  vector machines, text analysis, Text categorization, text document
+  preprocessing, Text processing {\textless}, Text processing
+  {\textless}Applications {\textless}Pattern Recognition {\textless}Computing
+  Methodologies}
+    \strng{namehash}{ID+1}
+    \strng{fullhash}{IDLLHKVPRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{year}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{abstract}{%
+    This work implements an enhanced hybrid classification method through the
+  utilization of the naive Bayes approach and the support vector machine (SVM).
+  In this project, the Bayes formula was used to vectorize (as opposed to
+  classify) a document according to a probability distribution reflecting the
+  probable categories that the document may belong to. The Bayes formula gives
+  a range of probabilities to which the document can be assigned according to a
+  predetermined set of topics (categories) such as those found in the "20
+  Newsgroups" data set for instance. Using this probability distribution as the
+  vectors to represent the document, the SVM can then be used to classify the
+  documents on a multidimensional level. The effects of an inadvertent
+  dimensionality reduction caused by classifying using only the highest
+  probability using the naive Bayes classifier can be overcome using the SVM by
+  employing all the probability values associated with every category for each
+  document. This method can be used for any data set and shows a significant
+  reduction in training time as compared to the Lsquare method and significant
+  improvement in the classification accuracy when compared to pure naive Bayes
+  systems and also the TF-IDF/SVM hybrids.%
+    }
+    \verb{doi}
+    \verb 10.1109/TKDE.2008.76
+    \endverb
+    \field{issn}{1041-4347}
+    \field{number}{9}
+    \field{pages}{1264\bibrangedash 1272}
+    \field{title}{Text {Document} {Preprocessing} with the {Bayes} {Formula}
+  for {Classification} {Using} the {Support} {Vector} {Machine}}
+    \field{volume}{20}
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/Users/raghebal-ghezi/Zotero/storage/8Y5X
+    \verb 5NRJ/4492780.html:text/html
+    \endverb
+    \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+    \field{month}{09}
+    \field{year}{2008}
+  \endentry
+
+  \entry{jurafsky2014speech}{book}{}
+    \name{author}{2}{}{%
+      {{hash=JD}{%
+         family={Jurafsky},
+         familyi={J\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MJH}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={James\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson London}%
+    }
+    \strng{namehash}{JDMJH1}
+    \strng{fullhash}{JDMJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Speech and language processing}
+    \field{volume}{3}
+    \field{year}{2014}
+  \endentry
+
+  \entry{kim_effective_2006}{article}{}
+    \name{author}{4}{}{%
+      {{hash=KSB}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Sang-Bum},
+         giveni={S\bibinitperiod-B\bibinitperiod},
+      }}%
+      {{hash=HKS}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Kyoung-Soo},
+         giveni={K\bibinitperiod-S\bibinitperiod},
+      }}%
+      {{hash=RHC}{%
+         family={Rim},
+         familyi={R\bibinitperiod},
+         given={Hae-Chang},
+         giveni={H\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=MSH}{%
+         family={Myaeng},
+         familyi={M\bibinitperiod},
+         given={Sung\bibnamedelima Hyon},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{Data mining, classification, Frequency, Bayes methods, naive Bayes
+  classifier, Support vector machine classification, Support vector machines,
+  text analysis, Text categorization, automatic text classification problem,
+  data mining, data mining tasks, feature weighting method, feature weighting.,
+  learning (artificial intelligence), Learning systems, naive Bayes text
+  classification, natural language, natural language processing, Natural
+  languages, parameter estimation, Parameter estimation, parameter estimation
+  process, per-document text normalization, Poisson model, Probability,
+  Statistical learning, Text classification}
+    \strng{namehash}{KSB+1}
+    \strng{fullhash}{KSBHKSRHCMSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    While naive Bayes is quite effective in various data mining tasks, it shows
+  a disappointing result in the automatic text classification problem. Based on
+  the observation of naive Bayes for the natural language text, we found a
+  serious problem in the parameter estimation process, which causes poor
+  results in text classification domain. In this paper, we propose two
+  empirical heuristics: per-document text normalization and feature weighting
+  method. While these are somewhat ad hoc methods, our proposed naive Bayes
+  text classifier performs very well in the standard benchmark collections,
+  competing with state-of-the-art text classifiers based on a highly complex
+  learning method such as SVM%
+    }
+    \verb{doi}
+    \verb 10.1109/TKDE.2006.180
+    \endverb
+    \field{issn}{1041-4347}
+    \field{number}{11}
+    \field{pages}{1457\bibrangedash 1466}
+    \field{title}{Some {Effective} {Techniques} for {Naive} {Bayes} {Text}
+  {Classification}}
+    \field{volume}{18}
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/Users/raghebal-ghezi/Zotero/storage/5NXR
+    \verb 2W5U/1704799.html:text/html
+    \endverb
+    \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+    \field{month}{11}
+    \field{year}{2006}
+  \endentry
+
+  \entry{kitaev2018constituency}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KN}{%
+         family={Kitaev},
+         familyi={K\bibinitperiod},
+         given={Nikita},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KNKD1}
+    \strng{fullhash}{KNKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Constituency Parsing with a Self-Attentive Encoder}
+    \field{journaltitle}{arXiv preprint arXiv:1805.01052}
+    \field{year}{2018}
+  \endentry
+
+  \entry{DBLP:journals/corr/LevySCZ17}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LO}{%
+         family={Levy},
+         familyi={L\bibinitperiod},
+         given={Omer},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Seo},
+         familyi={S\bibinitperiod},
+         given={Minjoon},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Eunsol},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zettlemoyer},
+         familyi={Z\bibinitperiod},
+         given={Luke},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LO+1}
+    \strng{fullhash}{LOSMCEZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 1706.04115
+    \endverb
+    \field{title}{Zero-Shot Relation Extraction via Reading Comprehension}
+    \verb{url}
+    \verb http://arxiv.org/abs/1706.04115
+    \endverb
+    \field{volume}{abs/1706.04115}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+  \endentry
+
+  \entry{lewis1992representation}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=LDD}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={David\bibnamedelima Dolan},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDD1}
+    \strng{fullhash}{LDD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Representation and learning in information retrieval}
+    \list{institution}{1}{%
+      {University of Massachusetts at Amherst}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{1992}
+  \endentry
+
+  \entry{mccallum_comparison_nodate}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MA}{%
+         family={McCallum},
+         familyi={M\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Nigam},
+         familyi={N\bibinitperiod},
+         given={Kamal},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{MANK1}
+    \strng{fullhash}{MANK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Recent approaches to text classiﬁcation have used two diﬀerent
+  ﬁrst-order probabilistic models for classiﬁcation, both of which make the
+  naive Bayes assumption. Some use a multi-variate Bernoulli model, that is, a
+  Bayesian Network with no dependencies between words and binary word features
+  (e.g. Larkey and Croft 1996; Koller and Sahami 1997). Others use a
+  multinomial model, that is, a uni-gram language model with integer word
+  counts (e.g. Lewis and Gale 1994; Mitchell 1997). This paper aims to clarify
+  the confusion by describing the diﬀerences and details of these two models,
+  and by empirically comparing their classiﬁcation performance on ﬁve text
+  corpora. We ﬁnd that the multi-variate Bernoulli performs well with small
+  vocabulary sizes, but that the multinomial performs usually performs even
+  better at larger vocabulary sizes—providing on average a 27\% reduction in
+  error over the multi-variate Bernoulli model at any vocabulary size.%
+    }
+    \field{pages}{8}
+    \field{title}{A {Comparison} of {Event} {Models} for {Naive} {Bayes} {Text}
+  {Classiﬁcation}}
+    \verb{file}
+    \verb McCallum and Nigam - A Comparison of Event Models for Naive Bayes Tex
+    \verb t .pdf:/Users/raghebal-ghezi/Zotero/storage/YTVETFVI/McCallum and Nig
+    \verb am - A Comparison of Event Models for Naive Bayes Text .pdf:applicati
+    \verb on/pdf
+    \endverb
+  \endentry
+
+  \entry{mikolov2013distributed}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MT}{%
+         family={Mikolov},
+         familyi={M\bibinitperiod},
+         given={Tomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CGS}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg\bibnamedelima S},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTSICKCGSDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{3111\bibrangedash 3119}
+    \field{title}{Distributed representations of words and phrases and their
+  compositionality}
+    \field{year}{2013}
+  \endentry
+
+  \entry{pennington2014glove}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=PJ}{%
+         family={Pennington},
+         familyi={P\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Socher},
+         familyi={S\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Manning},
+         familyi={M\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJSRMC1}
+    \strng{fullhash}{PJSRMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Proceedings of the 2014 conference on empirical methods
+  in natural language processing (EMNLP)}
+    \field{pages}{1532\bibrangedash 1543}
+    \field{title}{Glove: Global vectors for word representation}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Peters:2018}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=PME}{%
+         family={Peters},
+         familyi={P\bibinitperiod},
+         given={Matthew\bibnamedelima E.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Neumann},
+         familyi={N\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Iyyer},
+         familyi={I\bibinitperiod},
+         given={Mohit},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gardner},
+         familyi={G\bibinitperiod},
+         given={Matt},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kenton},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zettlemoyer},
+         familyi={Z\bibinitperiod},
+         given={Luke},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PME+1}
+    \strng{fullhash}{PMENMIMGMCCLKZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Proc. of NAACL}
+    \field{title}{Deep contextualized word representations}
+    \field{year}{2018}
+  \endentry
+
+  \entry{porter1980algorithm}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PMF}{%
+         family={Porter},
+         familyi={P\bibinitperiod},
+         given={Martin\bibnamedelima F},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MCB UP Ltd}%
+    }
+    \strng{namehash}{PMF1}
+    \strng{fullhash}{PMF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1980}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{3}
+    \field{pages}{130\bibrangedash 137}
+    \field{title}{An algorithm for suffix stripping}
+    \field{volume}{14}
+    \field{journaltitle}{Program}
+    \field{year}{1980}
+  \endentry
+
+  \entry{rish_analysis_2001}{report}{}
+    \name{author}{3}{}{%
+      {{hash=RI}{%
+         family={Rish},
+         familyi={R\bibinitperiod},
+         given={Irina},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hellerstein},
+         familyi={H\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Thathachar},
+         familyi={T\bibinitperiod},
+         given={Jayram},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RIHJTJ1}
+    \strng{fullhash}{RIHJTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Despite its unrealistic independence assumption, the naive Bayes classifier
+  is remarkably successful in practice. This paper identifies some data
+  characteristics for which naive Bayes works well, such as certain
+  deterministic and almostdeterministic dependencies (i.e., low-entropy
+  distributions). First, we address zero-Bayesrisk problems, proving naive
+  Bayes optimality for any two-class concept that assigns class%
+    }
+    \field{title}{An analysis of data characteristics that affect naive {Bayes}
+  performance}
+    \verb{file}
+    \verb Citeseer - Full Text PDF:/Users/raghebal-ghezi/Zotero/storage/8ZBQJN9
+    \verb T/Rish et al. - 2001 - An analysis of data characteristics that affec
+    \verb t na.pdf:application/pdf;Citeseer - Snapshot:/Users/raghebal-ghezi/Zo
+    \verb tero/storage/QU8YAB8T/summary.html:text/html
+    \endverb
+    \field{type}{techreport}
+    \field{year}{2001}
+  \endentry
+
+  \entry{rocchio_xxiii._nodate}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RJ}{%
+         family={Rocchio},
+         familyi={R\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{RJ1}
+    \strng{fullhash}{RJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    In evaluating the performance of a document retrieval system one must
+  attempt to isolate the critical variables which determine system behavior.
+  For this purpose a model is introduced which identifies indexing, search
+  request formulation,, and request-document matching as the three primary
+  functions of an automatic retrieval system. Search request formulation,, the
+  responsibility of the users of the system, Is considered to be the variable
+  with the greatest potential variance. In view of this, the idea of the
+  optimization of search requests is believed to constitute a primary
+  possibility toward better control In evaluating indexing and request-document
+  matching. Investigation into request optimality leads In turn to a method for
+  improving search requests in an operational framework. For this purpose the
+  notion of interaction between a user and an information retrieval system by
+  means of relevance feedback is introduced. A process of request modifications
+  is developed based on a sequence of retrieval operations, such that after
+  each operation the user Is allowed to communicate his evaluation to the
+  system. This information Is used as a basis for altering the user's query.
+  The modification algorithm is developed below and some preliminary results
+  are presented.%
+    }
+    \field{pages}{18}
+    \field{title}{{XXIII}. {RELEVANCE} {FEEDBACK} {IN} {INFORMATION}
+  {RETRIEVAL}}
+    \verb{file}
+    \verb Rocchio - XXIII. RELEVANCE FEEDBACK IN INFORMATION RETRIEVAL.pdf:/Use
+    \verb rs/raghebal-ghezi/Zotero/storage/3ZYDE3ZY/Rocchio - XXIII. RELEVANCE
+    \verb FEEDBACK IN INFORMATION RETRIEVAL.pdf:application/pdf
+    \endverb
+  \endentry
+
+  \entry{sable2001using}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SC}{%
+         family={Sable},
+         familyi={S\bibinitperiod},
+         given={Carl},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CKW}{%
+         family={Church},
+         familyi={C\bibinitperiod},
+         given={Kenneth\bibnamedelima W},
+         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCCKW1}
+    \strng{fullhash}{SCCKW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the 2001 Conference on Empirical Methods
+  in Natural Language Processing}
+    \field{title}{Using bins to empirically estimate term weights for text
+  categorization}
+    \field{year}{2001}
+  \endentry
+
+  \entry{schmid1994probabilistic}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SH}{%
+         family={Schmid},
+         familyi={S\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SH1}
+    \strng{fullhash}{SH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Probabilistic part-of-speech tagging using decision trees. In
+  proceedings of international conference on new methods in language
+  processing,(pp. 1-9), Access date: 09.11. 2012}
+    \field{year}{1994}
+  \endentry
+
+  \entry{DBLP:journals/corr/SeoKFH16}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SMJ}{%
+         family={Seo},
+         familyi={S\bibinitperiod},
+         given={Min\bibnamedelima Joon},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kembhavi},
+         familyi={K\bibinitperiod},
+         given={Aniruddha},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Farhadi},
+         familyi={F\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HH}{%
+         family={Hajishirzi},
+         familyi={H\bibinitperiod},
+         given={Hannaneh},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMJ+1}
+    \strng{fullhash}{SMJKAFAHH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1611.01603
+    \endverb
+    \field{title}{Bidirectional Attention Flow for Machine Comprehension}
+    \verb{url}
+    \verb http://arxiv.org/abs/1611.01603
+    \endverb
+    \field{volume}{abs/1611.01603}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+  \endentry
+
+  \entry{shannon1948mathematical}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SCE}{%
+         family={Shannon},
+         familyi={S\bibinitperiod},
+         given={Claude\bibnamedelima Elwood},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SCE1}
+    \strng{fullhash}{SCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1948}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{379\bibrangedash 423}
+    \field{title}{A mathematical theory of communication}
+    \field{volume}{27}
+    \field{journaltitle}{Bell system technical journal}
+    \field{year}{1948}
+  \endentry
+
+  \entry{singhal1997learning}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SA}{%
+         family={Singhal},
+         familyi={S\bibinitperiod},
+         given={Amit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mitra},
+         familyi={M\bibinitperiod},
+         given={Mandar},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Buckley},
+         familyi={B\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{SAMMBC1}
+    \strng{fullhash}{SAMMBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{ACM SIGIR Forum}
+    \field{number}{SI}
+    \field{pages}{25\bibrangedash 32}
+    \field{title}{Learning routing queries in a query zone}
+    \field{volume}{31}
+    \field{year}{1997}
+  \endentry
+
+  \entry{slonim2001power}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SN}{%
+         family={Slonim},
+         familyi={S\bibinitperiod},
+         given={Noam},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Tishby},
+         familyi={T\bibinitperiod},
+         given={Naftali},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SNTN1}
+    \strng{fullhash}{SNTN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{23rd European Colloquium on Information Retrieval
+  Research}
+    \field{pages}{200}
+    \field{title}{The power of word clusters for text classification}
+    \field{volume}{1}
+    \field{year}{2001}
+  \endentry
+
+  \entry{tam_comparative_2002}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=TV}{%
+         family={Tam},
+         familyi={T\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Santoso},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Setiono},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Bayesian methods, centroid-based document categorization,
+  classification, document retrieval, Extraterrestrial measurements, Frequency,
+  HASRD algorithm, highest average similarity algorithm, information retrieval,
+  Information retrieval, Internet, k-nearest neighborhood algorithm, kNN
+  algorithm, macro F1 values, micro F1 values, Nearest neighbor searches,
+  neighborhood-based document categorization, optimal classification,
+  Performance analysis, Reuters-21578 corpus, Software libraries, statistical
+  analysis, Statistical analysis, statistical document categorization, term
+  weighting scheme, Testing}
+    \strng{namehash}{TVSASR1}
+    \strng{fullhash}{TVSASR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Associating documents to relevant categories is critical for effective
+  document retrieval. Here, we compare the well-known k-nearest neighborhood
+  (kNN) algorithm, the centroid-based classifier and the highest average
+  similarity over retrieved documents (HASRD) algorithm, for effective document
+  categorization. We use various measures such as the micro and macro F1 values
+  to evaluate their performance on the Reuters-21578 corpus. The empirical
+  results show that kNN performs the best, followed by our adapted HASRD and
+  the centroid-based classifier for common document categories, while the
+  centroid-based classifier and kNN outperform our adapted HASRD for rare
+  document categories. Additionally, our study clearly indicates that each
+  classifier performs optimally only when a suitable term weighting scheme is
+  used All these significant results lead to many exciting directions for
+  future exploration.%
+    }
+    \field{booktitle}{Object recognition supported by user interaction for
+  service robots}
+    \verb{doi}
+    \verb 10.1109/ICPR.2002.1047440
+    \endverb
+    \field{pages}{235\bibrangedash 238 vol.4}
+    \field{title}{A comparative study of centroid-based, neighborhood-based and
+  statistical approaches for effective document categorization}
+    \field{volume}{4}
+    \verb{file}
+    \verb IEEE Xplore Abstract Record:/Users/raghebal-ghezi/Zotero/storage/2Z8E
+    \verb UR45/1047440.html:text/html
+    \endverb
+    \field{month}{08}
+    \field{year}{2002}
+  \endentry
+
+  \entry{tzeras1993automatic}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TK}{%
+         family={Tzeras},
+         familyi={T\bibinitperiod},
+         given={Kostas},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hartmann},
+         familyi={H\bibinitperiod},
+         given={Stephan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{TKHS1}
+    \strng{fullhash}{TKHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{Proceedings of the 16th annual international ACM SIGIR
+  conference on Research and development in information retrieval}
+    \field{pages}{22\bibrangedash 35}
+    \field{title}{Automatic indexing based on Bayesian inference networks}
+    \field{year}{1993}
+  \endentry
+
+  \entry{DBLP:journals/corr/VaswaniSPUJGKP17}{article}{}
+    \name{author}{8}{}{%
+      {{hash=VA}{%
+         family={Vaswani},
+         familyi={V\bibinitperiod},
+         given={Ashish},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Shazeer},
+         familyi={S\bibinitperiod},
+         given={Noam},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Parmar},
+         familyi={P\bibinitperiod},
+         given={Niki},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=UJ}{%
+         family={Uszkoreit},
+         familyi={U\bibinitperiod},
+         given={Jakob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Llion},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GAN}{%
+         family={Gomez},
+         familyi={G\bibinitperiod},
+         given={Aidan\bibnamedelima N.},
+         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kaiser},
+         familyi={K\bibinitperiod},
+         given={Lukasz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PI}{%
+         family={Polosukhin},
+         familyi={P\bibinitperiod},
+         given={Illia},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VA+1}
+    \strng{fullhash}{VASNPNUJJLGANKLPI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{eprint}
+    \verb 1706.03762
+    \endverb
+    \field{title}{Attention Is All You Need}
+    \verb{url}
+    \verb http://arxiv.org/abs/1706.03762
+    \endverb
+    \field{volume}{abs/1706.03762}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+  \endentry
+
+  \entry{DBLP:journals/corr/abs-1811-11934}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WW}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YM}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WWYMWC1}
+    \strng{fullhash}{WWYMWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{eprint}
+    \verb 1811.11934
+    \endverb
+    \field{title}{Multi-granularity hierarchical attention fusion networks for
+  reading comprehension and question answering}
+    \verb{url}
+    \verb http://arxiv.org/abs/1811.11934
+    \endverb
+    \field{volume}{abs/1811.11934}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+  \endentry
+
+  \entry{wu_behavior-based_2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WCH}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Chih-Hung},
+         giveni={C\bibinitperiod-H\bibinitperiod},
+      }}%
+    }
+    \keyw{Classification, Back-propagation neural networks, Machine-learning,
+  Rule-based reasoning, Spam filtering}
+    \strng{namehash}{WCH1}
+    \strng{fullhash}{WCH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Earlier methods on spam filtering usually compare the contents of emails
+  against specific keywords, which are not robust as the spammers frequently
+  change the terms used in emails. This paper presents a hybrid method of
+  rule-based processing and back-propagation neural networks for spam
+  filtering. Instead of using keywords, this study utilize the spamming
+  behaviors as features for describing emails. A rule-based process is first
+  employed to identify and digitize the spamming behaviors observed from the
+  headers and syslogs of emails. An enhanced BPNN with a weighted learning
+  strategy is designed as the classification mechanism. Since spamming
+  behaviors are infrequently changed, compared with that of keywords used in
+  spams, the proposed method is more robust with respect to the change of time.
+  The experimental results show that the proposed method is useful in
+  identifying spam emails.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.eswa.2008.03.002
+    \endverb
+    \field{issn}{0957-4174}
+    \field{number}{3, Part 1}
+    \field{pages}{4321\bibrangedash 4330}
+    \field{title}{Behavior-based spam detection using a hybrid method of
+  rule-based techniques and neural networks}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0957417408001772
+    \endverb
+    \field{volume}{36}
+    \verb{file}
+    \verb ScienceDirect Snapshot:/Users/raghebal-ghezi/Zotero/storage/Z38ABUAD/
+    \verb S0957417408001772.html:text/html
+    \endverb
+    \field{journaltitle}{Expert Systems with Applications}
+    \field{month}{04}
+    \field{year}{2009}
+    \field{urlday}{09}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Yang1999ARO}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=YY}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Yiming},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YYLX1}
+    \strng{fullhash}{YYLX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{SIGIR}
+    \field{title}{A Re-Examination of Text Categorization Methods}
+    \field{year}{1999}
+  \endentry
+
+  \entry{yarowsky_unsupervised_1995}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=YD}{%
+         family={Yarowsky},
+         familyi={Y\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{YD1}
+    \strng{fullhash}{YD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{Proceedings of the 33rd {Annual} {Meeting} of the
+  {Association} for {Computational} {Linguistics}}
+    \verb{doi}
+    \verb 10.3115/981658.981684
+    \endverb
+    \field{pages}{189\bibrangedash 196}
+    \field{title}{{UNSUPERVISED} {WORD} {SENSE} {DISAMBIGUATION} {RIVALING}
+  {SUPERVISED} {METHODS}}
+    \verb{url}
+    \verb http://www.aclweb.org/anthology/P95-1026
+    \endverb
+    \list{location}{1}{%
+      {Cambridge, Massachusetts, USA}%
+    }
+    \verb{file}
+    \verb Full Text PDF:/Users/raghebal-ghezi/Zotero/storage/773ZN3AB/Yarowsky
+    \verb - 1995 - UNSUPERVISED WORD SENSE DISAMBIGUATION RIVALING SU.pdf:appli
+    \verb cation/pdf
+    \endverb
+    \field{month}{06}
+    \field{year}{1995}
+    \field{urlday}{09}
+    \field{urlmonth}{12}
+    \field{urlyear}{2018}
+  \endentry
+\enddatalist
+\endinput
