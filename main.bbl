@@ -924,6 +924,42 @@
     \field{year}{1992}
   \endentry
 
+  \entry{manning1999foundations}{book}{}
+    \name{author}{3}{}{%
+      {{hash=MCD}{%
+         family={Manning},
+         familyi={M\bibinitperiod},
+         given={Christopher\bibnamedelima D},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MCD}{%
+         family={Manning},
+         familyi={M\bibinitperiod},
+         given={Christopher\bibnamedelima D},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Sch{\"u}tze},
+         familyi={S\bibinitperiod},
+         given={Hinrich},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT press}%
+    }
+    \strng{namehash}{MCDMCDSH1}
+    \strng{fullhash}{MCDMCDSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Foundations of statistical natural language processing}
+    \field{year}{1999}
+  \endentry
+
   \entry{mccallum_comparison_nodate}{article}{}
     \name{author}{2}{}{%
       {{hash=MA}{%
@@ -1750,8 +1786,8 @@
     \verb 10.3115/981658.981684
     \endverb
     \field{pages}{189\bibrangedash 196}
-    \field{title}{{UNSUPERVISED} {WORD} {SENSE} {DISAMBIGUATION} {RIVALING}
-  {SUPERVISED} {METHODS}}
+    \field{title}{Unsupervised word sense disambiguation rivaling supervised
+  methods}
     \verb{url}
     \verb http://www.aclweb.org/anthology/P95-1026
     \endverb
