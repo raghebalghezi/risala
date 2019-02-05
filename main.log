@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 FEB 2019 05:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 FEB 2019 09:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1804,22 +1804,22 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 File: Figures/../Figures/mlpipeline.png Graphic file (type png)
 <use Figures/../Figures/mlpipeline.png>
 Package pdftex.def Info: Figures/../Figures/mlpipeline.png  used on input line 
-45.
+40.
 (pdftex.def)             Requested size: 351.9072pt x 181.54247pt.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 54.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 49.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
 
-Overfull \hbox (4.92696pt too wide) in paragraph at lines 54--55
+Overfull \hbox (4.92696pt too wide) in paragraph at lines 49--50
 []\T1/ppl/m/n/10.95 Feature Rep-re-sen-ta-tion: a method of nu-mer-i-cally rep-
 re-sent lan-guage data (char-
  []
 
 
-Overfull \hbox (0.5584pt too wide) in paragraph at lines 54--55
+Overfull \hbox (0.5584pt too wide) in paragraph at lines 49--50
 \T1/ppl/m/n/10.95 ac-ters, words and sen-tences, etc) in-put $\OML/zplm/m/it/10
 .95 x$ \T1/ppl/m/n/10.95 as fea-ture vec-tor $\OT1/zplm/m/n/10.95 [\OML/zplm/m/
 it/10.95 x[]\OT1/ppl/m/n/10.95 , \OML/zplm/m/it/10.95 x[]\OT1/ppl/m/n/10.95 , \
@@ -1829,8 +1829,8 @@ m/m/n/10.95 ]$ \T1/ppl/m/n/10.95 where
 
 [2 <./Figures/../Figures/mlpipeline.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 83.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 106.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 78.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 100.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1845,7 +1845,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 File: Figures/../Figures/Confuse_Mat_Example.png Graphic file (type png)
 <use Figures/../Figures/Confuse_Mat_Example.png>
 Package pdftex.def Info: Figures/../Figures/Confuse_Mat_Example.png  used on in
-put line 264.
+put line 258.
 (pdftex.def)             Requested size: 293.34521pt x 225.59225pt.
  [9 <./Figures/../Figures/Confuse_Mat_Example.png>]) [10]
 \openout2 = `Chapters/Chapter2.aux'.
@@ -1867,8 +1867,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 ...ditions \cite{mccallum_comparison_nodate} 
-                                                  \cite{rish_analysis_2001}....
+l.40 ...itions \citep{mccallum_comparison_nodate} 
+                                                  \citep{rish_analysis_2001}...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1892,33 +1892,39 @@ Overfull \vbox (8.34636pt too high) has occurred while \output is active []
 <Figures/../Figures/pca_proj.png, id=511, 384.43625pt x 252.945pt>
 File: Figures/../Figures/pca_proj.png Graphic file (type png)
 <use Figures/../Figures/pca_proj.png>
-Package pdftex.def Info: Figures/../Figures/pca_proj.png  used on input line 59
+Package pdftex.def Info: Figures/../Figures/pca_proj.png  used on input line 61
 .
 (pdftex.def)             Requested size: 303.0218pt x 199.39207pt.
  [13 <./Figures/../Figures/pca_proj.png>] [14]
-Overfull \hbox (2.79227pt too wide) in paragraph at lines 110--111
+Overfull \hbox (2.79227pt too wide) in paragraph at lines 112--113
 []\T1/ppl/b/n/10.95 BoW\T1/ppl/m/n/10.95 : Ap-ply un-i-gram, bi-gram and tri-gr
 am bag-of-words model with both word
  []
 
-<Figures/../Figures/conf_matrix_iter1.png, id=526, 315.1775pt x 281.05pt>
+<Figures/../Figures/conf_matrix_iter1.png, id=527, 315.1775pt x 281.05pt>
 File: Figures/../Figures/conf_matrix_iter1.png Graphic file (type png)
 <use Figures/../Figures/conf_matrix_iter1.png>
 Package pdftex.def Info: Figures/../Figures/conf_matrix_iter1.png  used on inpu
-t line 117.
+t line 119.
 (pdftex.def)             Requested size: 303.0218pt x 270.22519pt.
-[15]
-<Figures/../Figures/conf_matrix_iter2.png, id=533, 315.1775pt x 281.05pt>
+[15] [16 <./Figures/../Figures/conf_matrix_iter1.png>]
+<Figures/../Figures/conf_matrix_iter2.png, id=540, 315.1775pt x 281.05pt>
 File: Figures/../Figures/conf_matrix_iter2.png Graphic file (type png)
 <use Figures/../Figures/conf_matrix_iter2.png>
 Package pdftex.def Info: Figures/../Figures/conf_matrix_iter2.png  used on inpu
-t line 151.
+t line 153.
 (pdftex.def)             Requested size: 303.0218pt x 270.22519pt.
- [16 <./Figures/../Figures/conf_matrix_iter1.png>]) [17 <./Figures/../Figures/c
-onf_matrix_iter2.png>]
+)
+Overfull \hbox (0.49112pt too wide) in paragraph at lines 160--271
+\T1/ppl/m/n/10.95 a pro-posed mask-ing BoW method that re-places con-tent lex-i
+-cal items with their gram-
+ []
+
+[17 <./Figures/../Figures/conf_matrix_iter2.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
- (./Chapters/Chapter3.tex [18
+ (./Chapters/Chapter3.tex
+[18
 
 
 
@@ -1956,7 +1962,7 @@ Overfull \hbox (2.46269pt too wide) in paragraph at lines 37--38
 c-tive an-swer spans, a question-
  []
 
-<Figures/../Figures/Flowchart.pdf, id=573, 208.78pt x 451.6875pt>
+<Figures/../Figures/Flowchart.pdf, id=574, 208.78pt x 451.6875pt>
 File: Figures/../Figures/Flowchart.pdf Graphic file (type pdf)
 <use Figures/../Figures/Flowchart.pdf>
 Package pdftex.def Info: Figures/../Figures/Flowchart.pdf  used on input line 4
@@ -1969,7 +1975,7 @@ card score be-tween each sentence-question
  []
 
 [21] [22 <./Figures/../Figures/Flowchart.pdf>]
-<Figures/Figure_1.png, id=600, 462.528pt x 346.896pt>
+<Figures/Figure_1.png, id=601, 462.528pt x 346.896pt>
 File: Figures/Figure_1.png Graphic file (type png)
 <use Figures/Figure_1.png>
 Package pdftex.def Info: Figures/Figure_1.png  used on input line 62.
@@ -2021,7 +2027,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 [23 <./Figures/Figure_1.png>] [24]
-<Figures/../Figures/fig_iter1.pdf, id=612, 433.62pt x 289.08pt>
+<Figures/../Figures/fig_iter1.pdf, id=613, 433.62pt x 289.08pt>
 File: Figures/../Figures/fig_iter1.pdf Graphic file (type pdf)
 <use Figures/../Figures/fig_iter1.pdf>
 Package pdftex.def Info: Figures/../Figures/fig_iter1.pdf  used on input line 1
@@ -2037,7 +2043,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-<Figures/../Figures/fig_1.pdf, id=663, 433.62pt x 289.08pt>
+<Figures/../Figures/fig_1.pdf, id=664, 433.62pt x 289.08pt>
 File: Figures/../Figures/fig_1.pdf Graphic file (type pdf)
 <use Figures/../Figures/fig_1.pdf>
 Package pdftex.def Info: Figures/../Figures/fig_1.pdf  used on input line 140.
@@ -2103,6 +2109,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -2131,10 +2141,10 @@ pe1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palat
 ino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on main.pdf (51 pages, 799303 bytes).
+Output written on main.pdf (51 pages, 800195 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 698 compressed objects within 7 object streams
+ 867 PDF objects out of 1000 (max. 8388607)
+ 699 compressed objects within 7 object streams
  173 named destinations out of 1000 (max. 500000)
  422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

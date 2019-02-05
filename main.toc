@@ -11,7 +11,7 @@
 \contentsline {subsubsection}{Bag-of-Words Representation}{3}{section*.18}
 \contentsline {subsubsection}{Weighting of the features}{5}{section*.27}
 \contentsline {subsection}{\numberline {1.4.2}Dimensionality reduction}{6}{subsection.28}
-\contentsline {subsection}{\numberline {1.4.3}Distributional Method}{6}{subsection.29}
+\contentsline {subsection}{\numberline {1.4.3}Distributional Method}{7}{subsection.29}
 \contentsline {section}{\numberline {1.5}Classification and Objective Function}{7}{section.30}
 \contentsline {subsection}{\numberline {1.5.1}Classification Functions}{7}{subsection.31}
 \contentsline {subsection}{\numberline {1.5.2}Objective Functions}{8}{subsection.32}
@@ -25,10 +25,10 @@
 \contentsline {section}{\numberline {2.2}Related Works}{12}{section.46}
 \contentsline {section}{\numberline {2.3}Method}{13}{section.47}
 \contentsline {subsection}{\numberline {2.3.1}Dataset: English Grammar Profile}{13}{subsection.48}
-\contentsline {subsection}{\numberline {2.3.2}Multinomial Logistic Regression}{13}{subsection.50}
+\contentsline {subsection}{\numberline {2.3.2}Multinomial Logistic Regression}{14}{subsection.50}
 \contentsline {subsection}{\numberline {2.3.3}Feature Design}{14}{subsection.52}
 \contentsline {subsubsection}{Bag of Word Model}{14}{section*.53}
-\contentsline {subsubsection}{TF-IDF}{14}{section*.54}
+\contentsline {subsubsection}{TF-IDF}{15}{section*.54}
 \contentsline {section}{\numberline {2.4}Experimental Results}{15}{section.55}
 \contentsline {subsection}{\numberline {2.4.1}First Phase}{15}{subsection.56}
 \contentsline {subsection}{\numberline {2.4.2}Second Phase}{16}{subsection.59}
