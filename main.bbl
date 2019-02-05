@@ -1180,6 +1180,40 @@
     \field{year}{1980}
   \endentry
 
+  \entry{rajpurkar2018know}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RP}{%
+         family={Rajpurkar},
+         familyi={R\bibinitperiod},
+         given={Pranav},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Robin},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Percy},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RPJRLP1}
+    \strng{fullhash}{RPJRLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Know What You Don't Know: Unanswerable Questions for SQuAD}
+    \field{journaltitle}{arXiv preprint arXiv:1806.03822}
+    \field{year}{2018}
+  \endentry
+
   \entry{rish_analysis_2001}{report}{}
     \name{author}{3}{}{%
       {{hash=RI}{%

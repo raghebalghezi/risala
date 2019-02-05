@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 FEB 2019 09:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  5 FEB 2019 09:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1962,7 +1962,7 @@ Overfull \hbox (2.46269pt too wide) in paragraph at lines 37--38
 c-tive an-swer spans, a question-
  []
 
-<Figures/../Figures/Flowchart.pdf, id=574, 208.78pt x 451.6875pt>
+<Figures/../Figures/Flowchart.pdf, id=576, 208.78pt x 451.6875pt>
 File: Figures/../Figures/Flowchart.pdf Graphic file (type pdf)
 <use Figures/../Figures/Flowchart.pdf>
 Package pdftex.def Info: Figures/../Figures/Flowchart.pdf  used on input line 4
@@ -1975,7 +1975,7 @@ card score be-tween each sentence-question
  []
 
 [21] [22 <./Figures/../Figures/Flowchart.pdf>]
-<Figures/Figure_1.png, id=601, 462.528pt x 346.896pt>
+<Figures/Figure_1.png, id=603, 462.528pt x 346.896pt>
 File: Figures/Figure_1.png Graphic file (type png)
 <use Figures/Figure_1.png>
 Package pdftex.def Info: Figures/Figure_1.png  used on input line 62.
@@ -2027,7 +2027,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 [23 <./Figures/Figure_1.png>] [24]
-<Figures/../Figures/fig_iter1.pdf, id=613, 433.62pt x 289.08pt>
+<Figures/../Figures/fig_iter1.pdf, id=615, 433.62pt x 289.08pt>
 File: Figures/../Figures/fig_iter1.pdf Graphic file (type pdf)
 <use Figures/../Figures/fig_iter1.pdf>
 Package pdftex.def Info: Figures/../Figures/fig_iter1.pdf  used on input line 1
@@ -2043,7 +2043,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-<Figures/../Figures/fig_1.pdf, id=664, 433.62pt x 289.08pt>
+<Figures/../Figures/fig_1.pdf, id=666, 433.62pt x 289.08pt>
 File: Figures/../Figures/fig_1.pdf Graphic file (type pdf)
 <use Figures/../Figures/fig_1.pdf>
 Package pdftex.def Info: Figures/../Figures/fig_1.pdf  used on input line 140.
@@ -2109,22 +2109,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36639 strings out of 492649
- 732331 string characters out of 6129622
- 1001555 words of memory out of 5000000
- 39941 multiletter control sequences out of 15000+600000
+ 36644 strings out of 492649
+ 732476 string characters out of 6129622
+ 1002139 words of memory out of 5000000
+ 39945 multiletter control sequences out of 15000+600000
  592444 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,20n,84p,10377b,2955s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,20n,84p,10377b,2964s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -2141,10 +2137,10 @@ pe1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/ur
 w/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palat
 ino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on main.pdf (51 pages, 800195 bytes).
+Output written on main.pdf (51 pages, 800579 bytes).
 PDF statistics:
- 867 PDF objects out of 1000 (max. 8388607)
- 699 compressed objects within 7 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 870 PDF objects out of 1000 (max. 8388607)
+ 701 compressed objects within 8 object streams
+ 174 named destinations out of 1000 (max. 500000)
  422 words of extra memory for PDF output out of 10000 (max. 10000000)
 
