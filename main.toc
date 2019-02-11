@@ -1,49 +1,47 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
-\contentsline {chapter}{Abstract}{v}{section*.1}
-\contentsline {chapter}{Acknowledgements}{vii}{section*.2}
-\contentsline {chapter}{\numberline {1}Text Representation}{1}{chapter.9}
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.10}
-\contentsline {section}{\numberline {1.2}Classification as a Machine Learning Task}{1}{section.11}
-\contentsline {section}{\numberline {1.3}Logistic Regression}{2}{section.13}
-\contentsline {section}{\numberline {1.4}Feature Representation}{3}{section.16}
-\contentsline {subsection}{\numberline {1.4.1}Frequency-based Methods}{3}{subsection.17}
-\contentsline {subsubsection}{Bag-of-Words Representation}{3}{section*.18}
-\contentsline {subsubsection}{Weighting of the features}{5}{section*.27}
-\contentsline {subsection}{\numberline {1.4.2}Dimensionality reduction}{6}{subsection.28}
-\contentsline {subsection}{\numberline {1.4.3}Distributional Method}{7}{subsection.29}
-\contentsline {section}{\numberline {1.5}Classification and Objective Function}{7}{section.30}
-\contentsline {subsection}{\numberline {1.5.1}Classification Functions}{7}{subsection.31}
-\contentsline {subsection}{\numberline {1.5.2}Objective Functions}{8}{subsection.32}
-\contentsline {section}{\numberline {1.6}Optimization}{8}{section.33}
-\contentsline {section}{\numberline {1.7}Evaluation Metrics}{9}{section.34}
-\contentsline {subsection}{\numberline {1.7.1}Confusion Matrix}{9}{subsection.35}
-\contentsline {subsection}{\numberline {1.7.2}Precision, Recall and F-Score}{9}{subsection.41}
-\contentsline {section}{\numberline {1.8}Conclusion}{10}{section.42}
-\contentsline {chapter}{\numberline {2}The Use of Semi-supervised Learning in Classification of English Grammatical Structures}{11}{chapter.43}
-\contentsline {section}{\numberline {2.1}Introduction}{11}{section.44}
-\contentsline {section}{\numberline {2.2}Related Works}{12}{section.46}
-\contentsline {section}{\numberline {2.3}Method}{13}{section.47}
-\contentsline {subsection}{\numberline {2.3.1}Dataset: English Grammar Profile}{13}{subsection.48}
-\contentsline {subsection}{\numberline {2.3.2}Multinomial Logistic Regression}{14}{subsection.50}
-\contentsline {subsection}{\numberline {2.3.3}Feature Design}{14}{subsection.52}
-\contentsline {subsubsection}{Bag of Word Model}{14}{section*.53}
-\contentsline {subsubsection}{TF-IDF}{15}{section*.54}
-\contentsline {section}{\numberline {2.4}Experimental Results}{15}{section.55}
-\contentsline {subsection}{\numberline {2.4.1}First Phase}{15}{subsection.56}
-\contentsline {subsection}{\numberline {2.4.2}Second Phase}{16}{subsection.59}
-\contentsline {section}{\numberline {2.5}Conclusion}{17}{section.61}
-\contentsline {chapter}{\numberline {3}Two-stage Classifcation Method for Automatic Reading Comprehension }{19}{chapter.62}
-\contentsline {section}{\numberline {3.1}Introduction}{19}{section.63}
-\contentsline {section}{\numberline {3.2}Related Work}{20}{section.64}
-\contentsline {section}{\numberline {3.3}Baseline Implementation}{21}{section.65}
-\contentsline {subsection}{\numberline {3.3.1}Feature Design}{21}{subsection.67}
-\contentsline {subsection}{\numberline {3.3.2}Training and Result}{23}{subsection.68}
-\contentsline {section}{\numberline {3.4}Stage Two: Predicting the Answer Span}{24}{section.71}
-\contentsline {subsection}{\numberline {3.4.1}Iteration 1}{24}{subsection.72}
-\contentsline {subsection}{\numberline {3.4.2}Error Analysis: Iteration 1}{25}{subsection.73}
-\contentsline {subsection}{\numberline {3.4.3}Iteration 2}{25}{subsection.75}
-\contentsline {section}{\numberline {3.5}Conclusion}{27}{section.77}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{29}{appendix.78}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{29}{section.79}
-\contentsline {chapter}{Bibliography}{31}{appendix*.80}
+\contentsline {chapter}{Abstract}{iii}{section*.1}
+\contentsline {chapter}{Acknowledgements}{v}{section*.2}
+\contentsline {chapter}{\numberline {1}Text Representation}{1}{chapter.7}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.8}
+\contentsline {section}{\numberline {1.2}Classification as a Machine Learning Task}{1}{section.9}
+\contentsline {section}{\numberline {1.3}Logistic Regression}{2}{section.11}
+\contentsline {section}{\numberline {1.4}Feature Representation}{3}{section.14}
+\contentsline {subsection}{\numberline {1.4.1}Frequency-based Methods}{3}{subsection.15}
+\contentsline {subsubsection}{Bag-of-Words Representation}{3}{section*.16}
+\contentsline {subsubsection}{Weighting of the features}{5}{section*.25}
+\contentsline {subsection}{\numberline {1.4.2}Dimensionality reduction}{6}{subsection.26}
+\contentsline {subsection}{\numberline {1.4.3}Distributional Method}{7}{subsection.27}
+\contentsline {section}{\numberline {1.5}Classification and Objective Function}{7}{section.28}
+\contentsline {subsection}{\numberline {1.5.1}Classification Functions}{7}{subsection.29}
+\contentsline {subsection}{\numberline {1.5.2}Objective Functions}{8}{subsection.30}
+\contentsline {section}{\numberline {1.6}Optimization}{9}{section.31}
+\contentsline {section}{\numberline {1.7}Evaluation Metrics}{9}{section.32}
+\contentsline {subsection}{\numberline {1.7.1}Confusion Matrix}{9}{subsection.33}
+\contentsline {subsection}{\numberline {1.7.2}Precision, Recall and F-Score}{9}{subsection.39}
+\contentsline {section}{\numberline {1.8}Conclusion}{10}{section.40}
+\contentsline {chapter}{\numberline {2}The Use of Semi-supervised Learning in Classification of English Grammatical Structures}{13}{chapter.41}
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.42}
+\contentsline {section}{\numberline {2.2}Related Works}{14}{section.44}
+\contentsline {section}{\numberline {2.3}Method}{15}{section.45}
+\contentsline {subsection}{\numberline {2.3.1}Dataset: English Grammar Profile}{15}{subsection.46}
+\contentsline {subsection}{\numberline {2.3.2}Multinomial Logistic Regression}{15}{subsection.48}
+\contentsline {subsection}{\numberline {2.3.3}Feature Design}{16}{subsection.50}
+\contentsline {subsubsection}{Bag of Word Model}{17}{section*.51}
+\contentsline {subsubsection}{TF-IDF}{17}{section*.52}
+\contentsline {section}{\numberline {2.4}Experimental Results}{17}{section.53}
+\contentsline {subsection}{\numberline {2.4.1}First Phase}{17}{subsection.54}
+\contentsline {subsection}{\numberline {2.4.2}Second Phase}{18}{subsection.57}
+\contentsline {section}{\numberline {2.5}Conclusion}{20}{section.59}
+\contentsline {chapter}{\numberline {3}Two-stage Classifcation Method for Automatic Reading Comprehension }{21}{chapter.60}
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.61}
+\contentsline {section}{\numberline {3.2}Related Work}{22}{section.62}
+\contentsline {section}{\numberline {3.3}Baseline Implementation}{23}{section.63}
+\contentsline {subsection}{\numberline {3.3.1}Feature Design}{23}{subsection.65}
+\contentsline {subsection}{\numberline {3.3.2}Training and Result}{25}{subsection.66}
+\contentsline {section}{\numberline {3.4}Stage Two: Predicting the Answer Span}{26}{section.69}
+\contentsline {subsection}{\numberline {3.4.1}Iteration 1}{26}{subsection.70}
+\contentsline {subsection}{\numberline {3.4.2}Error Analysis: Iteration 1}{27}{subsection.71}
+\contentsline {subsection}{\numberline {3.4.3}Iteration 2}{28}{subsection.73}
+\contentsline {section}{\numberline {3.5}Conclusion}{28}{section.75}
+\contentsline {chapter}{Bibliography}{31}{appendix*.76}
