@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 FEB 2019 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  4 MAR 2019 03:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1453,14 +1453,18 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux
+(./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
+(./Chapters/Chapter3.aux
+
+LaTeX Warning: Label `Chapter2' multiply defined.
+
 
 LaTeX Warning: Label `fig:cmdstudy' multiply defined.
 
 
 LaTeX Warning: Label `fig:cmdstudy' multiply defined.
 
-) (./Chapters/Chapter3.aux))
+) (./Chapters/Chapter4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -1783,57 +1787,71 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 [1
 
 
-]
-<Figures/../Figures/mlpipeline.png, id=344, 439.8834pt x 226.9278pt>
+]) [2]
+\openout2 = `Chapters/Chapter2.aux'.
+
+ (./Chapters/Chapter2.tex
+Chapter 2.
+
+LaTeX Warning: Reference `fig:mlpipeline' on page 3 undefined on input line 39.
+
+
+<Figures/../Figures/mlpipeline.png, id=357, 439.8834pt x 226.9278pt>
 File: Figures/../Figures/mlpipeline.png Graphic file (type png)
 <use Figures/../Figures/mlpipeline.png>
 Package pdftex.def Info: Figures/../Figures/mlpipeline.png  used on input line 
-40.
+42.
 (pdftex.def)             Requested size: 351.9072pt x 181.54247pt.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 49.
+1: section
+[3
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 52.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
- [2 <./Figures/../Figures/mlpipeline.png>]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+ [4 <./Figures/../Figures/mlpipeline.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 78.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 100.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 81.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 103.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [3]
+) [5]
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [4]
-[5]
-Overfull \hbox (3.50902pt too wide) in paragraph at lines 195--196
+) [6]
+[7]
+Overfull \hbox (3.50902pt too wide) in paragraph at lines 198--199
 []\T1/ppl/m/n/10.95 Clustering ([]Baker and Mc-Cal-lum, [][]1998[][]) ([]Sable 
 and Church, [][]2001[][]) ([]Slonim and Tishby,
  []
 
-[6] [7] [8]
-<Figures/../Figures/Confuse_Mat_Example.png, id=430, 586.69188pt x 451.18562pt>
+[8] [9] [10]
+<Figures/../Figures/Confuse_Mat_Example.png, id=448, 586.69188pt x 451.18562pt>
 
 File: Figures/../Figures/Confuse_Mat_Example.png Graphic file (type png)
 <use Figures/../Figures/Confuse_Mat_Example.png>
 Package pdftex.def Info: Figures/../Figures/Confuse_Mat_Example.png  used on in
-put line 258.
+put line 261.
 (pdftex.def)             Requested size: 293.34521pt x 225.59225pt.
- [9]) [10 <./Figures/../Figures/Confuse_Mat_Example.png>] [11]
-\openout2 = `Chapters/Chapter2.aux'.
+ [11 <./Figures/../Figures/Confuse_Mat_Example.png>]) [12]
+\openout2 = `Chapters/Chapter3.aux'.
 
 
-(./Chapters/Chapter2.tex [12
+(./Chapters/Chapter3.tex
+Chapter 3.
+1: section
+[13
 
 
 
 ]
-Chapter 2.
-1: section
-[13]
 
 ! Package inputenc Error: Unicode character ﬁ (U+FB01)
 (inputenc)                not set up for use with LaTeX.
@@ -1864,37 +1882,45 @@ Overfull \vbox (8.34636pt too high) has occurred while \output is active []
 
 
 [14]
-<Figures/../Figures/pca_proj.png, id=486, 384.43625pt x 252.945pt>
+<Figures/../Figures/pca_proj.png, id=494, 384.43625pt x 252.945pt>
 File: Figures/../Figures/pca_proj.png Graphic file (type png)
 <use Figures/../Figures/pca_proj.png>
 Package pdftex.def Info: Figures/../Figures/pca_proj.png  used on input line 61
 .
 (pdftex.def)             Requested size: 315.61215pt x 207.67484pt.
  [15] [16 <./Figures/../Figures/pca_proj.png>]
-<Figures/../Figures/conf_matrix_iter1.png, id=504, 315.1775pt x 281.05pt>
+<Figures/../Figures/conf_matrix_iter1.png, id=513, 315.1775pt x 281.05pt>
 File: Figures/../Figures/conf_matrix_iter1.png Graphic file (type png)
 <use Figures/../Figures/conf_matrix_iter1.png>
 Package pdftex.def Info: Figures/../Figures/conf_matrix_iter1.png  used on inpu
 t line 119.
 (pdftex.def)             Requested size: 315.61215pt x 281.45241pt.
- [17] [18 <./Figures/../Figures/conf_matrix_iter1.png>]
-<Figures/../Figures/conf_matrix_iter2.png, id=517, 315.1775pt x 281.05pt>
+ [17 <./Figures/../Figures/conf_matrix_iter1.png>]
+
+LaTeX Warning: Citation 'citeulike: 13797746' on page 18 undefined on input lin
+e 147.
+
+<Figures/../Figures/conf_matrix_iter2.png, id=521, 315.1775pt x 281.05pt>
 File: Figures/../Figures/conf_matrix_iter2.png Graphic file (type png)
 <use Figures/../Figures/conf_matrix_iter2.png>
 Package pdftex.def Info: Figures/../Figures/conf_matrix_iter2.png  used on inpu
 t line 153.
 (pdftex.def)             Requested size: 315.61215pt x 281.45241pt.
 )
-Overfull \hbox (10.80507pt too wide) in paragraph at lines 160--271
+Overfull \hbox (10.80507pt too wide) in paragraph at lines 160--272
 \T1/ppl/m/n/10.95 strap-ping) method to clas-sify En-glish sen-tences based on 
 their level dif-fi-culty, A=Beginner,
  []
 
-[19 <./Figures/../Figures/conf_matrix_iter2.png>] [20]
-\openout2 = `Chapters/Chapter3.aux'.
+[18] [19 <./Figures/../Figures/conf_matrix_iter2.png>]
+\openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter3.tex
-Chapter 3.
+ (./Chapters/Chapter4.tex [20
+
+
+
+]
+Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
@@ -1906,11 +1932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 1: section
-[21
-
-
-
-]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
@@ -1926,31 +1948,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
  []
 
 [22]
-<Figures/../Figures/Flowchart.pdf, id=552, 208.78pt x 451.6875pt>
+<Figures/../Figures/Flowchart.pdf, id=559, 208.78pt x 451.6875pt>
 File: Figures/../Figures/Flowchart.pdf Graphic file (type pdf)
 <use Figures/../Figures/Flowchart.pdf>
 Package pdftex.def Info: Figures/../Figures/Flowchart.pdf  used on input line 4
 0.
 (pdftex.def)             Requested size: 208.77946pt x 451.68639pt.
  [23] [24 <./Figures/../Figures/Flowchart.pdf>]
-<Figures/Figure_1.png, id=581, 462.528pt x 346.896pt>
+<Figures/Figure_1.png, id=588, 462.528pt x 346.896pt>
 File: Figures/Figure_1.png Graphic file (type png)
 <use Figures/Figure_1.png>
-Package pdftex.def Info: Figures/Figure_1.png  used on input line 62.
+Package pdftex.def Info: Figures/Figure_1.png  used on input line 63.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-Overfull \hbox (41.71065pt too wide) in paragraph at lines 62--63
+Overfull \hbox (41.71065pt too wide) in paragraph at lines 63--64
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 66.
+               Default added (so using `tbp') on input line 67.
 
 ! Misplaced \noalign.
 \hline ->\noalign 
                   {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.69 \hline
+l.70 \hline
             \textbf{class} & \textbf{precision} & \textbf{recall} & \textbf{...
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1958,7 +1980,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! You can't use `\hrule' here except with leaders.
 \hline ->\noalign {\ifnum 0=`}\fi \hrule 
                                          \@height \arrayrulewidth \futurelet...
-l.69 \hline
+l.70 \hline
             \textbf{class} & \textbf{precision} & \textbf{recall} & \textbf{...
 To put a horizontal rule in an hbox or an alignment,
 you should use \leaders or \hrulefill (see The TeXbook).
@@ -1966,7 +1988,7 @@ you should use \leaders or \hrulefill (see The TeXbook).
 ! Missing number, treated as zero.
 <to be read again> 
                    \futurelet 
-l.69 \hline
+l.70 \hline
             \textbf{class} & \textbf{precision} & \textbf{recall} & \textbf{...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1975,7 +1997,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \futurelet 
-l.69 \hline
+l.70 \hline
             \textbf{class} & \textbf{precision} & \textbf{recall} & \textbf{...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1985,29 +2007,29 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 [25 <./Figures/Figure_1.png>] [26]
-<Figures/../Figures/fig_iter1.pdf, id=593, 433.62pt x 289.08pt>
+<Figures/../Figures/fig_iter1.pdf, id=600, 433.62pt x 289.08pt>
 File: Figures/../Figures/fig_iter1.pdf Graphic file (type pdf)
 <use Figures/../Figures/fig_iter1.pdf>
 Package pdftex.def Info: Figures/../Figures/fig_iter1.pdf  used on input line 1
-15.
+16.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
-Overfull \hbox (12.80273pt too wide) in paragraph at lines 115--116
+Overfull \hbox (12.80273pt too wide) in paragraph at lines 116--117
  [][] 
  []
 
 [27 <./Figures/../Figures/fig_iter1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-<Figures/../Figures/fig_1.pdf, id=643, 433.62pt x 289.08pt>
+<Figures/../Figures/fig_1.pdf, id=650, 433.62pt x 289.08pt>
 File: Figures/../Figures/fig_1.pdf Graphic file (type pdf)
 <use Figures/../Figures/fig_1.pdf>
-Package pdftex.def Info: Figures/../Figures/fig_1.pdf  used on input line 140.
+Package pdftex.def Info: Figures/../Figures/fig_1.pdf  used on input line 142.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
-Overfull \hbox (12.80273pt too wide) in paragraph at lines 140--141
+Overfull \hbox (12.80273pt too wide) in paragraph at lines 142--143
 [][] 
  []
 
@@ -2053,24 +2075,32 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
 [33]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
-(./Chapters/Chapter3.aux))
+(./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9204F68A4EDB69D1FCE1E074FE4D1492;7414.
+(rerunfilecheck)             Checksum: 7008F7F0F551CD96212395EB50805275;7489.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36617 strings out of 492649
- 732092 string characters out of 6129622
- 1001291 words of memory out of 5000000
- 39937 multiletter control sequences out of 15000+600000
+ 36628 strings out of 492649
+ 732293 string characters out of 6129622
+ 1002435 words of memory out of 5000000
+ 39939 multiletter control sequences out of 15000+600000
  589206 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,20n,82p,10377b,2955s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2089,10 +2119,10 @@ type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/pal
 atino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/u
 plri8a.pfb>
-Output written on main.pdf (47 pages, 773221 bytes).
+Output written on main.pdf (47 pages, 772493 bytes).
 PDF statistics:
- 834 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 166 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 843 PDF objects out of 1000 (max. 8388607)
+ 680 compressed objects within 7 object streams
+ 168 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

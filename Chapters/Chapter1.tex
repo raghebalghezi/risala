@@ -1,6 +1,6 @@
 % Chapter Template
 
-\chapter{Text Representation} % Main chapter title
+\chapter{Introduction} % Main chapter title
 
 \label{Chapter1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
@@ -8,271 +8,33 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Introduction} 
+\section{Background}
 
-Computers do not understand human language the way we do; they are limited by their innate nature of numerical computation. So in order to make use of decades worth of lingusitic theories in the field of human language technology, tremendious human efforts must be extended to represent lingusitic phenomona in a way computers are able to deal with. The goal is to unify the representation of textual documents
-whatever their formats by transforming them into a set of terms
-(features) that can be easily used by learning algorithms. Features can be thought of as any rule a lingusit devises to represent particular characteristic of langauge. For instance, the presence of the substring `win \$1000 by clicking here` in an email may indicate for its spamminess. Feature engineering and design is an active research area in natural language processing, and its methods spans between manual and automatic creation.
+Lum is a company developing customized machine reading technology using machine learning and natural language processing. Their technology is served to a variety of medical, agricultural and educational domains and sectors. During the internship, the researcher was assigned two main NLP tasks that contribute to solving problems in teaching foreign languages using online distance learning. The two NLP tasks are automatic reading comprehension and detecting grammatical difficulty of English sentences according to CEFR. The goal of the first task is to design and implement a system that, given a reading passage and a set of questions, can automatically find answers to those questions from within the reading passage. The motivation for such a system is that it can help human
+language instructors create automatically graded assignment and quiz activities
+in virtual learning environments. The purpose of the second task is to create a system that can automatically categorize a given English text into three
+levels of grammatical difficulty: Elementary (A), Intermediate (B), and Advanced (C). In this report, the researcher investigates the possibility to use NLP and ML algorithms to solve these two problems. The report also covers the entire process: data description and analysis, literature survey, feature design, and engineering and evaluating the performance of the algorithm. 
 
-In order to apply learning algorithms on text, it is necessary to create
-a numerical representation of the text and assign a weight to each
-feature in text. This weighting is extremely important as it will
-influence the results of learning algorithms. Thus, a second objective
-is to improve weight the features.
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\section{Goals}
 
-The number of features is a very important factor on which the
-performance of Text Classification depends. Indeed, several learning
-algorithms are unable to handle a large number of features. For this
-purpose, it is necessary to reduce the dimensionality of the
-representation space by keeping only the best features. Reduction
-methods are used to select or extract the most important features. In
-this chapter, we present most common automatic methods of text
-representation, specifying their advantages and disadvantages, and then we
-discuss the weighting techniques most used in Text Classification as
-well as the techniques used to reduce dimensionality.
+One goal of this internship report is to examine the suitability of using a machine learning linear classification algorithm called logistic regression on two novel educational tasks: automatic reading comprehension and detection of grammatical difficulty. Another goal is to explore and compare different methods of feature extraction and feature engineering to each of these tasks. Furthermore, examine the use of logistic regression in a semi-supervised fashion to bootstrap the scarcity of training data and improve the overall quality of generalization. 
 
-\section{Classification as a Machine Learning Task}
-Classification is a supervised Machine learning task aims to select a correct class for a given input, or more generally a task of “ assigning objects from a universe to two or more classes or categories ” \citep{manning1999foundations}. In natural language processing, the tasks of tagging, word sense disambiguation and spam filtering are all examples of supervised machine learning classification. A classifier is an algorithm that quantitatively models the relationship between a set of inputs and their associated output such that it generalizes well to new input data. In the task of spam filtering, for instance, input data are set of sentences with binary labels (SPAM, Not SPAM). 
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
 
-\textbf{CHECKMEOUT}: There are two main phases to supervised classification: Training and Prediction. During training, a feature extractor is used to convert each input value to a feature set. These feature sets, which capture the basic information about each input that should be used to classify it, are discussed in the next section. Pairs of feature sets and labels are fed into the machine learning algorithm to generate a model. In prediction phase, the same feature extractor is used to convert unseen inputs to feature sets. These feature sets are then fed into the model, which generates predicted labels.
+\section{Outline}
+The first chapter gives a general background about the internship that the researcher undertakes as well as the goals intended to achieve through this internship report. 
 
-\begin{figure}
-\includegraphics[scale=.8]{../Figures/mlpipeline.png} \centering
-\caption{A figure shows the machine learning workflow}
-\end{figure}
+The second chapter is dedicated to reviewing the theory of machine learning in the context of natural language processing. It also defines classification as a supervised machine learning task and logistic regression as one popular linear classification algorithm. The chapter also includes the conventional methods of computational representation of human languages such as bag-of-words, term-frequency-inverse-document-frequency, and word embeddings. Finally, it concludes by showing the metrics used to evaluate classification systems. 
 
- \section{Logistic Regression}
- Logistic regression is one of the most common machine learning classifier in natural language processing tasks. It is also considered the building blocks of neural network models. Logistic regression belongs to a group of probabilistic classifiers called discriminative models which, unlike its generative counterparts like Naive Bayes classifiers, is to try to learn to distinguish the classes. More formally, given a document $d$ and a class $c$ , logistic regressions attempts to compute the conditional probability $P(c|d)$. 
- According to \citep{jurafsky2014speech}, classification using logistic regression, like any other supervised classification algorithm, has four main components: 
+The third chapter introduces the task of detecting grammatical errors in English sentence as a classification problem and explains the use of multinomial logistic regression in a semi-supervised fashion to solve it. The chapter also briefly surveys the most important studies in the literature that tackled similar textual
+classification tasks. Finally, it shows the experiments, the results of
+applying the algorithm of the data collected as well as the conclusions. 
 
-\begin{list}{•}{}
- \item Feature Representation: a method of numerically represent language data (characters, words and sentences, etc) input $x$ as feature vector $[x_{1},x_{2},x_{3},...x_{n}]$ where $i$  represents an observation in the input data.
+The fourth chapter introduces the task of automatic reading comprehension and the data set used for this purpose. It also discusses the common approaches tackling these tasks in the literature. Next, the chapter uses the different feature engineering used to create a numerical representation of text. Finally, the chapter is concluded with the result and evaluation as well as sections dedicated to error analysis and future work respectively. 
 
-\item Classification function: computes an estimation to class $\hat{y}$ via $p(y|x)$. In the case of binary logistic regression, the sigmoid function is used, while a softmax is used for multinomial classification. 
- 
-\item An objective function involving minimizing error on training examples (cross entropy)
-
-\item An optimizer to help find the minimum of objective function 
- (stochastic gradient descent).
- \end{list}
-
-Logistic regression also has two phases: training and testing. In training phase, the goal is to find the optimal weights that best account for mapping input features $x_{i}$ to the labelled output $y_{i}$ of a subset of the data. In testing, we measure the generalizability of weights learned in the training phase on the remaining set of the data.
-
-Given a dataset $\mathcal { D } = \left\{ \left( \boldsymbol { x } ^ { ( i ) } , y ^ { ( i ) } \right) \right\} _ { i = 1 } ^ { N }$, the weights  are estimated by maximum conditional likelihood, 
-
-\begin{equation}
-\log \mathrm { p } \left( \boldsymbol { y } ^ { ( 1 : N ) } | \boldsymbol { x } ^ { ( 1 : N ) } ; \boldsymbol { \theta } \right) = \sum _ { i = 1 } ^ { N } \log \mathrm { p } \left( y ^ { ( i ) } | \boldsymbol { x } ^ { ( i ) } ; \boldsymbol { \theta } \right)
-\end{equation}
-\begin{equation}
-\sum _ { i = 1 } ^ { N } \boldsymbol { \theta } \cdot \boldsymbol { f } \left( \boldsymbol { x } ^ { ( i ) } , y ^ { ( i ) } \right) - \log \sum _ { y ^ { \prime } \in \mathcal { Y } } \exp \left( \boldsymbol { \theta } \cdot \boldsymbol { f } \left( \boldsymbol { x } ^ { ( i ) } , y ^ { \prime } \right) \right)
-\end{equation}
-
-
-
-
-
-\section{Feature Representation}
-
-A feature is defined as any element that can be used as an attribute in classification algorithms. Choosing what features to use to represent a text or a document not only has a major impact on the entire classification process, but it is also arguably the most difficult phase in any natural language processing task. The reasons go to several fundamental questions on how to represent language computationally. For example, on what level should we represent a text: \emph{character-wise}, \emph{word-wise} or \emph{sentence-wise}, or even more specifically morphologically, etymologically or phonologically? Do we treat a word e.g. \emph{try} and all its morphological variations e.g. \emph{tries}, \emph{trying}, \emph{tried} similarly or differently? How to represent and model the semantics of human language computationally? Questions like these and many others are the core of natural language processing; therefore, we briefly explore some of the most common text representation methods.
-
-\subsection{Frequency-based Methods}
-
-\subsubsection{Bag-of-Words Representation}
-
-The "bag of words" representation is the simplest and most intuitive
-representation. It represents each document by a vector
-whose component corresponds to the number of occurrences of a word in
-the document.  Words have the advantage of having an
-explicit meaning. Nevertheless, the implementation of this
-representation raises several difficulties. The first difficulty is that
-of the delimitation of words in a text. Indeed, we still can not define
-what is a word. A word as being a sequence of
-characters belonging to a dictionary, or formally, as being a sequence
-of characters separated by spaces or punctuation characters. This
-definition is not valid for all languages. Indeed, languages such as
-Chinese or Japanese do not separate their words by spaces. In addition, some separators can be part of certain words (for example: today,
-127.0.0.1, potato, etc.). Another difficulty concerns the management of
-compound words (for example: rainbow, potato, etc.) and acronyms (like:
-IBM, CAF, CAN, etc.). Consideration of these cases requires quite
-complex language treatments. This representation of texts excludes any
-grammatical analysis and any notion of order between words and therefore
-semantically distant texts can have the same representation. For
-example, the sentences \texttt{the\ wolf\ eats\ the\ goat} and
-\texttt{the\ goat\ eats\ the\ wolf} is given the same representation
-despite being semantically different.
-
-% \subsubsection{Representation by Sentences}
-
-Bag-of-words representation excludes any notion of order and
-relationship between the words of a text, several studies have
-attempted to use sentences as features instead of words \citep{fuhr1991probabilistic} \citep{tzeras1993automatic}.
-The use of the sentences makes it possible to solve the problem of
-ambiguity generated by the use of the representation "bag of words". For
-example, the word \texttt{mouse} has several possible meanings while
-optical mouse and domestic mouse has no ambiguity. Although the
-sentences have the advantage of better keeping the semantics in relation
-to the words, their use as features did not lead to the expected
-results. According to Lewis \citep{lewis1992representation}, this representation is penalized
-by the large number of possible combinations which leads to low and too
-random frequencies. One solution proposed in \citep{caropreso2001learner} was to consider a
-sentence as a set of contiguous (but not necessarily ordered) words that
-appear together but do not necessarily respect grammatical rules.
-
-% \subsubsection{Representation by lemmas or lexical roots}
-
-A modification to the "bag of words" is representation by lemmas or lexical roots which replaces  each word by its canonical form so that words with different
-forms (singular, plural, masculine, feminine, present, past,
-future, etc.) can have in a single form called a canonical form.
-Grouping the different forms of a word offers the advantage of  reducing the dimensionality of the learning space. Indeed, in the bag-of-words representation, each form of a word is given a dimension; while with lemma representation the different forms of one word will be merged into one dimension. For example, words such as play, player, players, play, play, play, cheek, etc. will be replaced by a single describer ie the root played or the lemma play.
-
-
-Lemmatization and stemming are the two techniques used to find the canonical form of a word. Lemmatization uses a knowledge base containing the different inflected forms corresponding to the different possible lemmas. Thus, the inflected forms of a noun will be replaced by the singular masculine form while the different inflected forms of a verb will be replaced by the infinitive form. Lemmatization requires the use of a dictionary of inflected forms of language as well as a grammar labeler. An efficient algorithm, named TreeTagger \citep{schmid1994probabilistic}, has been developed for thirteen different languages: German, English, French, Italian, Dutch, Spanish, Bulgarian, Russian, Greek, French Portuguese, Chinese, Swahili and Old French. Stemming uses a knowledge base of syntactic and morphological rules and to transform words into their roots. One of the most well-known stemming algorithms for the English language is Porter's algorithm \citep{porter1980algorithm}. Lemmatization is more complicated to implement since it depends on the grammatical labellers. In addition, it is more sensitive to misspellings than stemming.
-
-\begin{lstlisting}[language=Python, caption=Python example]
-def stem(word):
-    Suffix_list = ["ing","ly","ed","ious",\
-				"ies","ive","es","s","ment"]
-    for suffix in Suffix_list:
-        if word.endswith(suffix):
-            return word[:-len(suffix)]
-    return word
-\end{lstlisting}
-
-% \subsubsection{Representation by n-grams}
-
-A slightly better approach to represent text that makes use of context is the representation by n-grams. It consists of breaking the text into moving sequences of $n$ consecutive tokens. For example, the trigram segmentation of the word "language" gives the following 3-grams: lan, ang, ngu, gua, uag, age. The notion of n-grams was introduced by  \citep{shannon1948mathematical}; he was interested in predicting the appearance of certain characters according to the other characters. Since then, n-grams have been used in many areas such as speech recognition, documentary research, and so on. The use of n-grams offers the following advantages: 1) language-independent 2) Requiring no prior segmentation of the document. 3) Less sensitive to misspellings. 4) effective method to automatic language identification.
-
-
-% \subsubsection{Representation by concepts}
-
-Depending on the task, we may sometimes need to aggregate words with certain linguistic relation in concepts. For example, we replace co-hyponyms \emph{dog} and \emph{wolf} with their hypernym \emph{canine}; or \emph{vehicle} and \emph{car} with \emph{automobile}. Concepts, defined as units of knowledge, can be used as features for the purpose of solving the ambiguity problem as well as the problem of synonymy. Indeed, each concept represents a unique meaning that can be expressed by several synonymous words. Similarly, a word with many meanings (sense) is found mapped to several concepts. Thus, a document containing the word \emph{vehicle} may be indexed by other words such as car or automobile. The transition from a word representation to a concept representation requires the use of semantic resources external to the content of documents such as: semantic networks, thesauri and ontologies. As a result, the performance of such a representation crucially depends on the semantic richness of the resources used in terms of the number of concepts and relationships between these concepts.
-
-\subsubsection{Weighting of the features}
-
-Co-occurrence methods such as bag-of-words has major drawbacks, one of which is terms with higher frequency are more important than those with less frequency. To address this problem, several normalization methods were developed to remove the bias towards more frequent terms. One of these method is Term Frequency Inverse Document Frequency (TFIDF).
-
-TFIDF has two main parts. Term Frequency is proportional to the frequency of the term in the document (local weighting). Thus, the longer the term is common in the document, the more important it is. It can be used as is or in several variations \citep{singhal1997learning} \citep{sable2001using}.
-
-$$t f _ { i j } = f \left( t _ { i } , d _ { j } \right)$$
-
-$$t f _ { i j } = 1 + \log \left( f \left( t _ { i } , d _ { j } \right) \right)$$
-
-$$ t f _ { i j } = 0.5 + 0.5 \frac { f \left( t _ { i } , d _ { j } \right) } { m a x _ { t _ { i } \in d _ { j } } f \left( t _ { i } , d _ { j } \right) }$$
-
-where $f(t_{i},d_{j})$ is the term frequency of document $j$
-
-Inverse Document Frequency measures the importance of a term throughout the collection (overall weighting). A term that often appears in the document base should not have the same impact as a less frequent term. Indeed, the terms that appear in the majority of documents do not have any discriminating power to distinguish documents from each other and must therefore have low weightings. The IDF weighting is inversely proportional to the number of documents containing the term to be weighted. Thus, the more the term appears in several documents the less it is discriminating and is assigned a low weighting. The IDF weighting is generally expressed as follows:
-
-$$i d f \left( t _ { i } \right) = \log \left( \frac { N } { d f \left( t _ { i } \right) } \right)$$
-
-where $df(t_{i})$ is the term frequency of feature $i$ and $N$ is the number of documents in the corpus.
-
-The TFIDF weighting combines the two weightings TF and IDF in order to
-provide a better approximation of the importance of a term in a
-document. According to this weighting, for a term to be important in a
-document, it must appear frequently in the document and rarely in other
-documents. This weighting is given by the product of the local weighting
-of the term in the document by its overall weighting in all the
-documents of the corpus.
-
-$$t f i d f \left( t _ { i } , d _ { j } \right) = t f _ { i j } \times \log \left( \frac { N } { d f \left( t _ { i } \right) } \right)$$
-
-
-TFC is a modification to TFIDF that overcomes the major drawback of the
-TFIDF measure, namely that the length of the documents is not taken into
-consideration by adding a normalization factor. The TFC weighting of a
-term $i$ in a document $j$ is calculated as follows:
-
-$$T F C _ { i j } = \frac { T F I D F \left( t _ { i } , d _ { j } \right) } { \sqrt { \sum _ { k = 1 } ^ { T } T F I D F \left( t _ { k } , d _ { j } \right) ^ { 2 } } }$$
-
-\subsection{Dimensionality reduction}
-
-The text representation method explored so far, despite its usefulness in a variety of tasks in natural language processing, share sparsity as one problem in common. The number of features generated using these methods can easily exceed the tens of thousands, and not only does negatively influence the categorization process, it is also very computationally expensive in terms of hardware resources. In addition, the higher the dimensions of the features are, the weaker the features become. This problem is known as the \emph{curse of dimensionality} \citep{bellman2015adaptive}. To remedy this issue,  techniques, borrowed from the field of information theory and linear algebra, have been developed to reduce the feature space dimensionality without losing a lot of information. 
-
-% Dimensionality reduction techniques can be done using probabilistic and linear algebraic techniques such as principal component analysis (PCA) and linear discriminant analysis (LDA) that aim to project highly dimensional data into lower dimension space. 
-% \paragraph{Extraction of terms}
-
-Clustering \citep{baker1998distributional} \citep{sable2001using} \citep{slonim2001power} can be used to reduce dimensionality. It consists of representing the documents in a new representation space other than the original one. Each dimension of the new representation space groups terms that share the same meaning. Thus, the documents will no longer be represented by terms but rather by groupings of terms representing semantic concepts. This new space of representation offers the advantage of managing the synonymy since the synonymous terms will appear in the same groupings. Likewise, the fact that a term can be included in several groupings also makes it possible to manage the polysemy. Another very interesting method to reduce dimensionality, proposed by \citep{deerwester1990indexing} is Latent Semantic Allocation (LSA). It uses singular value decomposition of the document $x$ term matrix to change the representation by keeping only the $k$ axes of strongest singular values. However, LSA is very expensive in terms of calculation time during learning as it relies on a matrix factorization method called Singular Value Decomposition (SVD) which runs computationally in cubic size. Likewise, with each new document, it is necessary to redo the whole grouping process.
-
-\subsection{Distributional Method}
-An alternative approach for text representation and natural language of processing is the distributional similarity. The basic idea of the distribution of similarity is to represent the meaning of a word using words which co-occurs in the same context. "You shall know a word by the company it keeps" \citep{firth1957synopsis}. For example, the words 'dog' and 'cat' have the same meaning in the following two sentences: I have a cat, I have a dog. While this idea might not be adequate to capture or account for the complexity or the sophistication of human language, it has succeeded tremendously in a variety of lexicalized NLP tasks. In fact, it has become the de facto representation method of text. The need for such method does not only come from the need for more accurate numerical representation, but its density compared to other methods makes it less computationally expensive. Word2Vec \citep{mikolov2013distributed} and GloVe \citep{pennington2014glove} are two famous algorithms for creating word embedding. 
-
-The intuition of word2vec is to train a classifier on a binary prediction task: “Is
-word $w$ likely to show up near X?”, where $X$ is the word to which we want to find embeddings. Then, we use the weights learned by the classifier as embeddings. Skip-gram algorithm \citep{mikolov2013distributed} , first, initializes embeddings randomly. Then, it iteratively updates the embeddings of each word $w$ to be equal to the words they occur with in the same context. Finally, it injects $k$ number non-neighbor words as negative examples. 
-
-\section{Classification and Objective Function}
-\subsection{Classification Functions}
-What we have discussed so far gives us a method to numerically translate language from a form that is uniquely comprehensible to humans into a representation that a computer can understand, and can somehow capture the characteristics of human language. However, in order for the logistic regression to to learn to classify, a classification function should be utilized. Depending on whether the classification task is binary or multinomial, there are two main functions used: sigmoid and softmax. Sigmoid function, used for binary classification, outputs 1 if an observation input (feature vector) is a member of a particular class e.g. (spam), and 0 otherwise. In other words, it calculates $P(y=1|x)$ for spam text and $P(y=0|x)$ for non-spam text. The mathematical form of the Sigmoid function or (logistic function, hence comes the name of the classifier) is as follow:
-
-$$Sig ( x ) = \frac { 1 } { 1 + e ^ { - (w \cdot x +b)} }$$ 
-
-where $x$ represent the input vector, $w$ is the learned weights and $b$ is the bias term or the intercept of the linear equation. One mathematical property of the Sigmoid function is that it maps any input between 0 and 1, and to make it as probability we need to make the sum of $P(y=1)$ and $P(y=0)$ equals to 1. 
-
-$$ P ( y = 1 ) = \sigma ( w \cdot x + b ) $$
-$$ P ( y = 0 ) = 1 - \sigma ( w \cdot x + b ) $$
-
-Now to make decision, the classifier declares an observation input as \emph{Yes} (if it is a member of a class spam) if the probability is greater than certain threshold say 0.5, and declares an observation input as \emph{No} otherwise. 
-
-$$  \hat { y } = \left\{ \begin{array} { l l } { 1 } & { \text { if } P ( y = 1 | x ) > 0.5 } \\ { 0 } & { \text { otherwise } } \end{array} \right.  $$
-
-
-In the case of multinomial classification, the logic remains the same expect for the classification function where Softmax is used rather than Sigmoid. Softmax 
-
-$$p ( y = i | x ) = \frac { e ^ { w _ { i } \cdot x + b _ { i } } } { \sum _ { j = 1 } ^ { k } e ^ { w _ { j } \cdot x + b _ { j } } }$$
-
-works on normalizing the prediction of an observation by the values of all other classes in order to produce valid probability distribution. 
-
-\subsection{Objective Functions}
-
-During the learning process, we need to answer the question of \emph{how correct is the estimated output $\hat{y}$ of classifier from the true output $y$?}, and thus our objective \emph{function} is to minimize the difference between the estimated output and the true one such that the weights learned during this minimization process are, hopefully,  generalizable enough to correctly label observations unseen in the training phase. So we can imagine an objective function to be a difference between the $\hat{y}$ and $y$ i.e. $\left | \hat{y} - y \right |$, but for mathematical convenience we need a non-convex objective function (or also commonly referred to as loss function)  that can be easily optimized. Thus, we use maximum likelihood estimation. 
-
-Binary classification can be seen as Bernoulli distribution since the outcome is either 0 or 1. More formally, the probability of predicting class $y$ given input $x$ is  $p ( y | x ) = \hat { y } ^ { y } ( 1 - \hat { y } ) ^ { 1 - y }$. Minimizing the probability is the same as maximizing the negative log likelihood:
- $$L _ { C E } ( \hat { y } , y ) = - \log p ( y | x ) = - [ y \log \hat { y } + ( 1 - y ) \log ( 1 - \hat { y } ) ]$$
-
-Finally, by plugging in the value of $\hat{y}$ we get:
-$$ L _ { C E } ( w , b ) = - \frac { 1 } { m } \sum _ { i = 1 } ^ { m } y ^ { ( i ) } \log \sigma \left( w \cdot x ^ { ( i ) } + b \right) + \left( 1 - y ^ { ( i ) } \right) \log \left( 1 - \sigma \left( w \cdot x ^ { ( i ) } + b \right) \right) $$, where $m$ is the number of training examples.
-
-On the other hand, multinomial classification uses the same process except that it uses a different classification function \emph{softmax} and hence has different (multinomial) distribution. So the loss function for a single example $x$ is the sum of the logs of the $K$ output classes:
-$$ L _ { C E } ( \hat { y } , y ) = - \sum _ { k = 1 } ^ { K } 1 \{ y = k \} \log \frac { e ^ { w _ { k } \cdot x + b _ { k } } } { \sum _ { j = 1 } ^ { K } e ^ { w _ { j } \cdot x + b _ { j } } } $$
-
-\section{Optimization}
-
-The objective functions derived in the previous section is optimized  using numerical methods. Several algorithms are used for this purpose such as Stochastic Gradient Descent, that uses first derivative (gradient) information to find a minimum of a function; Newton-Raphson algorithm uses Second derivative information to find a minimum of a function. Discussing the details of how these algorithms work and the mathematical derivation of gradients is beyond the scope of this work. Interested readers are referred to \citep{jurafsky2014speech} for more details on the derivation of Stochastic Gradient Descent. In addition, current machine learning frameworks like Google's Tensorflow and Facebook's Pytorch offer automatic differentiation techniques to find an optimum of a function. 
-
-\section{Evaluation Metrics}
-\subsection{Confusion Matrix}
-
-A confusion matrix is a method to visualize the results of a classification algorithm. For the binary classification, the algorithm can be used to predict whether a test sample is either 0, or 1. As a way to measure how well the algorithm performs, we can count four different metrics, here 1 defined as positive and 0 defined as negative:
-
-\begin{enumerate}
-
-\item True positive (TP), the algorithm classifies 1 where the correct class is 1.
-\item False positive (FP), the algorithm classifies 1 where the correct class is 0.
-\item True negative (TN), the algorithm classifies 0 where the correct class is 0.
-\item False negative (FN), the algorithm classifies 0 where the correct class is 1.
-
-\end{enumerate}
-
-\begin{figure}[hbtp]
-\caption{Confusion Mtrix Example}
-\includegraphics[scale=.5]{../Figures/Confuse_Mat_Example.png}\centering
-\end{figure}
-
-\subsection{Precision, Recall and F-Score}
-
-Precision and Recall are two popular measurement to evaluate the performance of supervised classification methods. Precision is defined as:
-
-$$\text { Precision } = \frac { True Postive } { True Postive + False Positive }$$
-
-, recall defined as:
-
-$$\text { Recall } = \frac { True Postive } { True Postive + False Negative }$$
-
-and F-score is defined as the harmonic mean of both precision and recall:
-
-$$F _ { 1 } = 2 \cdot \frac { \text { precision } \cdot \text { recall } } { \text { precision } + \text { recall } }$$
-
-A classifier with high precision means it classifies almost no inputs as positive unless they are positive. A classifier high recall, on the other hand, would mean that the it misses almost no positive values. 
-\section{Conclusion}
-
-In this chapter, we briefly introduced some fundamental topics of Machine Learning theory required for natural language processing supervised classification tasks. We discussed two commonly used numerical methods to represent text computationally and their variants, Frequency-based methods: Bag-of word models (BoW) and Term Frequency - Inverse Document Frequency (tfidf), and Distributional similarity methods.In addition, we reviewed some techniques to reduce the dimensionality of feature space to reduce the complexity of the training and save computational resources. Finally, we covered how logistic regression as a probabilistic algorithm can be used for binary or multinomial classification along with the evaluation metrics used to gauge its performance. In the next two chapters, we will examine the use of multinomial logisitic regression classifier on two novel tasks in natural language processing: grammatical difficulty categorization of English sentences and automatic reading comprehension. We also explore how logisitic regression can be used in a semi-supervised manner to work on tasks with scarce data. 
+The fifth chapter contains the overall conclusion of the internship report.  

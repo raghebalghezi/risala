@@ -1,160 +1,281 @@
 % Chapter Template
 
-\chapter{The Use of Semi-supervised Learning in Classification of English Grammatical Structures} % Main chapter title
+\chapter{Theory} % Main chapter title
 
 \label{Chapter2} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\section{Introduction}
+%----------------------------------------------------------------------------------------
+%    SECTION 1
+%----------------------------------------------------------------------------------------
 
-In this chapter, we examine the use of multinomal logisitic regression classifier in a semi-supervised manner to automatically categorize English sentences based on difficulty to second langauge learners using Common European Framework Reference. We also compare some of text representation techniques introduced in the previous chapter and determine the best one to use in this task. Finally, we evaluate the overall performance of the classifier before and the semi-supervised data augmentation. 
+\section{Introduction} 
 
-Common European Framework Reference (CERF) is a standard for describing language achievement on a six-point scale, from A1 for beginners, up to C2 for proficient user ability on the four primary skills reading, writing, listening, speaking, and the two secondary skills: vocabulary and grammar. The latter two skills are considered the backbone for the four primary skills in terms of difficulty. For example, frequently uncommon lexical item like \emph{sagacious} makes the sentence in which it appears more difficult to an English learner than a sentence with a more frequent lexical item like \emph{wise}. Similarly, grammatical structures also play a vital role in the overall difficulty of a sentence. For instance, the word \emph{should} conveys different meaning in \emph{I should study for my final exams.} than in \emph{This is your mission should you accept it.}. The latter is considered more difficult to an English learner because the use of \emph{should} as a conditional is less frequent than its use as a modal auxiliary expressing necessity. 
+In this chapter, we explain the fundamentals of machine learning theory, with emphasis on supervised classification task. We start by describing the three primary stages of the machine learning process: feature extraction, classifier training, and testing and evaluation. We also discuss two types of feature engineering methods: frequency-based and distributional in addition to dimensionality reduction methods. Next, we introduce a linear classification technique called logistic regression and explain its mathematical foundations. Finally, we discuss the metrics used to evaluate the performance of supervised classification tasks.  
 
-Wide World Web and social media are becoming indispensible reosources for second language learners. However, deciding the appropriateness of materials to learners is very labor-intensive task for English teachers. Instructors spent hours sifting through materials online to determine their difficulty and whether or not they are appropriate for their learners. To this end, we leverage the power of machine learning to build a tool that can automatically determine the difficulty of a given text according to CEFR guidelines. 
-CEFR provides 1200 criteria \citep{noauthor_english_nodate} for the difficutly of grammatical structures \ref{tab:cefr}.
-\begin{table}
-\caption{An excerpt of English sentences and their corresponding CEFR difficulty levels}
-\centering
-\begin{tabular}{l|c|c|c}
-Sentence   & Level \\
-\hline
-I go there every year with my friends & A1 & \\
-I think swimming is good for my body. & A2 & \\
-Tomorrow I'm expecting a delivery of our latest\\ catalogues. & B1 & \\
-Do not hesitate to contact me should \\you need further information. & B2 & \\
-Living in Greece, I have had a chance \\to realise how much tourism can affect one's life. & C1 & \\
-There were no photographs of \\him in Ann 's mother's albums. & C2 & \\
-\end{tabular}
-\label{tab:cefr}
-\end{table}
+%Computers do not understand human language the way we do; they are limited by their innate nature of numerical computation. So in order to make use of decades worth of linguistic theories in the field of human language technology, tremendous human efforts must be extended to represent linguistic phenomena in a way computers are able to deal with. The goal is to unify the representation of textual documents
+%whatever their formats by transforming them into a set of terms
+%(features) that can be easily used by learning algorithms. Features can be thought of as any rule a linguist devises to represent particular characteristic of language. For instance, the presence of the substring `win \$1000 by clicking here` in an email may indicate for its spamminess. Feature engineering and design is an active research area in natural language processing, and its methods spans between manual and automatic creation.
+%
+%In order to apply learning algorithms on text, it is necessary to create
+%a numerical representation of the text and assign a weight to each
+%feature in text. This weighting is extremely important as it will
+%influence the results of learning algorithms. Thus, a second objective
+%is to improve weight the features.
+%
+%The number of features is a very important factor on which the
+%performance of Text Classification depends. Indeed, several learning
+%algorithms are unable to handle a large number of features. For this
+%purpose, it is necessary to reduce the dimensionality of the
+%representation space by keeping only the best features. Reduction
+%methods are used to select or extract the most important features. In
+%this chapter, we present most common automatic methods of text
+%representation, specifying their advantages and disadvantages, and then we
+%discuss the weighting techniques most used in Text Classification as
+%well as the techniques used to reduce dimensionality.
 
-We treat this task as a multinomial classification problem. In our first attempt, we train a logistic regression classifier optimized by Newton-Raphson method on a dataset of around 3000 examples provided by [englishprofile.com], described in details in section 2. We get F1 score of 0.67. In our second attempt, we use the trained classifier from our first attempt to predict the difficulty of sentences in an unlabeled corpus to fetch more training. After that, we merge the newly fetched data with the original dataset (obtained from Englishprofile.com) and re-train another multinomial logistic regression classifier from scratch to get F1 score of 0.79. 
+\section{Classification as a Machine Learning Task}
+Classification is a supervised Machine learning task aims to select a correct class for a given input, or more generally a task of “ assigning objects from a universe to two or more classes or categories ” \citep{manning1999foundations}. In natural language processing, the tasks of tagging, word sense disambiguation, and spam filtering are all examples of supervised machine learning classification. A classifier is an algorithm that quantitatively models the relationship between a set of inputs and their associated output such that it generalizes well to new input data. In the task of spam filtering, for instance, input data are a set of sentences or documents and the output are binary labels (0 or 1) representing whether or not a document is spam. 
 
-\section{Related Works}
-\label{sec:research_background}
+Training and Prediction are two main phases to supervised classification ~\ref{fig:mlpipeline}. During training, a feature extractor is used to convert each input into a feature set. These feature sets capture the basic information about each input. Pairs of feature sets and labels are, then, fed into the machine learning algorithm to generate a model. In the prediction phase, the trained model is used on unseen data to predict the labels. 
 
-Sentence classification is the most common task in natural language processing. Considerable number of studies conducted on lexicalized tasks like sentiment analysis, spam filtering, news categorization, etc. Rarely do we see work on classification sentences based on their syntactic structures. Thus, to the best of our knowledge no work has ever tackled the task of classifying the grammatical difficulty of English sentences according to CEFR guidelines. Therefore, we will briefly survey techniques used to solve general sentence classification problems. 
+\begin{figure}
+\includegraphics[scale=.8]{../Figures/mlpipeline.png} \centering
+\caption{Figure Showing Workflow of Machine Learning }
+\end{figure}
 
-Proximity-based Algorithms such as Rocchio's algorithm \citep{rocchio1971relevance}  and K-nearest neighbor \citep{tam_comparative_2002} build vector for each class using a training set of document by measuring the similarity, such as Euclidean distance or cosine similarity, between the documents. Some studies \citep{bang_hierarchical_2006} incorporated dictionary-based methods to construct a conceptual similarity with KNN classifier, while \citep{chang_using_2009} combine two KNN classifier with a Naive Bayes one using TF-IDF over phrases to categorize large collections of emails. While proximity-based methods perform well on document classification, yet using them on large training set is not feasible as computing similarities across documents is computationally and resource-wise expensive. Another disadvantage is that noise and irrelevant data can severely degrade the performance of the classification.
-
-Another family of classifier that work well in text categories tasks are decision trees. known for their rule-based approach, Decision trees are favored for their high interpretability \citep{apte_towards_1994}. Classification using this method is done through automatic creating of "if-then" rules. Their use in tasks like spam filtering is very common even with the advent of deep neural network methods \citep{wu_behavior-based_2009}. Another common powerful classifier is Naive Bayes that based on Baye's rule. It perform surprisingly well for many real world classification applications under some specific conditions \citep{mccallum_comparison_nodate} \citep{rish_analysis_2001}. While Naive Bayes do not often outperform discriminative classifiers like Support-Vector Machine, it has the advantage of functioning well with small training data. \citep{kim_effective_2006} and \citep{isa_text_2008} show good results by selecting Naive Bayes with SVM for text classification and clustering the documents. Using a Poisson Naive Bayes for text classification model also yield very good results \citep{isa_text_2008}.  
+ \section{Logistic Regression}
  
-The SVM classification method and logistic regression have shown outstanding results when used in text classification tasks \citep{Yang1999ARO} \citep{brucher2002document} perhaps because of their capacity of handling high-dimensional sparse data well.  However,they can be relatively complex in training and require high time and resource consumption.
+Logistic regression is a classic machine learning classifier that is used in a variety of learning tasks in natural language processing and computer vision. It belongs to a group of probabilistic classifiers called discriminative models which, unlike its generative counterparts like Naive Bayes classifiers, tries to distinguish the classes rather than learn to generate them. More formally, given a document $d$ and a class $c$ , logistic regressions attempts to compute the conditional probability $P(c|d)$. There are two types of logistic regression classifier: binary and multinomial. The binary logisitc regression is used when there are two classes of inputs to be predicted such as spam or not spam; positive or negative; malignant or benign. Multinomial or multi-class logistic regression is used when the number of predicted classes is more than two.
+ According to \citep{jurafsky2014speech}, classification using logistic regression, like any other supervised classification algorithm, has four main components: 
 
+\begin{list}{•}{}
+ \item Feature Representation: a method of numerically represent language data (characters, words and sentences, etc) input $\mathbf{X}$ as feature vector $\left[x_1,x_2,\ldots,x_n \right]^T$ where $n$  represents the number of features in the input data.
 
+\item Classification function: computes an estimation to class $\hat{y}$ via $p(y|x)$. In the case of binary logistic regression, the sigmoid function is used, while a softmax is used for multinomial classification. 
+ 
+\item An objective function involving minimizing error on training examples (cross entropy)
 
-\section{Method}
-\label{sec:logistic}
+\item An optimizer to help find the minimum of the objective function 
+ (stochastic gradient descent).
+ \end{list}
 
-\subsection{Dataset: English Grammar Profile}
-The dataset used for this study, provided by English Grammar Profile, exhibits typical grammar profile for each level. It consists of 3615 examples and 1215 rules, divided as follows: class A has 1194 supporting examples; class B has 1775 examples; and class C has 646 supporting examples. We merged each the six levels into three supercategories in order to provide more data within each category. 
+Logistic regression also has two phases: training and testing. In the training phase, the goal is to find the optimal weights that best account for mapping input features $x_{i}$ to the labeled output $y_{i}$ of a subset of the data. In testing, we measure the generalizability of weights learned in the training phase on the remaining set of the data.
 
-\begin{itemize}
-	\item \textbf{Rule}: Can use 'and' to join a limited range of common adjectives.
-	\item \textbf{Example}: The teachers are very nice and friendly.
-	\item \textbf{Level}: A1
-\end{itemize}
-As we can see, the dataset provides some guideance of what characterizes each example. These rules are prepared to be used by human teachers, and are not very computationally friendly. On the other hand, the small number of examples in the dataset is not enough to build a reliable probablisitic classifier to learn to distingush the various properties of the classes. Therefore, in order to improve the performance, we are using a semi-supervised data augmentation technique similar to Yarawsky's bootstrapping approach \citep{yarowsky_unsupervised_1995}. 
+Given a dataset $\mathcal { D } = \left\{ \left( \boldsymbol { x } ^ { ( i ) } , y ^ { ( i ) } \right) \right\} _ { i = 1 } ^ { N }$, the weights  are estimated by maximum conditional likelihood, 
 
-\begin{figure}[t]
-	\centering
-    \includegraphics[width=.75\linewidth]{../Figures/pca_proj.png} 
-	\caption{2d projection of the three classes A, B and C using K-means Clustering and PCA}
-	\label{fig:cmdstudy}
-\end{figure}
-
-\subsection{Multinomial Logistic Regression}
-Suppose that $\mathbf{x}$ is the vectorized sentence in either of its two forms: BoW or TfIDF, $y\in Y$ is the class label, $\mathbf{w}_k$ and $b_k$ are network parameters associated with class $y$. Then the probability of $\mathbf{x}$ belonging to the class $y$ can be defined by the Softmax function:
 \begin{equation}
-p(y|\mathbf{x}) =\frac{1}{z(\mathbf{x})}\exp(\mathbf{w}_y^T\mathbf{x}+b_y) \,,
-\label{eq:softmax}
+\log \mathrm { p } \left( \boldsymbol { y } ^ { ( 1 : N ) } | \boldsymbol { x } ^ { ( 1 : N ) } ; \boldsymbol { \theta } \right) = \sum _ { i = 1 } ^ { N } \log \mathrm { p } \left( y ^ { ( i ) } | \boldsymbol { x } ^ { ( i ) } ; \boldsymbol { \theta } \right)
 \end{equation}
-where $z(\mathbf{x}) = \sum_{j=1}^{K}\exp(\mathbf{w}_j^T\mathbf{x}+b_j)$.
-
-Let the log-likelihood function be $$L ( \beta ) = \sum _ { i = 1 } ^ { N } \log p _ { g _ { i } } \left( x _ { i } ; \beta \right)$$. 
-
-$$= \sum _ { i = 1 } ^ { N } \left[ \overline { \beta } _ { g _ { i } } ^ { T } x _ { i } - \log \left( 1 + \sum _ { l = 1 } ^ { K - 1 } e ^ { \overline { \beta } _ { l } ^ { T } x _ { i } } \right) \right]$$
-
-To apply Newton-Raphson method, we need the second derivative of the log likelihood function
-
-$$\frac { \partial ^ { 2 } L ( \beta ) } { \partial \beta _ { k j } \partial \beta _ { m n } } = - \sum _ { i = 1 } ^ { N } x _ { i j } x _ { i n } p _ { k } \left( x _ { i } ; \beta \right) \left[ l ( k = m ) - p _ { m } \left( x _ { i } ; \beta \right) \right]$$
-
-The formula for updating $\beta_{new}$ for multiclass is:
-$$\beta ^ { \text { new } } = \beta ^ { \text { old } } + \left( \tilde { \mathbf { X } } ^ { T } \mathbf { W } \tilde { \mathbf { X } } \right) ^ { - 1 } \tilde { \mathbf { X } } ^ { T } ( \mathbf { y } - \mathbf { p } )$$
-
-where $y$ is the concatenated indicator vector of dimension $N \times (K-1)$, $p$ is the concatenated vector of fitted probabilities of dimension $N \times (K-1)$, $\tilde{X}$ is an $N(K-1)\times (p+1)(K-1)$ matrix; and Matrix $W$ is an $N(K-1)\times N(K-1)$ square matrix.
-
-\subsection{Feature Design}
-
-For this task we are comparing two common methods of feature generation in natural language processing and information retrieval: bag-of-word model and term-frequency inverse-document frequency (TFIDF)
-
-\subsubsection{Bag of Word Model} a method to represent the occurrence of words within one sentence. We add different variation by counting unigram, bigram and trigram frequencies. In addition, because this model ignores the order or the location of the word in the sentence, it might not be that helpful to our task as it is not lexicalized and the grammar is core of it. Therefore, we replace some lexical words such as nouns, adjactive with their parts-of-speech tags in order to enforce the presence the of the grammatical category, and avoid the influence of the word itself.  For example, the sentence this is your mission should you accept it” becomes this is NP should S-PRN VRB O-PRN (CLAUSE)”. 
-
-\subsubsection{TF-IDF}  This common information retrieval technique differs from the regular bag-of-words model in that length of the sentence and the frequency of words across sentences does not influence the score of a sentence as it is normalized by other sentences in the dataset. TF·IDF is calculated based on term frequency and document frequency. Term frequency is the number of times a term $t$ occurs in a document $d$ , denoted by TF (t, d) . Document frequency measures the number
-of documents in which a term t occurs, denoted by DF(t) . TF·IDF is typically calculated as:
-
-$$T F \cdot I D F ( t , d ) = T F ( t , d ) \cdot \log \frac { | D | } { D F ( t ) }$$, where $|D|$ is the total number of documents.
+\begin{equation}
+\sum _ { i = 1 } ^ { N } \boldsymbol { \theta } \cdot \boldsymbol { f } \left( \boldsymbol { x } ^ { ( i ) } , y ^ { ( i ) } \right) - \log \sum _ { y ^ { \prime } \in \mathcal { Y } } \exp \left( \boldsymbol { \theta } \cdot \boldsymbol { f } \left( \boldsymbol { x } ^ { ( i ) } , y ^ { \prime } \right) \right)
+\end{equation}
 
 
 
 
 
-\section{Experimental Results}
-\label{sec:exp}
+\section{Feature Representation}
 
-In this section, we evaluate several variations of our method against random model as our baseline model. In the following experiments, all methods are done using Python 3.5 and Scikit Learn Library, tested on MacBook Pro laptop with Core i5 processor and 8 GB of RAM.
+A feature is defined as any element that can be used as an attribute in classification algorithms. Choosing what features to use to represent a text or a document not only has a major impact on the entire classification process, but it is also arguably the most difficult phase in any natural language processing task. The reasons go to several fundamental questions on how to represent language computationally. For example, on what level should we represent a text: \emph{character-wise}, \emph{word-wise} or \emph{sentence-wise}, or even more specifically morphologically, etymologically or phonologically? Do we treat a word e.g. \emph{try} and all its morphological variations e.g. \emph{tries}, \emph{trying}, \emph{tried} similarly or differently? How to represent and model the semantics of human language computationally? Questions like these and many others are the core of natural language processing; therefore, we briefly explore some of the most common text representation methods.
 
-\subsection{First Phase}
+\subsection{Frequency-based Methods}
 
-In the first phase of our experiment, we train a logistic regression classifier, optimized by Newton-Raphson method , on English Grammar Profile dataset. We also introduce a  feature design method to mask word categories with their part-of-speech tags in order to preserve grammatical information and avoid the lexical influence of the word. We use a combination of feature design methods such as:
+\subsubsection{Bag-of-Words Representation}
 
-\begin{itemize}
-	\item \textbf{BoW}: Apply unigram, bigram and trigram bag-of-words model with both word tokens, and masked tokens.
-	\item \textbf{Tf-idf}: Apply unigram, bigram and trigram tf-idf model with both word tokens, and masked tokens.
-\end{itemize}
+The "bag of words" representation is the most straightforward and most intuitive
+representation. It represents each document by a vector
+whose component corresponds to the number of occurrences of a word in
+the document.  Words have the advantage of having an
+explicit meaning. Nevertheless, the implementation of this
+representation raises several difficulties. The first difficulty is that
+of the delimitation of words in a text. Indeed, we still cannot define
+what a word is. A word as being a sequence of
+characters belonging to a dictionary, or formally, as being a sequence
+of characters separated by spaces or punctuation characters. This
+definition is not valid for all languages. Indeed, languages such as
+Chinese or Japanese do not separate their words by spaces. In addition, some separators can be part of certain words (for example today,
+127.0.0.1, potato). Another difficulty concerns the management of
+compound words (for example rainbow, potato) and acronyms (like:
+IBM, CAF, CAN, etc.). Consideration of these cases requires quite
+complex language treatments. This representation of texts excludes any
+grammatical analysis, and any notion of order between words and therefore
+semantically distant texts can have the same representation. For
+example, the sentences \texttt{the\ wolf\ eats\ the\ goat} and
+\texttt{the\ goat\ eats\ the\ wolf} is given the same representation
+despite being semantically different.
+
+% \subsubsection{Representation by Sentences}
+
+Bag-of-words representation excludes any notion of order and
+the relationship between the words of a text, several studies have
+attempted to use sentences as features instead of words \citep{fuhr1991probabilistic} \citep{tzeras1993automatic}.
+The use of the sentences makes it possible to solve the problem of
+ambiguity generated by the use of the representation "bag of words." For
+example, the word \texttt{mouse} has several possible meanings while
+optical mouse and domestic mouse has no ambiguity. Although the
+sentences have the advantage of better keeping the semantics in relation
+to the words, their use as features did not lead to the expected
+results. According to Lewis \citep{lewis1992representation}, this representation is penalized
+by a large number of possible combinations which leads to low and too
+random frequencies. One solution proposed in \citep{caropreso2001learner} was to consider a
+sentence as a set of contiguous (but not necessarily ordered) words that
+appear together but do not necessarily respect grammatical rules.
+
+% \subsubsection{Representation by lemmas or lexical roots}
+
+A modification to the "bag of words" is representation by lemmas or lexical roots which replaces  each word by its canonical form so that words with different
+forms (singular, plural, masculine, feminine, present, past,
+future) can have in a single form called a canonical form.
+Grouping the different forms of a word offer the advantage of reducing the dimensionality of the learning space. Indeed, in the bag-of-words representation, each form of a word is given a dimension; while with lemma representation the different forms of one word will be merged into one dimension. For example, words such as play, player, players, plays, and played will be replaced by the lemma play.
 
 
-\begin{figure}[t]
-	\centering
-    \includegraphics[width=.75\linewidth]{../Figures/conf_matrix_iter1.png} 
-	\caption{Confusion matrix illustrating the performance of LR-BoW-Word model with class weight to deal with data imbalance}
-	\label{fig:cmdstudy}
+Lemmatization and stemming are the two techniques used to find the canonical form of a word. Lemmatization uses a knowledge base containing the different inflected forms corresponding to the different possible lemmas. Thus, the inflected forms of a noun will be replaced by the singular masculine form while the infinitive form will replace the different inflected forms of a verb. Lemmatization requires the use of a dictionary of inflected forms of language as well as a grammar labeler. An efficient algorithm, named TreeTagger \citep{schmid1994probabilistic}, has been developed for thirteen different languages: German, English, French, Italian, Dutch, Spanish, Bulgarian, Russian, Greek, French Portuguese, Chinese, Swahili, and Old French. Stemming uses a knowledge base of syntactic and morphological rules and to transform words into their roots. One of the most well-known stemming algorithms for the English language is Porter's algorithm \citep{porter1980algorithm}. Lemmatization is more complicated to implement since it depends on the grammatical labelers. In addition, it is more sensitive to misspellings than stemming.
+
+\begin{lstlisting}[language=Python, caption=Python example]
+def stem(word):
+    Suffix_list = ["ing","ly","ed","ious",\
+                "ies","ive","es","s","ment"]
+    for suffix in Suffix_list:
+        if word.endswith(suffix):
+            return word[:-len(suffix)]
+    return word
+\end{lstlisting}
+
+% \subsubsection{Representation by n-grams}
+
+A slightly better approach to represent text that makes use of context is the representation by n-grams. It consists of breaking the text into moving sequences of $n$ consecutive tokens. For example, the trigram segmentation of the word "language" gives the following 3-grams: lan, ang, ngu, gua, uag, age. The notion of n-grams was introduced by  \citep{shannon1948mathematical}; who was interested in predicting the appearance of certain characters according to the other characters. Since then, n-grams have been used in many areas such as speech recognition, documentary research, and so on. The use of n-grams offers the following advantages: 1) language-independent 2) Requiring no prior segmentation of the document. 3) Less sensitive to misspellings. 4) effective method to automatic language identification.
+
+
+% \subsubsection{Representation by concepts}
+
+Depending on the task, we may sometimes need to aggregate words with certain linguistic relation in concepts. For example, we replace co-hyponyms \emph{dog} and \emph{wolf} with their hypernym \emph{canine}; or \emph{vehicle} and \emph{car} with \emph{automobile}. Concepts, defined as units of knowledge, can be used as features to solve the ambiguity problem as well as the problem of synonymy. Indeed, each concept represents a unique meaning that can be expressed by several synonymous words. Similarly, a word with many meanings (sense) is found mapped to several concepts. Thus, a document containing the word \emph{vehicle} may be indexed by other words such as car or automobile. The transition from a word representation to a concept representation requires the use of semantic resources external to the content of documents such as semantic networks, thesauri, and ontologies. As a result, the performance of such a representation crucially depends on the semantic richness of the resources used in terms of the number of concepts and relationships between these concepts.
+
+\subsubsection{Weighting of the features}
+
+Co-occurrence methods such as bag-of-words have significant drawbacks, one of which is terms with higher frequency are more important than those with less frequency. Several normalization methods were developed to remove the bias towards more frequent terms. One of these methods is Term Frequency Inverse Document Frequency (TFIDF).
+
+TFIDF has two main parts. Term Frequency is proportional to the frequency of the term in the document (local weighting). Thus, the longer the term is common in the document, the more important it is. It can be used as is or in several variations \citep{singhal1997learning} \citep{sable2001using}.
+
+$$t f _ { i j } = f \left( t _ { i } , d _ { j } \right)$$
+
+$$t f _ { i j } = 1 + \log \left( f \left( t _ { i } , d _ { j } \right) \right)$$
+
+$$ t f _ { i j } = 0.5 + 0.5 \frac { f \left( t _ { i } , d _ { j } \right) } { m a x _ { t _ { i } \in d _ { j } } f \left( t _ { i } , d _ { j } \right) }$$
+
+where $f(t_{i},d_{j})$ is the term frequency of document $j$
+
+Inverse Document Frequency measures the importance of a term throughout the collection (overall weighting). A term that often appears in the document base should not have the same impact as a less frequent term. Indeed, the terms that appear in the majority of documents do not have any discriminating power to distinguish documents from each other and must, therefore, have low weightings. The IDF weighting is inversely proportional to the number of documents containing the term to be weighted. Thus, the more the term appears in several documents, the less it is discriminating and is assigned a low weighting. The IDF weighting is generally expressed as follows:
+
+$$i d f \left( t _ { i } \right) = \log \left( \frac { N } { d f \left( t _ { i } \right) } \right)$$
+
+where $df(t_{i})$ is the term frequency of feature $i$ and $N$ is the number of documents in the corpus.
+
+The TFIDF weighting combines the two weightings TF and IDF in order to
+provide a better approximation of the importance of a term in a
+document. According to this weighting, for a term to be important in a
+document, it must frequently appear in the document and rarely in other
+documents. This weighting is given by the product of the local weighting
+of the term in the document by its overall weighting in all the
+documents of the corpus.
+
+$$t f i d f \left( t _ { i } , d _ { j } \right) = t f _ { i j } \times \log \left( \frac { N } { d f \left( t _ { i } \right) } \right)$$
+
+
+TFC is a modification to TFIDF that overcomes the major drawback of the
+TFIDF measure, namely that the length of the documents is not taken into
+consideration by adding a normalization factor. The TFC weighting of a
+term $i$ in a document $j$ is calculated as follows:
+
+$$T F C _ { i j } = \frac { T F I D F \left( t _ { i } , d _ { j } \right) } { \sqrt { \sum _ { k = 1 } ^ { T } T F I D F \left( t _ { k } , d _ { j } \right) ^ { 2 } } }$$
+
+\subsection{Dimensionality reduction}
+
+The text representation methods explored so far, despite their usefulness in a variety of tasks in natural language processing, share sparsity as one problem in common. The number of features generated using these methods can easily exceed the tens of thousands, and not only does negatively influence the categorization process, but it is also very computationally expensive in terms of hardware resources. In addition, the higher the dimensions of the features are, the weaker the features become. This problem is known as the \emph{curse of dimensionality} \citep{bellman2015adaptive}. To remedy this issue,  techniques, borrowed from the field of information theory and linear algebra, have been developed to reduce the feature space dimensionality without losing much information. 
+
+% Dimensionality reduction techniques can be done using probabilistic and linear algebraic techniques such as principal component analysis (PCA) and linear discriminant analysis (LDA) that aim to project highly dimensional data into lower dimension space. 
+% \paragraph{Extraction of terms}
+
+Clustering \citep{baker1998distributional} \citep{sable2001using} \citep{slonim2001power} can be used to reduce dimensionality. It consists of representing the documents in a new representation space other than the original one — each dimension of the new representation space groups terms that share the same meaning. Thus, the documents will no longer be represented by terms but rather by groupings of terms representing semantic concepts. This new space of representation offers the advantage of managing the synonymy since the synonymous terms will appear in the same groupings. Likewise, the fact that a term can be included in several groupings also makes it possible to manage the polysemy. Another exciting method to reduce dimensionality, proposed by \citep{deerwester1990indexing} is Latent Semantic Allocation (LSA). It uses singular value decomposition of the document $x$ term matrix to change the representation by keeping only the $k$ axes of strongest singular values. However, LSA is very expensive in terms of calculation time during learning as it relies on a matrix factorization method called Singular Value Decomposition (SVD) which runs computationally in cubic size. Likewise, with each new document, it is necessary to redo the whole grouping process.
+
+\subsection{Distributional Method}
+An alternative approach for text representation and natural language of processing is the distributional similarity. The basic idea of the distribution of similarity is to represent the meaning of a word using words which co-occurs in the same context. "You shall know a word by the company it keeps" \citep{firth1957synopsis}. For example, the words 'dog' and 'cat' have the same meaning in the following two sentences: I have a cat, I have a dog. While this idea might not be adequate to capture or account for the complexity or the sophistication of human language, it has succeeded tremendously in a variety of lexicalized NLP tasks. It has become the de facto representation method of text. The need for such a method does not only come from the need for more accurate numerical representation, but its density compared to other methods makes it less computationally expensive. Word2Vec \citep{mikolov2013distributed} and GloVe \citep{pennington2014glove} are two famous algorithms for creating word embedding. 
+
+The intuition of word2vec is to train a classifier on a binary prediction task: “Is
+word $w$ likely to show up near X?”, where $X$ is the word to which we want to find embeddings. Then, we use the weights learned by the classifier as embeddings. Skip-gram algorithm \citep{mikolov2013distributed} , first, initializes embeddings randomly. Then, it iteratively updates the embeddings of each word $w$ to be equal to the words they occur within the same context. Finally, it injects $k$ number non-neighbor words as negative examples. 
+
+\section{Classification and Objective Function}
+\subsection{Classification Functions}
+What we have discussed so far gives us a method to numerically translate language from a form that is uniquely comprehensible to humans into a representation that a computer can understand, and can somehow capture the characteristics of human language. However, in order for the logistic regression to learn to classify, a classification function should be utilized. Depending on whether the classification task is binary or multinomial, there are two main functions used: Sigmoid and Softmax. Sigmoid function, used for binary classification, outputs 1 if an observation input (feature vector) is a member of a particular class e.g. (spam), and 0 otherwise. In other words, it calculates $P(y=1|x)$ for spam text and $P(y=0|x)$ for non-spam text. The mathematical form of the Sigmoid function or (logistic function, hence comes the name of the classifier) is as follow:
+
+$$Sig ( x ) = \frac { 1 } { 1 + e ^ { - (w \cdot x +b)} }$$ 
+
+where $x$ represent the input vector, $w$ is the learned weights, and $b$ is the bias term or the intercept of the linear equation. One mathematical property of the Sigmoid function is that it maps any input between 0 and 1, and to make it as probability we need to make the sum of $P(y=1)$ and $P(y=0)$ equals to 1. 
+
+$$ P ( y = 1 ) = \sigma ( w \cdot x + b ) $$
+$$ P ( y = 0 ) = 1 - \sigma ( w \cdot x + b ) $$
+
+Now to make a decision, the classifier declares an observation input as \emph{Yes} (if it is a member of class spam) if the probability is greater than a certain threshold, say 0.5, and declares an observation input as \emph{No} otherwise. 
+
+$$  \hat { y } = \left\{ \begin{array} { l l } { 1 } & { \text { if } P ( y = 1 | x ) > 0.5 } \\ { 0 } & { \text { otherwise } } \end{array} \right.  $$
+
+
+In the case of multinomial classification, the logic remains the same except for the classification function where Softmax is used rather than Sigmoid. Softmax works on normalizing the prediction of an observation by the values of all other classes in order to produce valid probability distribution. 
+
+$$p ( y = i | x ) = \frac { e ^ { w _ { i } \cdot x + b _ { i } } } { \sum _ { j = 1 } ^ { k } e ^ { w _ { j } \cdot x + b _ { j } } }$$
+
+
+
+\subsection{Objective Functions}
+
+During the learning process, we need to answer the question of \emph{how correct is the estimated output of $\hat{y}$ of classifier from the true output $y$?}. Thus our objective \emph{function} is to minimize the difference between the estimated output and the true one such that the weights learned during this minimization process are, hopefully,  generalizable enough to correctly label observations unseen in the training phase. So we can imagine an objective function to be a difference between the $\hat{y}$ and $y$ i.e. $\left | \hat{y} - y \right |$, but for mathematical convenience we need a non-convex objective function (or also commonly referred to as loss function)  that can be easily optimized. Thus, we use maximum likelihood estimation. 
+
+Binary classification can be seen as Bernoulli distribution since the outcome is either 0 or 1. More formally, the probability of predicting class $y$ given input $x$ is  $p ( y | x ) = \hat { y } ^ { y } ( 1 - \hat { y } ) ^ { 1 - y }$. Minimizing the probability is the same as maximizing the negative log likelihood:
+ $$L _ { C E } ( \hat { y } , y ) = - \log p ( y | x ) = - [ y \log \hat { y } + ( 1 - y ) \log ( 1 - \hat { y } ) ]$$
+
+Finally, by plugging in the value of $\hat{y}$ we get:
+$$ L _ { C E } ( w , b ) = - \frac { 1 } { m } \sum _ { i = 1 } ^ { m } y ^ { ( i ) } \log \sigma \left( w \cdot x ^ { ( i ) } + b \right) + \left( 1 - y ^ { ( i ) } \right) \log \left( 1 - \sigma \left( w \cdot x ^ { ( i ) } + b \right) \right) $$, where $m$ is the number of training examples.
+
+On the other hand, multinomial classification uses the same process except that it uses a different classification function \emph{softmax} and hence has different (multinomial) distribution. So the loss function for a single example $x$ is the sum of the logs of the $K$ output classes:
+$$ L _ { C E } ( \hat { y } , y ) = - \sum _ { k = 1 } ^ { K } 1 \{ y = k \} \log \frac { e ^ { w _ { k } \cdot x + b _ { k } } } { \sum _ { j = 1 } ^ { K } e ^ { w _ { j } \cdot x + b _ { j } } } $$
+
+\section{Optimization}
+
+The objective functions derived in the previous section is optimized using numerical methods. Several algorithms are used for this purpose such as Stochastic Gradient Descent, that uses first derivative (gradient) information to find a minimum of a function; Newton-Raphson algorithm uses Second derivative information to find a minimum of a function. Discussing the details of how these algorithms work and the mathematical derivation of gradients is beyond the scope of this work. Interested readers are referred to \citep{jurafsky2014speech} for more details on the derivation of Stochastic Gradient Descent. 
+
+\section{Evaluation Metrics}
+\subsection{Confusion Matrix}
+
+A confusion matrix is a method to visualize the results of a classification algorithm. For the binary classification, the algorithm can be used to predict whether a test sample is either 0, or 1. As a way to measure how well the algorithm performs, we can count four different metrics, here 1 defined as positive and 0 defined as negative:
+
+\begin{enumerate}
+
+\item True positive (TP), the algorithm classifies 1 where the correct class is 1.
+\item False positive (FP), the algorithm classifies 1 where the correct class is 0.
+\item True negative (TN), the algorithm classifies 0 where the correct class is 0.
+\item False negative (FN), the algorithm classifies 0 where the correct class is 1.
+
+\end{enumerate}
+
+\begin{figure}[hbtp]
+\caption{Confusion Mtrix Example}
+\includegraphics[scale=.5]{../Figures/Confuse_Mat_Example.png}\centering
 \end{figure}
 
-\begin{table}
-\centering
-\caption {Comparison of Precision-Recall - Phase One}
-\begin{tabular}{l|c|c|c}
-Model  &  Precision (\%) &  Recall (\%)  & F1 (\%) \\
-\hline
-Random-Baseline  &  39 (\%) &  39 (\%)  & 39 (\%) \\
-\textbf{BoW-LR-Words}  &  70 (\%) &  \textbf{69} (\%)  & \textbf{69} (\%) \\
-BoW-LR-Masked  &  66 (\%) &  62 (\%)  & 63 (\%) \\
-Tfidf-LR-Words  &  \textbf{75} (\%) &  66 (\%)  & 60 (\%) \\
-Tfidf-LR-Masked  &  66 (\%) &  64 (\%)  & 61 (\%) \\
-\hline
+\subsection{Precision, Recall and F-Score}
 
-\end{tabular}
-\label {tb:flickre2e}
-\end{table}
+Precision and Recall are two popular measurement to evaluate the performance of supervised classification methods. Precision is defined as:
 
-From table 2, we compare the performance of 4 variations of our method against the baseline, which is a random model. Surprisingly, we notice that our bag-of-words model with word tokens (BoW-LR-Words) outperform the one with masked sequence in terms of precision and recall respectively. It also outperforms (tfidf-LR-words) model in terms of recall only, while the latter has higher recall. From the confusion matrix (fig. 2), we see that (BoW-LR-Words) model predicts most of testing data correctly even though the number of training data is not equal among the classes, especially for class C. Therefore, we needed to assign certain weights to each class during the training in order to avoid this imbalance in the data. 
+$$\text { Precision } = \frac { True Postive } { True Postive + False Positive }$$
 
-\subsection{Second Phase}
+, recall defined as:
 
-The results shown in Table 2 does in fact indicate that the linear model has learned the associations between sentences and their corresponding grammatical class reasonably well. However, both of our feature design techniques, namely bag-of-words and tfidf have their disadvantages. The first assigns similarity based on occurrence, size and mutual words. For example, BoW model learns that longer sentences tend to be the most difficult, while shorter one are less difficult. Similarly, while tfidf treats the drawbacks of BoW model, it still ignores the usefulness of what-so-called \textit{Stop Words} due to their commonality. In other words, it is very hard to trust these results with this amount of training data. Therefore, we propose a non-synthetic data augmentation method to provide more training examples, and thereby improve the overall performance of the model. 
+$$\text { Recall } = \frac { True Postive } { True Postive + False Negative }$$
 
-Using a text-only version of the brown corpus \citep{citeulike:13797746} , we use our BoW-LR-Words model to predict the grammatical difficulty labels of its sentences. Then, we collect the sentences predicted with high certainty (above 0.9 probability) to be fed to the original dataset. It is very important to set a higher probability threshold as the new data examples will serve as seed points for our prediction in the future, and we do not want the classifier to \textit{drift} from the original trajectory. This technique is reminiscent of Yarawsky's Bootstrapping \citep{yarowsky_unsupervised_1995}(semi-supervised) algorithm, but with one difference is that unlike in Yarawsky's method, we apply this step only once. 
+and F-score is the harmonic mean of both precision and recall:
 
-Out of 38400 sentences in the unlabeled corpus, only 1428 sentences have been detected with certainty above 90\%. We also removed any sentence that is longer than 30 words in order to lessen the undesirable effect of BoW technique. We get apply our best model from phase one to the augmented dataset of 5043 examples under same training conditions to get a precision of \textbf{0.80}, recall of \textbf{0.79}, and F1 score of \textbf{0.79}. 
+$$F _ { 1 } = 2 \cdot \frac { \text { precision } \cdot \text { recall } } { \text { precision } + \text { recall } }$$
 
-\begin{figure}[t]
-	\centering
-    \includegraphics[width=.75\linewidth]{../Figures/conf_matrix_iter2.png} 
-	\caption{Confusion matrix illustrating the performance of LR-BoW-Word model after augmentation}
-	\label{fig:cmdstudy}
-\end{figure}
+A classifier with high precision means it classifies almost no inputs as positive unless they are positive. A classifier with high recall, on the other hand, would mean that  it misses almost no positive values. 
+\section{Conclusion}
 
-\section {Conclusion}
-\label{sec:conclusion}
-In this chapter, we have presented a classification method based on simple multinomial logistic regression and bag-of-words model augmented with semi-supervised (bootstrapping) method to classify English sentences based on their level difficulty, A=Beginner, B=intermediate, C=Advanced according to CEFR. We have also compared several common feature design techniques to encode the sentences along with a proposed masking BoW method that replaces content lexical items with their grammatical category. Finally, the model achieves an overall F1 score of 0.69, and 0.79 after augmenting it with example sentences from unlabeled corpus.
+In this chapter, we briefly introduced some fundamental topics of Machine Learning theory required for natural language processing supervised classification tasks. We discussed two commonly used numerical methods to represent text computationally and their variants, Frequency-based methods: Bag-of word models (BoW) and Term Frequency - Inverse Document Frequency (tfidf), and Distributional similarity methods. Besides, we reviewed some techniques to reduce the dimensionality of feature space to reduce the complexity of the training and save computational resources. Finally, we covered how logistic regression as a probabilistic algorithm can be used for binary or multinomial classification along with the evaluation metrics used to gauge its performance. In the next two chapters, we show the use of multinomial logistic regression classifier on two novel tasks in natural language processing: grammatical difficulty categorization of English sentences and automatic reading comprehension. We also explore how logistic regression can be used in a semi-supervised manner to work on tasks with limited data. 
