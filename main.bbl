@@ -17,79 +17,6 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
-  \entry{apte_towards_1994}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=AC}{%
-         family={Apté},
-         familyi={A\bibinitperiod},
-         given={Chidanand},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=DF}{%
-         family={Damerau},
-         familyi={D\bibinitperiod},
-         given={Fred},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=WSM}{%
-         family={Weiss},
-         familyi={W\bibinitperiod},
-         given={Sholom\bibnamedelima M.},
-         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \name{editor}{2}{}{%
-      {{hash=CBW}{%
-         family={Croft},
-         familyi={C\bibinitperiod},
-         given={Bruce\bibnamedelima W.},
-         giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=vRCJ}{%
-         prefix={van},
-         prefixi={v\bibinitperiod},
-         family={Rijsbergen},
-         familyi={R\bibinitperiod},
-         given={C.\bibnamedelima J.},
-         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {en}%
-    }
-    \list{publisher}{1}{%
-      {Springer London}%
-    }
-    \keyw{Breakeven Point, Document Classification, News Story, Rule Induction,
-  Training Case}
-    \strng{namehash}{ACDFWSM1}
-    \strng{fullhash}{ACDFWSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1994}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{abstract}{%
-    We describe the results of extensive machine learning experiments on large
-  collections of Reuters’ English and German newswires. The goal of these
-  experiments was to automatically discover classification patterns that can be
-  used for assignment of topics to the individual newswires. Our results with
-  the English newswire collection show a very large gain in performance as
-  compared to published benchmarks, while our initial results with the German
-  newswires appear very promising. We present our methodology, which seems to
-  be insensitive to the language of the document collections, and discuss
-  issues related to the differences in results that we have obtained for the
-  two collections.%
-    }
-    \field{booktitle}{{SIGIR} ’94}
-    \field{isbn}{978-1-4471-2099-5}
-    \field{pages}{23\bibrangedash 30}
-    \field{title}{Towards {Language} {Independent} {Automated} {Learning} of
-  {Text} {Categorization} {Models}}
-    \field{year}{1994}
-  \endentry
-
   \entry{baker1998distributional}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=BLD}{%
@@ -255,47 +182,6 @@
     \field{title}{Document classification methods for organizing explicit
   knowledge}
     \field{year}{2002}
-  \endentry
-
-  \entry{caropreso2001learner}{article}{}
-    \name{author}{3}{}{%
-      {{hash=CMF}{%
-         family={Caropreso},
-         familyi={C\bibinitperiod},
-         given={Maria\bibnamedelima Fernanda},
-         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={Matwin},
-         familyi={M\bibinitperiod},
-         given={Stan},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=SF}{%
-         family={Sebastiani},
-         familyi={S\bibinitperiod},
-         given={Fabrizio},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Citeseer}%
-    }
-    \strng{namehash}{CMFMSSF1}
-    \strng{fullhash}{CMFMSSF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2001}
-    \field{labeldatesource}{year}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{pages}{78\bibrangedash 102}
-    \field{title}{A learner-independent evaluation of the usefulness of
-  statistical phrases for automated text categorization}
-    \field{volume}{5478}
-    \field{journaltitle}{Text databases and document management: Theory and
-  practice}
-    \field{year}{2001}
   \endentry
 
   \entry{chang_using_2009}{article}{}
@@ -504,36 +390,6 @@
     \field{title}{A synopsis of linguistic theory, 1930-1955}
     \field{journaltitle}{Studies in linguistic analysis}
     \field{year}{1957}
-  \endentry
-
-  \entry{citeulike:13797746}{misc}{}
-    \name{author}{2}{}{%
-      {{hash=FWN}{%
-         family={Francis},
-         familyi={F\bibinitperiod},
-         given={W.\bibnamedelima Nelson},
-         giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=KH}{%
-         family={Kucera},
-         familyi={K\bibinitperiod},
-         given={Henry},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \keyw{proposal}
-    \strng{namehash}{FWNKH1}
-    \strng{fullhash}{FWNKH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1979}
-    \field{labeldatesource}{year}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{note}{Brown University Liguistics Department}
-    \field{title}{The Brown Corpus: A Standard Corpus of {Present-Day} Edited
-  American English}
-    \field{year}{1979}
   \endentry
 
   \entry{fuhr1991probabilistic}{article}{}
@@ -1318,29 +1174,6 @@
     \field{title}{Using bins to empirically estimate term weights for text
   categorization}
     \field{year}{2001}
-  \endentry
-
-  \entry{schmid1994probabilistic}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=SH}{%
-         family={Schmid},
-         familyi={S\bibinitperiod},
-         given={Helmut},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SH1}
-    \strng{fullhash}{SH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1994}
-    \field{labeldatesource}{year}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{Probabilistic part-of-speech tagging using decision trees. In
-  proceedings of international conference on new methods in language
-  processing,(pp. 1-9), Access date: 09.11. 2012}
-    \field{year}{1994}
   \endentry
 
   \entry{DBLP:journals/corr/SeoKFH16}{article}{}

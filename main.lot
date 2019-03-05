@@ -2,8 +2,9 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Bag-of-words feature example\relax }}{5}{table.caption.20}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces An excerpt of English sentences and their corresponding CEFR difficulty levels\relax }}{14}{table.caption.47}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of Precision-Recall - Phase One\relax }}{18}{table.caption.58}
+\contentsline {table}{\numberline {3.1}{\ignorespaces An excerpt of English sentences and their corresponding CEFR difficulty levels\relax }}{14}{table.caption.48}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of Precision-Recall - Phase One\relax }}{18}{table.caption.59}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces This table shows the results of running a multinomial regularized logistic regression. The class column represents the index of sentences within the paragraph, and -1 represents the unanswerable question case. Unpredicted classes are removed.\relax }}{26}{table.caption.70}
+\contentsline {table}{\numberline {4.1}{\ignorespaces This table shows the results of running a multinomial regularized logistic regression. The class column represents the index of sentences within the paragraph, and -1 represents the unanswerable question case. Unpredicted classes are removed.\relax }}{26}{table.caption.71}

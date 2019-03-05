@@ -3,13 +3,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Figure Showing Workflow of Machine Learning \relax }}{4}{figure.caption.14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Confusion Mtrix Example\relax }}{11}{figure.caption.42}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Confusion Mtrix Example\relax }}{11}{figure.caption.43}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 2d projection of the three classes A, B and C using K-means Clustering and PCA\relax }}{16}{figure.caption.51}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model with class weight to deal with data imbalance\relax }}{17}{figure.caption.57}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model after augmentation\relax }}{19}{figure.caption.60}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 2d projection of the three classes A, B and C using K-means Clustering and PCA\relax }}{16}{figure.caption.52}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model with class weight to deal with data imbalance\relax }}{17}{figure.caption.58}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model after augmentation\relax }}{19}{figure.caption.61}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flowchart illustrating the two-stage classification approach\relax }}{24}{figure.caption.66}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Confusion matrix shows which classes were predicted correctly\relax }}{25}{figure.caption.69}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion Matrix illustrating the first iteration of Stage2 LR. \relax }}{27}{figure.caption.74}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix illustrating the Second iteration of Stage2 LR. \relax }}{29}{figure.caption.76}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flowchart illustrating the two-stage classification approach\relax }}{24}{figure.caption.67}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Confusion matrix shows which classes were predicted correctly\relax }}{25}{figure.caption.70}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Confusion Matrix illustrating the first iteration of Stage2 LR. \relax }}{27}{figure.caption.75}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix illustrating the Second iteration of Stage2 LR. \relax }}{29}{figure.caption.77}

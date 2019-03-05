@@ -5,6 +5,10 @@ The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
+White space in argument---line 159 of file main.aux
+ : \citation{citeulike:
+ :                      13797746}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/Chapter4.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -20,50 +24,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10977 items from 5000.
+Reallocated field_info (elt_size=4) to 10421 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: references.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 43 entries,
+You've used 39 entries,
             6268 wiz_defined-function locations,
-            1482 strings with 29026 characters,
-and the built_in function-call counts, 266720 in all, are:
-= -- 17610
-> -- 6346
-< -- 1530
-+ -- 7627
-- -- 3114
-* -- 20433
-:= -- 27077
+            1455 strings with 27329 characters,
+and the built_in function-call counts, 240612 in all, are:
+= -- 15797
+> -- 5848
+< -- 1388
++ -- 7000
+- -- 2921
+* -- 18309
+:= -- 24463
 add.period$ -- 0
-call.type$ -- 43
-change.case$ -- 763
+call.type$ -- 39
+change.case$ -- 694
 chr.to.int$ -- 192
-cite$ -- 84
-duplicate$ -- 28651
-empty$ -- 24351
-format.name$ -- 3074
-if$ -- 53849
+cite$ -- 76
+duplicate$ -- 25937
+empty$ -- 21937
+format.name$ -- 2767
+if$ -- 48452
 int.to.chr$ -- 0
-int.to.str$ -- 104
+int.to.str$ -- 92
 missing$ -- 0
-newline$ -- 1678
-num.names$ -- 2051
-pop$ -- 14606
+newline$ -- 1527
+num.names$ -- 1851
+pop$ -- 13205
 preamble$ -- 1
-purify$ -- 1027
+purify$ -- 933
 quote$ -- 0
-skip$ -- 8019
+skip$ -- 7251
 stack$ -- 0
-substring$ -- 29215
-swap$ -- 7604
-text.length$ -- 1271
-text.prefix$ -- 42
+substring$ -- 26066
+swap$ -- 6908
+text.length$ -- 1147
+text.prefix$ -- 38
 top$ -- 1
-type$ -- 1448
+type$ -- 1312
 warning$ -- 0
-while$ -- 3273
+while$ -- 2971
 width$ -- 0
-write$ -- 1636
+write$ -- 1489
+(There was 1 error message)
