@@ -10,6 +10,7 @@ White space in argument---line 159 of file main.aux
  :                      13797746}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/Chapter4.aux
+A level-1 auxiliary file: Appendices/AppendixA.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -32,7 +33,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 39 entries,
             6268 wiz_defined-function locations,
-            1455 strings with 27329 characters,
+            1456 strings with 27353 characters,
 and the built_in function-call counts, 240612 in all, are:
 = -- 15797
 > -- 5848

@@ -1,25 +1,11 @@
-% Appendix A
-
-\chapter{Frequently Asked Questions} % Main appendix title
+\chapter{Auxiliary Functions for Codes in Ch3\&4} % Main appendix title
 
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\section{How do I change the colors of links?}
+\lstset{language=Python}
+\lstset{frame=lines}
+\lstset{caption={Helper Functions for Tokenization, Projection and Plotting}}
+\lstset{label={lst:code_direct}}
+\lstset{basicstyle=\footnotesize}
 
-The color of links can be changed to your liking using:
-
-{\small\verb!\hypersetup{urlcolor=red}!}, or
-
-{\small\verb!\hypersetup{citecolor=green}!}, or
-
-{\small\verb!\hypersetup{allcolor=blue}!}.
-
-\noindent If you want to completely hide the links, you can use:
-
-{\small\verb!\hypersetup{allcolors=.}!}, or even better: 
-
-{\small\verb!\hypersetup{hidelinks}!}.
-
-\noindent If you want to have obvious links in the PDF but not the printed text, use:
-
-{\small\verb!\hypersetup{colorlinks=false}!}.
+\lstinputlisting[language=Python]{Appendices/aux_functions.py}
