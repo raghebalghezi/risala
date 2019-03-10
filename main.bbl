@@ -350,21 +350,33 @@
     \field{year}{2018}
   \endentry
 
-  \entry{noauthor_english_nodate}{misc}{}
+  \entry{council2001common}{book}{}
+    \name{author}{1}{}{%
+      {{hash=oECfCCoECMLDC}{%
+         prefix={of\bibnamedelima Europe. Council for Cultural Co-operation.},
+         prefixi={o\bibinitperiod\bibinitdelim E\bibinitperiod C\bibinitperiod
+  f\bibinitperiod C\bibinitperiod C\bibinitperiod-o\bibinitperiod},
+         family={Education Committee. Modern Languages\bibnamedelima Division},
+         familyi={E\bibinitperiod\bibinitdelim C\bibinitperiod M\bibinitperiod
+  L\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Council},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{ECMLDCoECfCCo1}
+    \strng{fullhash}{ECMLDCoECfCCo1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
     \field{sortinit}{E}
     \field{sortinithash}{E}
-    \field{title}{English {Profile} - {EGP} {Online}}
-    \verb{url}
-    \verb http://www.englishprofile.org/english-grammar-profile/egp-online
-    \endverb
-    \verb{file}
-    \verb English Profile - EGP Online:/Users/raghebal-ghezi/Zotero/storage/CDD
-    \verb GDZ7R/egp-online.html:text/html
-    \endverb
-    \field{urlday}{29}
-    \field{urlmonth}{01}
-    \field{urlyear}{2019}
+    \field{title}{Common European Framework of Reference for Languages:
+  learning, teaching, assessment}
+    \field{year}{2001}
   \endentry
 
   \entry{firth1957synopsis}{article}{}
@@ -424,6 +436,47 @@
     \field{volume}{9}
     \field{journaltitle}{ACM Transactions on Information Systems (TOIS)}
     \field{year}{1991}
+  \endentry
+
+  \entry{graesser2011coh}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GAC}{%
+         family={Graesser},
+         familyi={G\bibinitperiod},
+         given={Arthur\bibnamedelima C},
+         giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MDS}{%
+         family={McNamara},
+         familyi={M\bibinitperiod},
+         given={Danielle\bibnamedelima S},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=KJM}{%
+         family={Kulikowich},
+         familyi={K\bibinitperiod},
+         given={Jonna\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{GACMDSKJM1}
+    \strng{fullhash}{GACMDSKJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{5}
+    \field{pages}{223\bibrangedash 234}
+    \field{title}{Coh-Metrix: Providing multilevel analyses of text
+  characteristics}
+    \field{volume}{40}
+    \field{journaltitle}{Educational researcher}
+    \field{year}{2011}
   \endentry
 
   \entry{DBLP:journals/corr/abs-1808-05759}{article}{}
@@ -679,32 +732,84 @@
     \field{year}{2006}
   \endentry
 
-  \entry{kitaev2018constituency}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KN}{%
-         family={Kitaev},
+  \entry{kincaid1975flesch}{article}{}
+    \name{author}{4}{}{%
+      {{hash=KJ}{%
+         family={Kincaid},
          familyi={K\bibinitperiod},
-         given={Nikita},
-         giveni={N\bibinitperiod},
+         given={JP},
+         giveni={J\bibinitperiod},
       }}%
-      {{hash=KD}{%
-         family={Klein},
-         familyi={K\bibinitperiod},
-         given={Dan},
-         giveni={D\bibinitperiod},
+      {{hash=FR}{%
+         family={Fishburne},
+         familyi={F\bibinitperiod},
+         given={RP},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rogers},
+         familyi={R\bibinitperiod},
+         given={RL},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Chissom},
+         familyi={C\bibinitperiod},
+         given={BS},
+         giveni={B\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KNKD1}
-    \strng{fullhash}{KNKD1}
+    \strng{namehash}{KJ+1}
+    \strng{fullhash}{KJFRRRCB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2018}
+    \field{labelyear}{1975}
     \field{labeldatesource}{year}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{title}{Constituency Parsing with a Self-Attentive Encoder}
-    \field{journaltitle}{arXiv preprint arXiv:1805.01052}
-    \field{year}{2018}
+    \field{title}{Flesch-Kincaid Grade Level}
+    \field{journaltitle}{Memphis: United States Navy}
+    \field{year}{1975}
+  \endentry
+
+  \entry{landauer2011word}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LTK}{%
+         family={Landauer},
+         familyi={L\bibinitperiod},
+         given={Thomas\bibnamedelima K},
+         giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kireyev},
+         familyi={K\bibinitperiod},
+         given={Kirill},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Panaccione},
+         familyi={P\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{LTKKKPC1}
+    \strng{fullhash}{LTKKKPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{1}
+    \field{pages}{92\bibrangedash 108}
+    \field{title}{Word maturity: A new metric for word knowledge}
+    \field{volume}{15}
+    \field{journaltitle}{Scientific Studies of Reading}
+    \field{year}{2011}
   \endentry
 
   \entry{DBLP:journals/corr/LevySCZ17}{article}{}
@@ -912,6 +1017,77 @@
     \field{title}{Distributed representations of words and phrases and their
   compositionality}
     \field{year}{2013}
+  \endentry
+
+  \entry{napolitano2015online}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ND}{%
+         family={Napolitano},
+         familyi={N\bibinitperiod},
+         given={Diane},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sheehan},
+         familyi={S\bibinitperiod},
+         given={Kathleen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mundkowsky},
+         familyi={M\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NDSKMR1}
+    \strng{fullhash}{NDSKMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{Proceedings of the 2015 Conference of the North American
+  Chapter of the Association for Computational Linguistics: Demonstrations}
+    \field{pages}{96\bibrangedash 100}
+    \field{title}{Online readability and text complexity analysis with
+  TextEvaluator}
+    \field{year}{2015}
+  \endentry
+
+  \entry{o2017english}{article}{}
+    \name{author}{2}{}{%
+      {{hash=OA}{%
+         family={O’Keeffe},
+         familyi={O\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Mark},
+         familyi={M\bibinitperiod},
+         given={Geraldine},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Benjamins}%
+    }
+    \strng{namehash}{OAMG1}
+    \strng{fullhash}{OAMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{number}{4}
+    \field{pages}{457\bibrangedash 489}
+    \field{title}{The English Grammar Profile of learner competence}
+    \field{volume}{22}
+    \field{journaltitle}{International Journal of Corpus Linguistics}
+    \field{year}{2017}
   \endentry
 
   \entry{pennington2014glove}{inproceedings}{}
@@ -1321,6 +1497,52 @@
     \field{title}{The power of word clusters for text classification}
     \field{volume}{1}
     \field{year}{2001}
+  \endentry
+
+  \entry{stenner2006accurate}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SAJ}{%
+         family={Stenner},
+         familyi={S\bibinitperiod},
+         given={A\bibnamedelima Jackson},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Burdick},
+         familyi={B\bibinitperiod},
+         given={Hal},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SEE}{%
+         family={Sanford},
+         familyi={S\bibinitperiod},
+         given={Eleanor\bibnamedelima E},
+         giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=BDS}{%
+         family={Burdick},
+         familyi={B\bibinitperiod},
+         given={Donald\bibnamedelima S},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {NOT KNOWN}%
+    }
+    \strng{namehash}{SAJ+1}
+    \strng{fullhash}{SAJBHSEEBDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{307}
+    \field{title}{How accurate are Lexile text measures?}
+    \field{volume}{7}
+    \field{journaltitle}{Journal of Applied Measurement}
+    \field{year}{2006}
   \endentry
 
   \entry{tam_comparative_2002}{inproceedings}{}

@@ -5,12 +5,14 @@ The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
-White space in argument---line 159 of file main.aux
+White space in argument---line 186 of file main.aux
  : \citation{citeulike:
  :                      13797746}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/Chapter4.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
+A level-1 auxiliary file: Appendices/AppendixB.aux
+A level-1 auxiliary file: Appendices/AppendixC.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -25,51 +27,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10421 items from 5000.
+Reallocated field_info (elt_size=4) to 11116 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: references.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 39 entries,
+You've used 44 entries,
             6268 wiz_defined-function locations,
-            1456 strings with 27353 characters,
-and the built_in function-call counts, 240612 in all, are:
-= -- 15797
-> -- 5848
-< -- 1388
-+ -- 7000
-- -- 2921
-* -- 18309
-:= -- 24463
+            1491 strings with 28429 characters,
+and the built_in function-call counts, 283756 in all, are:
+= -- 19257
+> -- 6391
+< -- 1630
++ -- 7832
+- -- 2970
+* -- 21890
+:= -- 28738
 add.period$ -- 0
-call.type$ -- 39
-change.case$ -- 694
-chr.to.int$ -- 192
-cite$ -- 76
-duplicate$ -- 25937
-empty$ -- 21937
-format.name$ -- 2767
-if$ -- 48452
+call.type$ -- 44
+change.case$ -- 862
+chr.to.int$ -- 168
+cite$ -- 86
+duplicate$ -- 30053
+empty$ -- 25873
+format.name$ -- 3241
+if$ -- 57645
 int.to.chr$ -- 0
-int.to.str$ -- 92
+int.to.str$ -- 108
 missing$ -- 0
-newline$ -- 1527
-num.names$ -- 1851
-pop$ -- 13205
+newline$ -- 1743
+num.names$ -- 2216
+pop$ -- 14997
 preamble$ -- 1
-purify$ -- 933
+purify$ -- 1144
 quote$ -- 0
-skip$ -- 7251
+skip$ -- 8485
 stack$ -- 0
-substring$ -- 26066
-swap$ -- 6908
-text.length$ -- 1147
-text.prefix$ -- 38
+substring$ -- 32481
+swap$ -- 7943
+text.length$ -- 1303
+text.prefix$ -- 43
 top$ -- 1
-type$ -- 1312
+type$ -- 1482
 warning$ -- 0
-while$ -- 2971
+while$ -- 3429
 width$ -- 0
-write$ -- 1489
+write$ -- 1700
 (There was 1 error message)

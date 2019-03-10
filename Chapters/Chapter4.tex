@@ -97,57 +97,93 @@ Using the three features above every question-sentence pair will have three scor
 \newpage
 
 \section{Stage Two: Predicting the Answer Span}
-\subsection{First Attempt}
-To select the most plausible answer span from the candidate sentence, we design a number of features:
+
+Stage Two: Selecting the Answer Span
+To select the most plausible answer span from the candidate sentence, we design a number of features, some of which are based on constituent analysis. A constituency parser is used to analyze a sentence into its constituent phrases. For example, the sentence "the quick brown fox jumps over the lazy dog" has the following syntactic (constituency) tree:
+
+
+The intuition is an answer span is one of constituents of the best candidate sentence. So we are using a constituency parser (Kitaev and Klein, 2018), we obtain all constituents in a candidate sentence. These constituents will be the classes from which we pick the right span. More generally, we design the following features for this stage:
+
 \begin{itemize}
-\item \textbf{Constituents}: Using a constituency parser \citep{kitaev2018constituency}, we obtain all constituents in a candidate sentence. These constituents will be the classes from which we pick the right span.
 \item \textbf{Contextual Overlap}: Constituents sharing context with the original question are potential candidates to be the correct answers. So we measure the cosine similarity between each constituent and the question:
+
 $${ similarity } = \frac { \sum _ { i = 1 } ^ { n } C _ { |w| } Q _ { i } } { \sqrt { \sum _ { i = 1 } ^ { n } C _ { |w| } ^ { 2 } } \sqrt { \sum _ { i = 1 } ^ { n } Q _ { i } ^ { 2 } } }$$ 
-where $w$ is the number of slide window around the candidate constituent. For our purposes features of size 2 and 3 are used. 
 
-\item \textbf{Constituent Label}: Constituency parse tree label of the span combined with wh-word.
-\end{itemize}
-Out of 85K training example, the answer spans of nearly half of them are not within the constituents. However, answers can be part of the constituents.  For example, an answer span might be \textit{L'official} and the nearest constituent is \textit{L'official Magazine}. So for our first attempt, we remove all data points whose answers are not explicitly found within the constituents. This results in around 45K data point. Next, we train a logistic regression classifier with L2 regularization and 100 epochs, optimized by newton method 'newton-cg' on a MacBook Pro laptop with core i5 processor and 8 GB of RAM. Python modules used are Scikit-learn and SpaCy. The latter is used to drive the attentive-neural constituency parser (Kitaev, 2018). The result is 0.25 F1 score.
+where w is the number of slide window around the candidate constituent. For our purposes features of size 2 and 3 are used.
 
 
-
-
-\subsection{Error Analysis of First Attempt}
-%\subsection{Format of Electronic Manuscript}
-%\label{sect:pdf}
-
-\begin{figure}
-  \includegraphics[scale=1]{../Figures/fig_iter1.pdf} \centering
-  \caption{Confusion Matrix illustrating the first iteration of Stage2 LR. }
-\end{figure} 
-
-
-
-Looking at the confusion matrix, we notice that there is a data imbalance. Classes at the beginning have more supporting points, and therefore have less error than the others. However, class 2 has been identified as class 1 34\%. For example, the answer of \textit{At what age did Beyonce meet LaTavia Robertson?} is predicted as \textit{At age eight} while the correct answer is \textit{age eight}. Another example, the answer for \textit{How much was public expenditure on the island in 2001-2002?} is predicted to be \textit{Public expenditure} while the true answer is \textit{£10 million}. In this case, the phrase public expenditure appears in the question, which is a stronger candidate given the features designed.
-Similarly, class 12 is predicted as class eleven 16\%. For example, the answer to the question \textit{Who supervised the design and implementation of the iPod user interface?} is \textit{Steve Jobs}, but it is predicted as \textit{Of Steve Jobs}. Another example, answer to \textit{What roles were women recruited for in the 1950s?} is \textit{in medicine, communication}, but it is predicted as \textit{logistics, and administration}. Given the features, we have designed it is very difficult for the classifier to recognize this settle difference between the classes. 
-
-
-\subsection{Second Attempt}
-
-In the first attempt, we have sacrificed valuable data because the answer span was not within the constituents of the candidate sentence. This time, we use all 85K, but we will face the same problem introduced in the previous section. The answer span can be a member of more than one constituent in the same sentence, and this will impose a very hard constraint on the performance because the inference can be close but not exact. Also because this problem requires more feature engineering efforts, we decided to leave it for future studies. Instead, we will set the target to the first constituent of which the span is a member. However, we will add three more features:
-
-\begin{itemize}
-\item \textbf{Distributional Distance}: We measure the distributional cosine similarity between the sum of all words in the contextual window and the question using Glove (Pennington, 2012). 
-
-\item \textbf{Matching Word Frequencies}: Sum of the TF-IDF of the words that occur in both the question and the sentence containing the candidate answer.
-
-\item \textbf{Lengths}: Number of words to the left and the right of the span.
+\item \textbf{Constituent Label}: Constituency parse tree label of the span combined with wh-word. For example, for a question "who designed the iPhone prototype?" and its answer "Steve Jobs designed the first prototype for the iPhone.", a constituent label feature is {who-NP, who-V, who-VP, who-PP, etc}. 
+\item \textbf{Distributional Distance}: We measure the distributional cosine similarity between the sum of all words in the contextual window and the question using Glove (Pennington, 2012).
+\item \emph{Matching Word Frequencies}: Sum of the TF-IDF of the words that occur in both the question and the sentence containing the candidate answer.
+\item \emph{Lengths}: Number of words to the left and the right of the span.
 \end{itemize}
 
-For classification, we compare the performance of a logistic regression classifier with a similar configuration as the first stage to 3-layer feed-forward neural network of 128, 64 and 32 nodes respectively. The logistic regression achieves 0.35 F1 while the neural network does 0.42 F1 using Adam optimizer and 100 epochs. Looking at the confusion matrix, it is apparent that the new features (tf-idf and distributional cosine similarity) improve the performance. However, they could not recognize the settle difference among the phrase.  \\
+\section{Experiment and Error Analysis}
+In this stage, we have done three different attempts. 
+In the first attempt, we used only two features "contextual overlap" and "constituent label". We also limited the number of classes (constituents) to 30. Using the same training settings and configurations from stage one, the logistic regression achieves a 0.25 F1 score. The confusion matrix shows a clear case of data imbalance. Classes at the beginning have more supporting points, and therefore have less errors than others. However, our analysis to the errors indicate the wrong answers are partially correct most of the times. class 2 has been identified as class 1 34\%. For example, the answer of \emph{At what age did Beyonce meet LaTavia Robertson? }is predicted as \emph{At age eight} when the correct answer is \emph{age eight}. Similarly, class 12 is predicted as class eleven 16\%. The answer to the question \emph{Who supervised the design and implementation of the iPod user interface?} is \emph{Steve Jobs}, but it is predicted as \emph{Of Steve Jobs}. Clearly, the predicted answers are not very far from the true ones. A harsher assumption such as keeping only Noun Phrase constituents could have resolved some of these issues, but we will leave this for future studies. 
 
+Other types of errors are due to literal word matching between the questions and phrases. For example, the answer for \emph{How much was public expenditure on the island in 2001-2002?} is predicted to be \emph{Public expenditure} when the true answer is \emph{£10 million}. In this case, the phrase \emph{public expenditure} appears in the question, which makes it a stronger candidate given the features designed. Another example, answer to \textit{What roles were women recruited for in the 1950s?} is \emph{in medicine, communication}, but it is predicted as \emph{logistics, and administration}. Given the features we have designed, it is very difficult for the classifier to recognize this settle difference between the classes. 
+In the second attempt, we have added the 3 remaining features: Distributional Distance, Matching Word Frequencies, and length, while keeping the same parameters of the first attempt. We get a 0.35 F1 score. Looking at the confusion matrix, it is apparent that the new features do significantly improve the performance.
 
-\begin{figure}
-  \includegraphics[scale=1]{../Figures/fig_1.pdf} 
-  \caption{Confusion Matrix illustrating the Second iteration of Stage2 LR. }
-\end{figure} 
+In our last experiment, we replaced logistic regression classifier in second attempt with a 3-layer feed-forward neural network of 128, 64 and 32 nodes respectively, optimized by Adam optimizer on a 100 epochs . The neural network achieves F1 score of 0.42. Using a neural network does indeed increase the performance, but its use is not very practical given its configuration. Each node in this neural network is equivalent to one logistic regression classifier, so using a feed-forward neural network with a total nodes of 224 is equal in computational power to 224 logistic regression. 
 
+\section{Future Studies and Recommendation}
+Looking at errors produced during the three attempts, we can improve the performance by injecting more linguistic information from Named Entity Recognizers, Semantic Role Labelers and Dependency Parsers. A Named Entity Recognizer can help answer questions about locations, persons or entities (Where, Who and Which questions). Information derived from a dependency parser and a semantic role labeler can, for example, help resolve cases when the answers are the subjects or the objects of the sentences. Another thing to investigate is to eliminate PP and VP constituent phrases, and only keep NP phrases. This idea comes from the assumption that the majority of answers to Wh-questions in SQUAD 2.0 dataset can be Noun Phrases.This assumption can help reduce the number of classes to be predicted, and there will be no need to limit the number of outputs to certain number as we did.
 
 \section{Conclusion}
+We introduced a two-step classification method for automatic reading comprehension via SQUAD 2.0 dataset. Our stage 1 classifier managed to find whether or not a question is answerable within a given passage and find the sentence containing the right answer with F1 score of 0.71. Our stage 2 classifier manages to detect the exact span with F1 score of 0.35 even though the predicted answer is not distant from the exact answer. In order to improve the performance of our approach, future studies should investigate the usefulness of features generated from Named Entity Recognition, Semantic Role Labeling and Dependency Parsing processes, which are expected to be potential solutions to the problems we faced in this work
 
-We introduced a two-step classification method for automatic reading comprehension via SQUAD 2.0 dataset. Our stage1 classifier managed to find whether or not a question is answerable within a given passage and find the sentence containing the right answer with F1 score of 0.71. Our stage2 classifier manages to detect the exact span with F1 score of 0.35 even though the predicted answer is not distant from the exact answer. In order to improve the performance of our approach, future studies should investigate the usefulness of features generated from Named Entity Recognition, Semantic Role Labeling and Dependency Parsing processes, which are expected to be potential solutions to the problems we faced in this work. 
+%\subsection{First Attempt}
+%To select the most plausible answer span from the candidate sentence, we design a number of features:
+%\begin{itemize}
+%\item \textbf{Constituents}: Using a constituency parser \citep{kitaev2018constituency}, we obtain all constituents in a candidate sentence. These constituents will be the classes from which we pick the right span.
+%\item \textbf{Contextual Overlap}: Constituents sharing context with the original question are potential candidates to be the correct answers. So we measure the cosine similarity between each constituent and the question:
+%$${ similarity } = \frac { \sum _ { i = 1 } ^ { n } C _ { |w| } Q _ { i } } { \sqrt { \sum _ { i = 1 } ^ { n } C _ { |w| } ^ { 2 } } \sqrt { \sum _ { i = 1 } ^ { n } Q _ { i } ^ { 2 } } }$$ 
+%where $w$ is the number of slide window around the candidate constituent. For our purposes features of size 2 and 3 are used. 
+%
+%\item \textbf{Constituent Label}: Constituency parse tree label of the span combined with wh-word.
+%\end{itemize}
+%Out of 85K training example, the answer spans of nearly half of them are not within the constituents. However, answers can be part of the constituents.  For example, an answer span might be \textit{L'official} and the nearest constituent is \textit{L'official Magazine}. So for our first attempt, we remove all data points whose answers are not explicitly found within the constituents. This results in around 45K data point. Next, we train a logistic regression classifier with L2 regularization and 100 epochs, optimized by newton method 'newton-cg' on a MacBook Pro laptop with core i5 processor and 8 GB of RAM. Python modules used are Scikit-learn and SpaCy. The latter is used to drive the attentive-neural constituency parser (Kitaev, 2018). The result is 0.25 F1 score.
+%
+%
+%
+%
+%\subsection{Error Analysis of First Attempt}
+%%\subsection{Format of Electronic Manuscript}
+%%\label{sect:pdf}
+%
+%\begin{figure}
+%  \includegraphics[scale=1]{../Figures/fig_iter1.pdf} \centering
+%  \caption{Confusion Matrix illustrating the first iteration of Stage2 LR. }
+%\end{figure} 
+%
+%
+%
+%Looking at the confusion matrix, we notice that there is a data imbalance. Classes at the beginning have more supporting points, and therefore have less error than the others. However, class 2 has been identified as class 1 34\%. For example, the answer of \textit{At what age did Beyonce meet LaTavia Robertson?} is predicted as \textit{At age eight} while the correct answer is \textit{age eight}. Another example, the answer for \textit{How much was public expenditure on the island in 2001-2002?} is predicted to be \textit{Public expenditure} while the true answer is \textit{£10 million}. In this case, the phrase public expenditure appears in the question, which is a stronger candidate given the features designed.
+%Similarly, class 12 is predicted as class eleven 16\%. For example, the answer to the question \textit{Who supervised the design and implementation of the iPod user interface?} is \textit{Steve Jobs}, but it is predicted as \textit{Of Steve Jobs}. Another example, answer to \textit{What roles were women recruited for in the 1950s?} is \textit{in medicine, communication}, but it is predicted as \textit{logistics, and administration}. Given the features, we have designed it is very difficult for the classifier to recognize this settle difference between the classes. 
+%
+%
+%\subsection{Second Attempt}
+%
+%In the first attempt, we have sacrificed valuable data because the answer span was not within the constituents of the candidate sentence. This time, we use all 85K, but we will face the same problem introduced in the previous section. The answer span can be a member of more than one constituent in the same sentence, and this will impose a very hard constraint on the performance because the inference can be close but not exact. Also because this problem requires more feature engineering efforts, we decided to leave it for future studies. Instead, we will set the target to the first constituent of which the span is a member. However, we will add three more features:
+%
+%\begin{itemize}
+%\item \textbf{Distributional Distance}: We measure the distributional cosine similarity between the sum of all words in the contextual window and the question using Glove (Pennington, 2012). 
+%
+%\item \textbf{Matching Word Frequencies}: Sum of the TF-IDF of the words that occur in both the question and the sentence containing the candidate answer.
+%
+%\item \textbf{Lengths}: Number of words to the left and the right of the span.
+%\end{itemize}
+%
+%For classification, we compare the performance of a logistic regression classifier with a similar configuration as the first stage to 3-layer feed-forward neural network of 128, 64 and 32 nodes respectively. The logistic regression achieves 0.35 F1 while the neural network does 0.42 F1 using Adam optimizer and 100 epochs. Looking at the confusion matrix, it is apparent that the new features (tf-idf and distributional cosine similarity) improve the performance. However, they could not recognize the settle difference among the phrase.  \\
+%
+%
+%\begin{figure}
+%  \includegraphics[scale=1]{../Figures/fig_1.pdf} 
+%  \caption{Confusion Matrix illustrating the Second iteration of Stage2 LR. }
+%\end{figure} 
+%
+%
+%\section{Conclusion}
+%
+%We introduced a two-step classification method for automatic reading comprehension via SQUAD 2.0 dataset. Our stage1 classifier managed to find whether or not a question is answerable within a given passage and find the sentence containing the right answer with F1 score of 0.71. Our stage2 classifier manages to detect the exact span with F1 score of 0.35 even though the predicted answer is not distant from the exact answer. In order to improve the performance of our approach, future studies should investigate the usefulness of features generated from Named Entity Recognition, Semantic Role Labeling and Dependency Parsing processes, which are expected to be potential solutions to the problems we faced in this work. 
