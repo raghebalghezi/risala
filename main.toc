@@ -42,7 +42,10 @@
 \contentsline {section}{\numberline {4.5}Experiment and Error Analysis}{29}{section.73}
 \contentsline {section}{\numberline {4.6}Future Studies and Recommendation}{30}{section.74}
 \contentsline {section}{\numberline {4.7}Conclusion}{31}{section.75}
-\contentsline {chapter}{\numberline {A}Auxiliary Functions for Codes in Ch3\&4}{33}{appendix.76}
-\contentsline {chapter}{\numberline {B}Complete Code for Grammatical Detection System}{37}{appendix.256}
-\contentsline {chapter}{\numberline {C}Complete Code for Automatic Reading Comprehension}{41}{appendix.398}
-\contentsline {chapter}{Bibliography}{49}{appendix*.757}
+\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.76}
+\contentsline {section}{\numberline {5.1}Summary of Contributions}{34}{section.77}
+\contentsline {section}{\numberline {5.2}Recommendations and Future Work}{34}{section.78}
+\contentsline {chapter}{\numberline {A}Auxiliary Functions for Codes in Ch3\&4}{35}{appendix.79}
+\contentsline {chapter}{\numberline {B}Complete Code for Grammatical Detection System}{39}{appendix.259}
+\contentsline {chapter}{\numberline {C}Complete Code for Automatic Reading Comprehension}{43}{appendix.401}
+\contentsline {chapter}{Bibliography}{51}{appendix*.760}
