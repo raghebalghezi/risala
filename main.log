@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 MAR 2019 05:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 MAR 2019 08:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1869,7 +1869,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=27.2pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 4
-5.
+6.
 
 
 Overfull \vbox (8.34636pt too high) has occurred while \output is active []
@@ -1903,14 +1903,13 @@ Overfull \hbox (14.12315pt too wide) in paragraph at lines 86--87
 riva-tive of the log-likelihood
  []
 
-[19]
-<Figures/../Figures/conf_matrix_iter1.png, id=545, 315.1775pt x 281.05pt>
+<Figures/../Figures/conf_matrix_iter1.png, id=541, 315.1775pt x 281.05pt>
 File: Figures/../Figures/conf_matrix_iter1.png Graphic file (type png)
 <use Figures/../Figures/conf_matrix_iter1.png>
 Package pdftex.def Info: Figures/../Figures/conf_matrix_iter1.png  used on inpu
 t line 127.
 (pdftex.def)             Requested size: 315.61215pt x 281.45241pt.
- [20 <./Figures/../Figures/conf_matrix_iter1.png>]
+[19] [20 <./Figures/../Figures/conf_matrix_iter1.png>]
 
 LaTeX Warning: Citation 'citeulike: 13797746' on page 21 undefined on input lin
 e 155.
@@ -2447,7 +2446,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  37739 strings out of 492649
  747040 string characters out of 6129622
- 1051556 words of memory out of 5000000
+ 1051558 words of memory out of 5000000
  40295 multiletter control sequences out of 15000+600000
  602306 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2467,7 +2466,7 @@ s/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/p
 alatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino
 /uplri8a.pfb>
-Output written on main.pdf (67 pages, 814219 bytes).
+Output written on main.pdf (67 pages, 813874 bytes).
 PDF statistics:
  1678 PDF objects out of 1728 (max. 8388607)
  1563 compressed objects within 16 object streams
