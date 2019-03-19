@@ -5,7 +5,7 @@ The style file: biblatex.bst
 A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
-White space in argument---line 186 of file main.aux
+White space in argument---line 190 of file main.aux
  : \citation{citeulike:
  :                      13797746}
 I'm skipping whatever remains of this command
@@ -28,51 +28,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11116 items from 5000.
+Reallocated field_info (elt_size=4) to 11255 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: references.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 44 entries,
+You've used 45 entries,
             6268 wiz_defined-function locations,
-            1492 strings with 28450 characters,
-and the built_in function-call counts, 283756 in all, are:
-= -- 19257
-> -- 6391
-< -- 1630
-+ -- 7832
-- -- 2970
-* -- 21890
-:= -- 28738
+            1496 strings with 28596 characters,
+and the built_in function-call counts, 288288 in all, are:
+= -- 19511
+> -- 6519
+< -- 1677
++ -- 7957
+- -- 3013
+* -- 22169
+:= -- 29113
 add.period$ -- 0
-call.type$ -- 44
-change.case$ -- 862
+call.type$ -- 45
+change.case$ -- 891
 chr.to.int$ -- 168
-cite$ -- 86
-duplicate$ -- 30053
-empty$ -- 25873
-format.name$ -- 3241
-if$ -- 57645
+cite$ -- 88
+duplicate$ -- 30657
+empty$ -- 26271
+format.name$ -- 3309
+if$ -- 58611
 int.to.chr$ -- 0
-int.to.str$ -- 108
+int.to.str$ -- 111
 missing$ -- 0
-newline$ -- 1743
-num.names$ -- 2216
-pop$ -- 14997
+newline$ -- 1773
+num.names$ -- 2278
+pop$ -- 15339
 preamble$ -- 1
-purify$ -- 1144
+purify$ -- 1178
 quote$ -- 0
-skip$ -- 8485
+skip$ -- 8709
 stack$ -- 0
-substring$ -- 32481
-swap$ -- 7943
-text.length$ -- 1303
-text.prefix$ -- 43
+substring$ -- 32687
+swap$ -- 8104
+text.length$ -- 1333
+text.prefix$ -- 44
 top$ -- 1
-type$ -- 1482
+type$ -- 1516
 warning$ -- 0
-while$ -- 3429
+while$ -- 3486
 width$ -- 0
-write$ -- 1700
+write$ -- 1729
 (There was 1 error message)

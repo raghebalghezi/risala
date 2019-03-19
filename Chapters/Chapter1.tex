@@ -10,8 +10,8 @@
 
 \section{Background}
 
-Lum is a company developing customized machine reading technology using machine learning and natural language processing. Their technology is served to a variety of medical, agricultural and educational domains and sectors. During the internship, the researcher was assigned two main NLP tasks that contribute to solving problems in teaching foreign languages using online distance learning. The two NLP tasks are automatic reading comprehension and detecting grammatical difficulty of English sentences according to CEFR. The goal of the first task is to design and implement a system that, given a reading passage and a set of questions, can automatically find answers to those questions from within the reading passage. The motivation for such a system is that it can help human
-language instructors create automatically graded assignment and quiz activities
+Lum is a company developing customized machine reading technology using machine learning and natural language processing. Their technology serves to a variety of medical, agricultural and educational domains and sectors. During a 3-month internship, the researcher was assigned two main NLP tasks that contributed to solving problems in teaching foreign languages using online distance learning. The two NLP tasks are automatic reading comprehension and detecting grammatical difficulty of English sentences according to CEFR. The goal of the first task is to design and implement a system that, given a reading passage and a set of questions, can automatically find answers to those questions from within the reading passage. The motivation for such a system is that it can help human
+language instructors create automatically graded assignments and quiz activities
 in virtual learning environments. The purpose of the second task is to create a system that can automatically categorize a given English text into three
 levels of grammatical difficulty: Elementary (A), Intermediate (B), and Advanced (C). In this report, the researcher investigates the possibility to use NLP and ML algorithms to solve these two problems. The report also covers the entire process: data description and analysis, literature survey, feature design, and engineering and evaluating the performance of the algorithm. 
 
@@ -20,21 +20,21 @@ levels of grammatical difficulty: Elementary (A), Intermediate (B), and Advanced
 %-----------------------------------
 \section{Goals}
 
-One goal of this internship report is to examine the suitability of using a machine learning linear classification algorithm called logistic regression on two novel educational tasks: automatic reading comprehension and detection of grammatical difficulty. Another goal is to explore and compare different methods of feature extraction and feature engineering to each of these tasks. Furthermore, examine the use of logistic regression in a semi-supervised fashion to bootstrap the scarcity of training data and improve the overall quality of generalization. 
+One goal of this internship report is to examine the suitability of using a machine learning linear classification algorithm called logistic regression on two novel educational tasks: automatic reading comprehension and detection of grammatical difficulty. Another goal is to explore and compare different methods of feature extraction and feature engineering to each of these tasks. Furthermore, examining the use of logistic regression in a semi-supervised fashion to bootstrap the scarcity of training data and improves the overall quality of generalization. 
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
 \section{Outline}
-The first chapter gives a general background about the internship that the researcher undertakes as well as the goals intended to achieve through this internship report. 
+The first chapter gives a general background about the internship that the researcher undertook as well as the goals intended to be achieved through this internship report. 
 
 The second chapter is dedicated to reviewing the theory of machine learning in the context of natural language processing. It also defines classification as a supervised machine learning task and logistic regression as one popular linear classification algorithm. The chapter also includes the conventional methods of computational representation of human languages such as bag-of-words, term-frequency-inverse-document-frequency, and word embeddings. Finally, it concludes by showing the metrics used to evaluate classification systems. 
 
-The third chapter introduces the task of detecting grammatical errors in English sentence as a classification problem and explains the use of multinomial logistic regression in a semi-supervised fashion to solve it. The chapter also briefly surveys the most important studies in the literature that tackled similar textual
+The third chapter introduces the task of detecting grammatical errors in English sentences as a classification problem and explains the use of multinomial logistic regression in a semi-supervised fashion to solve it. The chapter also briefly surveys the most important studies in the literature that tackled similar textual
 classification tasks. Finally, it shows the experiments, the results of
-applying the algorithm of the data collected as well as the conclusions. 
+applying the algorithm of the data collected, and the conclusions. 
 
-The fourth chapter introduces the task of automatic reading comprehension and the data set used for this purpose. It also discusses the common approaches tackling these tasks in the literature. Next, the chapter uses the different feature engineering used to create a numerical representation of text. Finally, the chapter is concluded with the result and evaluation as well as sections dedicated to error analysis and future work respectively. 
+The fourth chapter introduces the task of automatic reading comprehension and the data set used for this purpose. It also discusses the common approaches tackling these tasks in the literature. Next, the chapter explores different feature extraction methods to create a numerical representation of text. Finally, the chapter is concluded with the result and evaluation as well as sections dedicated to error analysis and future work respectively. 
 
 The fifth chapter contains the overall conclusion of the internship report.  

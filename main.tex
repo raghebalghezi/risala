@@ -55,6 +55,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
+
 \addbibresource{references.bib} % The filename of the bibliography
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
@@ -77,7 +78,7 @@ headsepline, % Uncomment to get a line under the header
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Application of Logistic Regression in Automatic Reading Comprehension and Detection of Grammatical Structures Based on Difficulty} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\thesistitle{Application of Logistic Regression in Automatic Reading Comprehension and Detection of English Grammatical Structures Based on Difficulty} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
 \supervisor{Dr. Robert \textsc{Henderson}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{Masters of Science} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
@@ -188,7 +189,7 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-In this study we examine the use of a probabilistic classification algorithm called Logistic Regression on two novel Natural Language Processing (NLP) tasks: Automatic Reading Comprehension and Detection of Grammatical Difficulty in English Sentences. Logistic Regression has been used extensively in machine learning and NLP research over the past decades, but it gains popularity as it is considered the building block of Artificial Neural Network (ANN). Both tasks studied in this report show a unique use to multinomial logistic. In automatic reading comprehension task, given a reading passage and a question, the goal is to extract an answer from the passage to the question if there exists one, or abstain from answering if the passage does not have an answer. For this purpose, a multinomial logistic regressor is used on two stages: a) find the sentence that most likely contains the answer (null-answer is treated as a sentence at this stage). b) within the best candidate sentence, another logistic regressor is used to extract the constituent that most likely represent the answer. The experiment results show that using simply designed features a logistic regressor score 0.71 F1 score and 0.40 F1 in stage 1 and 2 respectively, making it as a potential competitor to other state-of-the-art advanced neural network architectures. In the second task, detection of grammatical difficulty, a multinomial logistic regressor is applied in a semi-supervised manner on a low-resourced data to categorize the difficulty of English grammatical structures according to Common European Framework Reference (CEFR) guidelines. The method used shows a significant improvement from 0.67 F1 to 0.79 F1.
+In this study we examine the use of a probabilistic classification algorithm called Logistic Regression on two novel Natural Language Processing (NLP) tasks: Automatic Reading Comprehension and Detection of Grammatical Difficulty in English Sentences. Logistic Regression has been used extensively in machine learning and NLP research over the past decades, but it has gained popularity as it is considered the building block of Artificial Neural Network (ANN). Both tasks studied in this report show a unique use to multinomial logistic. In automatic reading comprehension task, given a reading passage and a question, the goal is to extract an answer from the passage to the question if there exists one or abstain from answering if the passage does not have an answer. For this purpose, a multinomial logistic regressor is used on two stages: a) find the sentence that most likely contains the answer (null-answer is treated as a sentence at this stage). b) within the best candidate sentence, another logistic regressor is used to extract the constituent that most likely represent the answer. The experiment results show that using simply designed features a logistic regressor score 0.71 F1 score and 0.40 F1 in stage 1 and 2 respectively, making it as a potential competitor to other state-of-the-art advanced neural network architectures. In the second task, detection of grammatical difficulty, a multinomial logistic regressor is applied in a semi-supervised manner on a low-resourced data to categorize the difficulty of English grammatical structures according to Common European Framework Reference (CEFR) guidelines. The method used shows a significant improvement from 0.67 F1 to 0.79 F1.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------

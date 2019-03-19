@@ -147,6 +147,43 @@
     \field{year}{2015}
   \endentry
 
+  \entry{bird2009natural}{book}{}
+    \name{author}{3}{}{%
+      {{hash=BS}{%
+         family={Bird},
+         familyi={B\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+         given={Ewan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Loper},
+         familyi={L\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {" O'Reilly Media, Inc."}%
+    }
+    \strng{namehash}{BSKELE1}
+    \strng{fullhash}{BSKELE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Natural language processing with Python: analyzing text with
+  the natural language toolkit}
+    \field{year}{2009}
+  \endentry
+
   \entry{brucher2002document}{article}{}
     \name{author}{3}{}{%
       {{hash=BH}{%
@@ -886,13 +923,7 @@
   \endentry
 
   \entry{manning1999foundations}{book}{}
-    \name{author}{3}{}{%
-      {{hash=MCD}{%
-         family={Manning},
-         familyi={M\bibinitperiod},
-         given={Christopher\bibnamedelima D},
-         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
+    \name{author}{2}{}{%
       {{hash=MCD}{%
          family={Manning},
          familyi={M\bibinitperiod},
@@ -909,8 +940,8 @@
     \list{publisher}{1}{%
       {MIT press}%
     }
-    \strng{namehash}{MCDMCDSH1}
-    \strng{fullhash}{MCDMCDSH1}
+    \strng{namehash}{MCDSH1}
+    \strng{fullhash}{MCDSH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1999}
