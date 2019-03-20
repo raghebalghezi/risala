@@ -180,11 +180,13 @@ Using a text-only small version of the Brown Corpus \citep{francis1965standard},
 
 Out of 38,400 sentences in the unlabeled corpus, only 1,428 sentences were detected with certainty above 90\%. We also removed any sentence that is longer than 30 words in order to lessen the undesirable effect of BOW technique. We apply our best model from phase one to the augmented dataset of 5,043 examples under the same training conditions to get a precision of \textbf{0.80}, a recall of \textbf{0.79}, and an F1 score of \textbf{0.79}. 
 
+Comparing the confusion matrices before \ref{fig:egp_confmat_LRBOW} and after \ref{fig:egp_confmat_LRBOW_aug} Bootstrapping, we notice that the performance of classification to class A does not improve much, unlike in classes B and C whose classification performance increases by F1 scores of 0.10 and 0.13 respectively. 
+
 \begin{figure}[t]
     \centering
     \includegraphics[width=.75\linewidth]{../Figures/conf_matrix_iter2.png} 
     \caption{Confusion Matrix Illustrating the Performance of LR-BOW-Word Model after Augmentation}
-    \label{fig:cmdstudy}
+    \label{fig:egp_confmat_LRBOW_aug}
 \end{figure}
 
 \section {Conclusion}
