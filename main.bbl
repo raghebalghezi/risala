@@ -285,6 +285,47 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{curran2007minimising}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CJR}{%
+         family={Curran},
+         familyi={C\bibinitperiod},
+         given={James\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Tara},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Scholz},
+         familyi={S\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{CJRMTSB1}
+    \strng{fullhash}{CJRMTSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Proceedings of the 10th Conference of the Pacific
+  Association for Computational Linguistics}
+    \field{pages}{172\bibrangedash 180}
+    \field{title}{Minimising semantic drift with mutual exclusion
+  bootstrapping}
+    \field{volume}{6}
+    \field{year}{2007}
+  \endentry
+
   \entry{deerwester1990indexing}{article}{}
     \name{author}{5}{}{%
       {{hash=DS}{%
@@ -414,6 +455,34 @@
     \field{title}{Common European Framework of Reference for Languages:
   learning, teaching, assessment}
     \field{year}{2001}
+  \endentry
+
+  \entry{francis1965standard}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FWN}{%
+         family={Francis},
+         familyi={F\bibinitperiod},
+         given={W\bibnamedelima Nelson},
+         giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{FWN1}
+    \strng{fullhash}{FWN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{4}
+    \field{pages}{267\bibrangedash 273}
+    \field{title}{A standard corpus of edited present-day American English}
+    \field{volume}{26}
+    \field{journaltitle}{College English}
+    \field{year}{1965}
   \endentry
 
   \entry{fuhr1991probabilistic}{article}{}

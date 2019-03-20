@@ -6,8 +6,8 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Confusion Matrix Example\relax }}{12}{figure.caption.43}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Two Dimensional Projection of classes A, B and C using K-means Clustering and Principal Component Analysis\relax }}{18}{figure.caption.52}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model with class weight to deal with data imbalance\relax }}{20}{figure.caption.58}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model after augmentation\relax }}{22}{figure.caption.61}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Confusion matrix illustrating the performance of LR-BOW-Word model with class weight to deal with data imbalance\relax }}{20}{figure.caption.58}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Confusion Matrix Illustrating the Performance of LR-BOW-Word Model after Augmentation\relax }}{22}{figure.caption.61}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Flowchart illustrating the two-stage classification approach\relax }}{26}{figure.caption.67}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Confusion matrix shows which classes were predicted correctly\relax }}{28}{figure.caption.70}

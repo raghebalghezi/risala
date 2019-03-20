@@ -92,7 +92,7 @@ The dataset provides some guidance of what characterizes each example. These rul
 \end{figure}
 
 \subsection{Multinomial Logistic Regression}
-Suppose that $\mathbf{x}$ is the vectorized sentence in either of its two forms: BoW or TfIDF, $y\in Y$ is the class label, $\mathbf{w}_k$ and $b_k$ are network parameters associated with class $y$. Then the probability of $\mathbf{x}$ belonging to the class $y$ can be defined by the Softmax function:
+Suppose that $\mathbf{x}$ is the vectorized sentence in either of its two forms: BOW or TF-IDF, $y\in Y$ is the class label, and $\mathbf{w}_k$ and $b_k$ are network parameters associated with class $y$. Then the probability of $\mathbf{x}$ belonging to the class $y$ can be defined by the Softmax function:
 \begin{equation}
 p(y|\mathbf{x}) =\frac{1}{z(\mathbf{x})}\exp(\mathbf{w}_y^T\mathbf{x}+b_y) \,,
 \label{eq:softmax}
@@ -114,7 +114,7 @@ where $y$ is the concatenated indicator vector of dimension $N \times (K-1)$, $p
 
 \subsection{Feature Design}
 
-For this task, we are comparing two standard methods of feature generation in natural language processing and information retrieval: bag-of-word model and term-frequency inverse-document frequency (TFIDF)
+For this task, we are comparing two standard methods of feature generation in natural language processing and information retrieval: Bag-of-Words model and term-frequency inverse-document frequency (TF-IDF)
 
 %\subsubsection{Bag of Word Model} a method to represent the occurrence of words within one sentence. We add different variation by counting unigram, bigram and trigram frequencies. Besides, because this model ignores the order or the location of the word in the sentence, it might not be that helpful to our task as it is not lexicalized and the grammar is the core of it. Therefore, we replace noun and adjective words with their parts-of-speech tags in order to enforce the presence of the grammatical category and avoid the influence of the word itself.  For example, the sentence "this is your mission should you accept it” becomes this is NP should S-PRN VRB O-PRN (CLAUSE)”. 
 %
@@ -130,59 +130,63 @@ For this task, we are comparing two standard methods of feature generation in na
 \section{Experimental Results}
 \label{sec:exp}
 
-In this section, we evaluate several variations of our method against a random model as our baseline model. In the following experiments, all methods are done using Python 3.5 and Scikit Learn Library tested on MacBook Pro laptop with Core i5 processor and 8 GB of RAM.
+In this section, we evaluate several variations of our method against a random model as our baseline model. In the following experiments, all methods are conducted using Python 3.5 and Scikit Learn Library tested on MacBook Pro laptop with Core i5 processor and 8 GB of RAM.
 
 \subsection{First Phase}
 
-In the first phase of our experiment, we train a logistic regression classifier, optimized by the Newton-Raphson method, on English Grammar Profile dataset. We also introduce a  feature design method to mask word categories with their part-of-speech tags in order to preserve grammatical information and avoid the lexical influence of the word. We use a combination of feature design methods such as:
+In the first phase of our experiment, we train a logistic regression classifier, optimized by the Newton-Raphson method, on the English Grammar Profile dataset. We also introduce a  feature design method to mask word categories with their part-of-speech tags in order to preserve grammatical information and avoid the lexical influence of the word. We refer to this method as \emph{Masked} in Table \ref{tb:egp_lr_performance}. We use a combination of feature design methods such as:
 
 \begin{itemize}
-    \item \textbf{BoW}: Apply unigram, bigram and trigram bag-of-words model with both word tokens, and masked tokens.
-    \item \textbf{Tf-idf}: Apply unigram, bigram and trigram tf-idf model with both word tokens, and masked tokens.
+    \item \textbf{BOW}: Apply unigram, bigram and trigram Bag-of-Words model with both word tokens, and masked tokens.
+    \item \textbf{TF-IDF}: Apply unigram, bigram and trigram TF-IDF model with both word tokens, and masked tokens.
 \end{itemize}
 
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=.75\linewidth]{../Figures/conf_matrix_iter1.png} 
-    \caption{Confusion matrix illustrating the performance of LR-BoW-Word model with class weight to deal with data imbalance}
-    \label{fig:cmdstudy}
+    \caption{Confusion matrix illustrating the performance of LR-BOW-Word model with class weight to deal with data imbalance}
+    \label{fig:egp_confmat_LRBOW}
 \end{figure}
 
 \begin{table}
 \centering
-\caption {Comparison of Precision-Recall - Phase One}
-\begin{tabular}{l|c|c|c}
-Model  &  Precision (\%) &  Recall (\%)  & F1 (\%) \\
+\caption{Comparison of Logistic Regression Performance Using Multiple Feature Extraction Methods}
+\begin{tabular}{|l|c|c|c|} 
 \hline
-Random-Baseline  &  39 (\%) &  39 (\%)  & 39 (\%) \\
-\textbf{BoW-LR-Words}  &  70 (\%) &  \textbf{69} (\%)  & \textbf{69} (\%) \\
-BoW-LR-Masked  &  66 (\%) &  62 (\%)  & 63 (\%) \\
-Tfidf-LR-Words  &  \textbf{75} (\%) &  66 (\%)  & 60 (\%) \\
-Tfidf-LR-Masked  &  66 (\%) &  64 (\%)  & 61 (\%) \\
+Model                  & Precision \%    & Recall \%       & F1 \%            \\ 
 \hline
-
+Random-Baseline        & 39 \%           & 39 \%           & 39 \%            \\ 
+\hline
+\textbf{BOW-LR-Words}  & 70 \%           & \textbf{69} \%  & \textbf{69} \%   \\ 
+\hline
+BOW-LR-Masked          & 66 \%           & 62 \%           & 63 \%            \\ 
+\hline
+TF-IDF-LR-Words        & \textbf{75} \%  & 66 \%           & 60 \%            \\ 
+\hline
+TF-IDF-LR-Masked       & 66 \%           & 64 \%           & 61 \%            \\
+\hline
 \end{tabular}
-\label {tb:flickre2e}
+\label{tb:egp_lr_performance}
 \end{table}
 
-From table 2, we compare the performance of 4 variations of our method against the baseline, which is a random model. Surprisingly, we notice that our bag-of-words model with word tokens (BoW-LR-Words) outperform the one with the masked sequence in terms of precision and recall respectively. Besides, BoW-LR-Words also outperforms (tfidf-LR-words) model in terms of recall only, while the latter has higher recall. From the confusion matrix (fig. 2), we see that (BoW-LR-Words) model predicts most of the testing data correctly even though the number of training data is not equal among the classes, especially for class C. Therefore, we needed to assign specific weights to each class during the training in order to avoid this imbalance in the data. 
+From Table \ref{tb:egp_lr_performance}, we compare the performance of four variations of our method against the baseline, which is a random model. Surprisingly, we notice that our Bag-of-Words model with word tokens (BOW-LR-Words) outperform the one with the masked sequence (BOW-LR-Masked) in terms of precision and recall respectively. Besides, BOW-LR-Words also outperforms (TF-IDF-LR-Words) model in terms of recall only, while the latter has higher recall. From the confusion matrix (Fig. \ref{fig:egp_confmat_LRBOW}), we see that (BOW-LR-Words) model predicts most of the testing data correctly even though the number of training data is not equal among the classes, especially for class C. Therefore, we needed to assign specific weights to each class during the training in order to avoid this imbalance in the data. 
 
 \subsection{Second Phase}
 
-The results shown in Table 2 does indicate that the linear model has learned the associations between sentences and their corresponding grammatical class reasonably well. However, both of our feature design techniques, namely bag-of-words and tfidf have their disadvantages. The first assigns similarity based on occurrence, size and mutual words. For example, the BoW model learns that longer sentences tend to be the most difficult, while shorter ones are less difficult. Similarly, while tfidf treats the drawbacks of BoW model, it still ignores the usefulness of what-so-called \textit{Stop Words} due to their commonality. In other words, it is very hard to trust these results with this amount of training data. Therefore, we propose a non-synthetic data augmentation method to provide more training examples, and thereby improve the overall performance of the model. 
+The results shown in Table \ref{tb:egp_lr_performance} does indicate that the linear model has learned the associations between sentences and their corresponding grammatical class reasonably well. However, both of our feature design techniques, namely BOW and TF-IDF have their disadvantages. The first assigns similarity based on occurrence, size and mutual words. For example, the BOW model learns that longer sentences tend to be the most difficult, while shorter ones are less difficult. Similarly, while TF-IDF treats the drawbacks of BOW model, it still ignores the usefulness of what-so-called \textit{Stop Words} due to their commonality. In other words, it is very hard to trust these results with this amount of training data. Therefore, we propose a non-synthetic data augmentation method to provide more training examples, and thereby improve the overall performance of the model. 
 
-Using a text-only version of the brown corpus \citep{citeulike: 13797746}, we use our BoW-LR-Words model to predict the grammatical difficulty labels of its sentences. Then, we collect the sentences predicted with high certainty (above 0.9 probability) to be fed to the original dataset. It is crucial to set a higher probability threshold as the new data examples will serve as seed points for our prediction in the future, and we do not want the classifier to \textit{drift} from the original trajectory. This technique is reminiscent of Yarawsky's Bootstrapping \citep{yarowsky_unsupervised_1995}(semi-supervised) algorithm, but with one difference is that unlike in Yarawsky's method, we apply this step only once. 
+Using a text-only small version of the Brown Corpus \citep{francis1965standard}, we use our BOW-LR-Words model to predict the grammatical difficulty labels of its sentences. Next, we collect the sentences predicted with high certainty (above 0.9 probability) to be fed into the original dataset. It is crucial to set a higher probability threshold, for the new data examples will serve as seed points for our prediction in the future; we do not want the classifier to \textit{drift} from the original trajectory. \citep{curran2007minimising} This technique is reminiscent of Yarawsky's Bootstrapping \citep{yarowsky_unsupervised_1995}(semi-supervised) algorithm, but with one difference is that unlike in Yarawsky's method, we apply this step only once. 
 
-Out of 38400 sentences in the unlabeled corpus, only 1428 sentences have been detected with certainty above 90\%. We also removed any sentence that is longer than 30 words in order to lessen the undesirable effect of BoW technique. We apply our best model from phase one to the augmented dataset of 5043 examples under the same training conditions to get a precision of \textbf{0.80}, recall of \textbf{0.79}, and F1 score of \textbf{0.79}. 
+Out of 38,400 sentences in the unlabeled corpus, only 1,428 sentences were detected with certainty above 90\%. We also removed any sentence that is longer than 30 words in order to lessen the undesirable effect of BOW technique. We apply our best model from phase one to the augmented dataset of 5,043 examples under the same training conditions to get a precision of \textbf{0.80}, a recall of \textbf{0.79}, and an F1 score of \textbf{0.79}. 
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=.75\linewidth]{../Figures/conf_matrix_iter2.png} 
-    \caption{Confusion matrix illustrating the performance of LR-BoW-Word model after augmentation}
+    \caption{Confusion Matrix Illustrating the Performance of LR-BOW-Word Model after Augmentation}
     \label{fig:cmdstudy}
 \end{figure}
 
 \section {Conclusion}
 \label{sec:conclusion}
-In this chapter, we have presented a classification method based on simple multinomial logistic regression and bag-of-words model augmented with semi-supervised (bootstrapping) method to classify English sentences based on their level difficulty, A=Beginner, B=intermediate, C=Advanced according to CEFR. We have also compared several common feature design techniques to encode the sentences along with a proposed masking BoW method that replaces lexical items with their grammatical category. Finally, the model achieves an overall F1 score of 0.69, and 0.79 after augmenting it with example sentences from an unlabeled corpus.
+In this chapter, we have presented a classification method based on simple multinomial logistic regression and Bag-of-Words model augmented with semi-supervised (Bootstrapping) method to classify English sentences based on their level difficulty level, A=Beginner, B=intermediate, and C=Advanced according to CEFR. We have also compared several common feature design techniques to encode the sentences along with a proposed masking BOW method that replaces lexical items with their grammatical category. Finally, the model achieves an overall F1 score of 0.69, and 0.79 after augmenting it with example sentences from an unlabeled corpus.
