@@ -416,31 +416,6 @@
     \field{year}{2001}
   \endentry
 
-  \entry{firth1957synopsis}{article}{}
-    \name{author}{1}{}{%
-      {{hash=FJR}{%
-         family={Firth},
-         familyi={F\bibinitperiod},
-         given={John\bibnamedelima R},
-         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Basil Blackwell}%
-    }
-    \strng{namehash}{FJR1}
-    \strng{fullhash}{FJR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1957}
-    \field{labeldatesource}{year}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{title}{A synopsis of linguistic theory, 1930-1955}
-    \field{journaltitle}{Studies in linguistic analysis}
-    \field{year}{1957}
-  \endentry
-
   \entry{fuhr1991probabilistic}{article}{}
     \name{author}{2}{}{%
       {{hash=FN}{%
@@ -922,6 +897,38 @@
     \field{year}{1992}
   \endentry
 
+  \entry{liu2012survey}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=LB}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LBZL1}
+    \strng{fullhash}{LBZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Mining text data}
+    \field{pages}{415\bibrangedash 463}
+    \field{title}{A survey of opinion mining and sentiment analysis}
+    \field{year}{2012}
+  \endentry
+
   \entry{manning1999foundations}{book}{}
     \name{author}{2}{}{%
       {{hash=MCD}{%
@@ -952,7 +959,8 @@
     \field{year}{1999}
   \endentry
 
-  \entry{mccallum_comparison_nodate}{article}{}
+  \entry{mccallum1998comparison}{inproceedings}{}
+    \true{moreauthor}
     \name{author}{2}{}{%
       {{hash=MA}{%
          family={McCallum},
@@ -967,39 +975,24 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {en}%
+    \list{organization}{1}{%
+      {Citeseer}%
     }
-    \strng{namehash}{MANK1}
-    \strng{fullhash}{MANK1}
+    \strng{namehash}{MANK+1}
+    \strng{fullhash}{MANK+1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{year}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{abstract}{%
-    Recent approaches to text classiﬁcation have used two diﬀerent
-  ﬁrst-order probabilistic models for classiﬁcation, both of which make the
-  naive Bayes assumption. Some use a multi-variate Bernoulli model, that is, a
-  Bayesian Network with no dependencies between words and binary word features
-  (e.g. Larkey and Croft 1996; Koller and Sahami 1997). Others use a
-  multinomial model, that is, a uni-gram language model with integer word
-  counts (e.g. Lewis and Gale 1994; Mitchell 1997). This paper aims to clarify
-  the confusion by describing the diﬀerences and details of these two models,
-  and by empirically comparing their classiﬁcation performance on ﬁve text
-  corpora. We ﬁnd that the multi-variate Bernoulli performs well with small
-  vocabulary sizes, but that the multinomial performs usually performs even
-  better at larger vocabulary sizes—providing on average a 27\% reduction in
-  error over the multi-variate Bernoulli model at any vocabulary size.%
-    }
-    \field{pages}{8}
-    \field{title}{A {Comparison} of {Event} {Models} for {Naive} {Bayes} {Text}
-  {Classiﬁcation}}
-    \verb{file}
-    \verb McCallum and Nigam - A Comparison of Event Models for Naive Bayes Tex
-    \verb t .pdf:/Users/raghebal-ghezi/Zotero/storage/YTVETFVI/McCallum and Nig
-    \verb am - A Comparison of Event Models for Naive Bayes Text .pdf:applicati
-    \verb on/pdf
-    \endverb
+    \field{booktitle}{AAAI-98 workshop on learning for text categorization}
+    \field{number}{1}
+    \field{pages}{41\bibrangedash 48}
+    \field{title}{A comparison of event models for naive bayes text
+  classification}
+    \field{volume}{752}
+    \field{year}{1998}
   \endentry
 
   \entry{mikolov2013distributed}{inproceedings}{}
@@ -1119,6 +1112,46 @@
     \field{volume}{22}
     \field{journaltitle}{International Journal of Corpus Linguistics}
     \field{year}{2017}
+  \endentry
+
+  \entry{pang2002thumbs}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=PB}{%
+         family={Pang},
+         familyi={P\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Lillian},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vaithyanathan},
+         familyi={V\bibinitperiod},
+         given={Shivakumar},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Association for Computational Linguistics}%
+    }
+    \strng{namehash}{PBLLVS1}
+    \strng{fullhash}{PBLLVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Proceedings of the ACL-02 conference on Empirical methods
+  in natural language processing-Volume 10}
+    \field{pages}{79\bibrangedash 86}
+    \field{title}{Thumbs up?: sentiment classification using machine learning
+  techniques}
+    \field{year}{2002}
   \endentry
 
   \entry{pennington2014glove}{inproceedings}{}
@@ -1459,6 +1492,75 @@
     \field{year}{1948}
   \endentry
 
+  \entry{ets_txt_eval}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SKM}{%
+         family={Sheehan},
+         familyi={S\bibinitperiod},
+         given={Kathleen\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Kostin},
+         familyi={K\bibinitperiod},
+         given={Irene},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=ND}{%
+         family={Napolitano},
+         familyi={N\bibinitperiod},
+         given={Diane},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Flor},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKM+1}
+    \strng{fullhash}{SKMKINDFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    AbstractThis article describes TextEvaluator, a comprehensive text-analysis
+  system designed to help teachers, textbook publishers, test developers, and
+  literacy researchers select reading materials that are consistent with the
+  text-complexity goals outlined in the Common Core State Standards. Three
+  particular aspects of the TextEvaluator measurement approach are highlighted:
+  (1) attending to relevant reader and task considerations, (2) expanding
+  construct coverage beyond the two dimensions of text variation traditionally
+  assessed by readability metrics, and (3) addressing two potential threats to
+  tool validity: genre bias and blueprint bias. We argue that systems that are
+  attentive to these particular measurement issues may be more effective at
+  helping users achieve a key goal of the new Standards: ensuring that students
+  are challenged to read texts at steadily increasing complexity levels as they
+  progress through school, so that all students acquire the advanced reading
+  skills needed for success in college and careers.%
+    }
+    \verb{doi}
+    \verb 10.1086/678294
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1086/678294
+    \endverb
+    \field{number}{2}
+    \field{pages}{184\bibrangedash 209}
+    \field{title}{The TextEvaluator Tool: Helping Teachers and Test Developers
+  Select Texts for Use in Instruction and Assessment}
+    \verb{url}
+    \verb https://doi.org/10.1086/678294
+    \endverb
+    \field{volume}{115}
+    \field{journaltitle}{The Elementary School Journal}
+    \field{year}{2014}
+  \endentry
+
   \entry{singhal1997learning}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=SA}{%
@@ -1528,6 +1630,35 @@
     \field{title}{The power of word clusters for text classification}
     \field{volume}{1}
     \field{year}{2001}
+  \endentry
+
+  \entry{stamatatos2009survey}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SE}{%
+         family={Stamatatos},
+         familyi={S\bibinitperiod},
+         given={Efstathios},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SE1}
+    \strng{fullhash}{SE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{538\bibrangedash 556}
+    \field{title}{A survey of modern authorship attribution methods}
+    \field{volume}{60}
+    \field{journaltitle}{Journal of the American Society for information
+  Science and Technology}
+    \field{year}{2009}
   \endentry
 
   \entry{stenner2006accurate}{article}{}

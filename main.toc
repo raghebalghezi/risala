@@ -19,12 +19,12 @@
 \contentsline {subsection}{\numberline {2.4.3}Optimization}{11}{subsection.36}
 \contentsline {section}{\numberline {2.5}Evaluation Metrics}{11}{section.37}
 \contentsline {subsection}{\numberline {2.5.1}Confusion Matrix}{11}{subsection.38}
-\contentsline {subsection}{\numberline {2.5.2}Precision, Recall and F-Score}{11}{subsection.44}
+\contentsline {subsection}{\numberline {2.5.2}Precision, Recall, and F-Score}{11}{subsection.44}
 \contentsline {section}{\numberline {2.6}Conclusion}{12}{section.45}
 \contentsline {chapter}{\numberline {3}The Use of Semi-supervised Learning in Classification of English Grammatical Structures}{15}{chapter.46}
 \contentsline {section}{\numberline {3.1}Introduction}{15}{section.47}
 \contentsline {section}{\numberline {3.2}Related Works}{16}{section.49}
-\contentsline {section}{\numberline {3.3}Method}{17}{section.50}
+\contentsline {section}{\numberline {3.3}Methods}{17}{section.50}
 \contentsline {subsection}{\numberline {3.3.1}Dataset: English Grammar Profile}{17}{subsection.51}
 \contentsline {subsection}{\numberline {3.3.2}Multinomial Logistic Regression}{18}{subsection.53}
 \contentsline {subsection}{\numberline {3.3.3}Feature Design}{19}{subsection.55}

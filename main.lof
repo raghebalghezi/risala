@@ -5,7 +5,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Supervised Classification Learning Workflow}}{4}{figure.caption.14}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Confusion Matrix Example\relax }}{12}{figure.caption.43}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 2d projection of the three classes A, B and C using K-means Clustering and PCA\relax }}{18}{figure.caption.52}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Two Dimensional Projection of classes A, B and C using K-means Clustering and Principal Component Analysis\relax }}{18}{figure.caption.52}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model with class weight to deal with data imbalance\relax }}{20}{figure.caption.58}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Confusion matrix illustrating the performance of LR-BoW-Word model after augmentation\relax }}{22}{figure.caption.61}
 \addvspace {10\p@ }
