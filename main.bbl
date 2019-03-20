@@ -17,6 +17,66 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
+  \entry{BahdanauBJGVB17}{article}{}
+    \name{author}{6}{}{%
+      {{hash=BD}{%
+         family={Bahdanau},
+         familyi={B\bibinitperiod},
+         given={Dzmitry},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Bosc},
+         familyi={B\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jastrzebski},
+         familyi={J\bibinitperiod},
+         given={Stanislaw},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Grefenstette},
+         familyi={G\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=VP}{%
+         family={Vincent},
+         familyi={V\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDBTJSGEVPBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{eprint}
+    \verb 1706.00286
+    \endverb
+    \field{title}{Learning to Compute Word Embeddings On the Fly}
+    \verb{url}
+    \verb http://arxiv.org/abs/1706.00286
+    \endverb
+    \field{volume}{abs/1706.00286}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+  \endentry
+
   \entry{baker1998distributional}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=BLD}{%
@@ -283,6 +343,86 @@
     \field{urlday}{09}
     \field{urlmonth}{12}
     \field{urlyear}{2018}
+  \endentry
+
+  \entry{chen2018neural}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=CD}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Danqi},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CD1}
+    \strng{fullhash}{CD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Neural Reading Comprehension and Beyond}
+    \list{institution}{1}{%
+      {Stanford University}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2018}
+  \endentry
+
+  \entry{ConneauKSBB17}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CA}{%
+         family={Conneau},
+         familyi={C\bibinitperiod},
+         given={Alexis},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kiela},
+         familyi={K\bibinitperiod},
+         given={Douwe},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Schwenk},
+         familyi={S\bibinitperiod},
+         given={Holger},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Barrault},
+         familyi={B\bibinitperiod},
+         given={Lo{\"{\i}}c},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bordes},
+         familyi={B\bibinitperiod},
+         given={Antoine},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CA+1}
+    \strng{fullhash}{CAKDSHBLBA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1705.02364
+    \endverb
+    \field{title}{Supervised Learning of Universal Sentence Representations
+  from Natural Language Inference Data}
+    \verb{url}
+    \verb http://arxiv.org/abs/1705.02364
+    \endverb
+    \field{volume}{abs/1705.02364}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
   \endentry
 
   \entry{curran2007minimising}{inproceedings}{}
@@ -851,6 +991,42 @@
     \field{title}{Flesch-Kincaid Grade Level}
     \field{journaltitle}{Memphis: United States Navy}
     \field{year}{1975}
+  \endentry
+
+  \entry{Kitaev2018}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KN}{%
+         family={Kitaev},
+         familyi={K\bibinitperiod},
+         given={Nikita},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KNKD1}
+    \strng{fullhash}{KNKD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{eprint}
+    \verb 1805.01052
+    \endverb
+    \field{title}{Constituency Parsing with a Self-Attentive Encoder}
+    \verb{url}
+    \verb http://arxiv.org/abs/1805.01052
+    \endverb
+    \field{volume}{abs/1805.01052}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
   \endentry
 
   \entry{landauer2011word}{article}{}
@@ -1951,6 +2127,42 @@
     \field{year}{2017}
   \endentry
 
+  \entry{WangJ16a}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Shuohang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WSJJ1}
+    \strng{fullhash}{WSJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{eprint}
+    \verb 1608.07905
+    \endverb
+    \field{title}{Machine Comprehension Using Match-LSTM and Answer Pointer}
+    \verb{url}
+    \verb http://arxiv.org/abs/1608.07905
+    \endverb
+    \field{volume}{abs/1608.07905}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+  \endentry
+
   \entry{DBLP:journals/corr/abs-1811-11934}{article}{}
     \name{author}{3}{}{%
       {{hash=WW}{%
@@ -2050,6 +2262,48 @@
     \field{urlday}{09}
     \field{urlmonth}{12}
     \field{urlyear}{2018}
+  \endentry
+
+  \entry{XiongZS16}{article}{}
+    \name{author}{3}{}{%
+      {{hash=XC}{%
+         family={Xiong},
+         familyi={X\bibinitperiod},
+         given={Caiming},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZV}{%
+         family={Zhong},
+         familyi={Z\bibinitperiod},
+         given={Victor},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Socher},
+         familyi={S\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XCZVSR1}
+    \strng{fullhash}{XCZVSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \verb{eprint}
+    \verb 1611.01604
+    \endverb
+    \field{title}{Dynamic Coattention Networks For Question Answering}
+    \verb{url}
+    \verb http://arxiv.org/abs/1611.01604
+    \endverb
+    \field{volume}{abs/1611.01604}
+    \field{journaltitle}{CoRR}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
   \endentry
 
   \entry{Yang1999ARO}{inproceedings}{}

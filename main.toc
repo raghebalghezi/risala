@@ -35,17 +35,17 @@
 \contentsline {chapter}{\numberline {4}Two-stage Classification Method for Automatic Reading Comprehension }{23}{chapter.63}
 \contentsline {section}{\numberline {4.1}Introduction}{23}{section.64}
 \contentsline {section}{\numberline {4.2}Related Work}{24}{section.65}
-\contentsline {section}{\numberline {4.3}Stage One: Selecting Best Candidate Sentence}{25}{section.66}
+\contentsline {section}{\numberline {4.3}Stage One: Selecting the Best Candidate Sentence}{25}{section.66}
 \contentsline {subsection}{\numberline {4.3.1}Feature Extraction}{25}{subsection.68}
 \contentsline {subsection}{\numberline {4.3.2}Training and Result}{27}{subsection.69}
 \contentsline {section}{\numberline {4.4}Stage Two: Predicting the Answer Span}{29}{section.72}
-\contentsline {section}{\numberline {4.5}Experiment and Error Analysis}{29}{section.73}
-\contentsline {section}{\numberline {4.6}Future Studies and Recommendation}{30}{section.74}
-\contentsline {section}{\numberline {4.7}Conclusion}{31}{section.75}
-\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.76}
-\contentsline {section}{\numberline {5.1}Summary of Contributions}{34}{section.77}
-\contentsline {section}{\numberline {5.2}Recommendations and Future Work}{34}{section.78}
-\contentsline {chapter}{\numberline {A}Auxiliary Functions for Codes in Ch3\&4}{35}{appendix.79}
-\contentsline {chapter}{\numberline {B}Complete Code for Grammatical Detection System}{39}{appendix.259}
-\contentsline {chapter}{\numberline {C}Complete Code for Automatic Reading Comprehension}{43}{appendix.401}
-\contentsline {chapter}{Bibliography}{51}{appendix*.760}
+\contentsline {section}{\numberline {4.5}Experiment and Error Analysis}{30}{section.74}
+\contentsline {section}{\numberline {4.6}Future Studies and Recommendations}{32}{section.76}
+\contentsline {section}{\numberline {4.7}Conclusion}{32}{section.77}
+\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.78}
+\contentsline {section}{\numberline {5.1}Summary of Contributions}{34}{section.79}
+\contentsline {section}{\numberline {5.2}Recommendations and Future Work}{34}{section.80}
+\contentsline {chapter}{\numberline {A}Auxiliary Functions for Codes in Ch3\&4}{35}{appendix.81}
+\contentsline {chapter}{\numberline {B}Complete Code for Grammatical Detection System}{39}{appendix.261}
+\contentsline {chapter}{\numberline {C}Complete Code for Automatic Reading Comprehension}{43}{appendix.403}
+\contentsline {chapter}{Bibliography}{51}{appendix*.762}

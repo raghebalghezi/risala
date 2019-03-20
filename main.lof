@@ -10,7 +10,10 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Confusion Matrix Illustrating the Performance of LR-BOW-Word Model after Augmentation\relax }}{22}{figure.caption.61}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Flowchart illustrating the two-stage classification approach\relax }}{26}{figure.caption.67}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Confusion matrix shows which classes were predicted correctly\relax }}{28}{figure.caption.70}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Confusion matrix shows which classes were predicted correctly in Stage One\relax }}{28}{figure.caption.70}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of Constituency Parse Tree\relax }}{29}{figure.caption.73}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Confusion Matrix Illustrating the Prediction of Answer Span - First Attempt\relax }}{31}{figure.caption.75}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Confusion Matrix Illustrating the Prediction of Answer Span - Second Attempt\relax }}{31}{figure.caption.75}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
