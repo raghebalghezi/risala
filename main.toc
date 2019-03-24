@@ -12,40 +12,40 @@
 \contentsline {section}{\numberline {2.3}Feature Extraction}{4}{section.15}
 \contentsline {subsection}{\numberline {2.3.1}Frequency-based Methods}{4}{subsection.16}
 \contentsline {subsection}{\numberline {2.3.2}Dimensionality reduction}{7}{subsection.22}
-\contentsline {subsection}{\numberline {2.3.3}Distributional Method}{8}{subsection.31}
-\contentsline {section}{\numberline {2.4}Logistic Regression}{8}{section.32}
-\contentsline {subsection}{\numberline {2.4.1}Classification Functions}{9}{subsection.34}
-\contentsline {subsection}{\numberline {2.4.2}Objective Functions}{10}{subsection.35}
-\contentsline {subsection}{\numberline {2.4.3}Optimization}{11}{subsection.36}
-\contentsline {section}{\numberline {2.5}Evaluation Metrics}{11}{section.37}
-\contentsline {subsection}{\numberline {2.5.1}Confusion Matrix}{11}{subsection.38}
-\contentsline {subsection}{\numberline {2.5.2}Precision, Recall, and F-Score}{11}{subsection.44}
-\contentsline {section}{\numberline {2.6}Conclusion}{12}{section.45}
-\contentsline {chapter}{\numberline {3}The Use of Semi-supervised Learning in Classification of English Grammatical Structures}{15}{chapter.46}
-\contentsline {section}{\numberline {3.1}Introduction}{15}{section.47}
-\contentsline {section}{\numberline {3.2}Related Works}{16}{section.49}
-\contentsline {section}{\numberline {3.3}Methods}{17}{section.50}
-\contentsline {subsection}{\numberline {3.3.1}Dataset: English Grammar Profile}{17}{subsection.51}
-\contentsline {subsection}{\numberline {3.3.2}Multinomial Logistic Regression}{18}{subsection.53}
-\contentsline {subsection}{\numberline {3.3.3}Feature Design}{19}{subsection.55}
-\contentsline {section}{\numberline {3.4}Experimental Results}{19}{section.56}
-\contentsline {subsection}{\numberline {3.4.1}First Phase}{19}{subsection.57}
-\contentsline {subsection}{\numberline {3.4.2}Second Phase}{21}{subsection.60}
-\contentsline {section}{\numberline {3.5}Conclusion}{21}{section.62}
-\contentsline {chapter}{\numberline {4}Two-stage Classification Method for Automatic Reading Comprehension }{23}{chapter.63}
-\contentsline {section}{\numberline {4.1}Introduction}{23}{section.64}
-\contentsline {section}{\numberline {4.2}Related Work}{24}{section.65}
-\contentsline {section}{\numberline {4.3}Stage One: Selecting the Best Candidate Sentence}{25}{section.66}
-\contentsline {subsection}{\numberline {4.3.1}Feature Extraction}{25}{subsection.68}
-\contentsline {subsection}{\numberline {4.3.2}Training and Result}{27}{subsection.69}
-\contentsline {section}{\numberline {4.4}Stage Two: Predicting the Answer Span}{29}{section.72}
-\contentsline {section}{\numberline {4.5}Experiment and Error Analysis}{30}{section.74}
-\contentsline {section}{\numberline {4.6}Future Studies and Recommendations}{32}{section.76}
-\contentsline {section}{\numberline {4.7}Conclusion}{32}{section.77}
-\contentsline {chapter}{\numberline {5}Conclusion}{33}{chapter.78}
-\contentsline {section}{\numberline {5.1}Summary of Contributions}{34}{section.79}
-\contentsline {section}{\numberline {5.2}Recommendations and Future Work}{34}{section.80}
-\contentsline {chapter}{\numberline {A}Auxiliary Functions for Codes in Ch3\&4}{35}{appendix.81}
-\contentsline {chapter}{\numberline {B}Complete Code for Grammatical Detection System}{39}{appendix.261}
-\contentsline {chapter}{\numberline {C}Complete Code for Automatic Reading Comprehension}{43}{appendix.403}
-\contentsline {chapter}{Bibliography}{51}{appendix*.762}
+\contentsline {subsection}{\numberline {2.3.3}Distributional Method}{8}{subsection.23}
+\contentsline {section}{\numberline {2.4}Logistic Regression}{8}{section.24}
+\contentsline {subsection}{\numberline {2.4.1}Classification Functions}{9}{subsection.26}
+\contentsline {subsection}{\numberline {2.4.2}Objective Functions}{10}{subsection.27}
+\contentsline {subsection}{\numberline {2.4.3}Optimization}{11}{subsection.28}
+\contentsline {section}{\numberline {2.5}Evaluation Metrics}{11}{section.29}
+\contentsline {subsection}{\numberline {2.5.1}Confusion Matrix}{11}{subsection.30}
+\contentsline {subsection}{\numberline {2.5.2}Precision, Recall, and F-Score}{11}{subsection.36}
+\contentsline {section}{\numberline {2.6}Conclusion}{12}{section.37}
+\contentsline {chapter}{\numberline {3}The Use of Semi-supervised Learning in Classification of English Grammatical Structures}{13}{chapter.38}
+\contentsline {section}{\numberline {3.1}Introduction}{13}{section.39}
+\contentsline {section}{\numberline {3.2}Related Works}{14}{section.41}
+\contentsline {section}{\numberline {3.3}Methods}{15}{section.42}
+\contentsline {subsection}{\numberline {3.3.1}Dataset: English Grammar Profile}{15}{subsection.43}
+\contentsline {subsection}{\numberline {3.3.2}Multinomial Logistic Regression}{16}{subsection.45}
+\contentsline {subsection}{\numberline {3.3.3}Feature Design}{17}{subsection.47}
+\contentsline {section}{\numberline {3.4}Experimental Results}{17}{section.48}
+\contentsline {subsection}{\numberline {3.4.1}First Phase}{17}{subsection.49}
+\contentsline {subsection}{\numberline {3.4.2}Second Phase}{19}{subsection.52}
+\contentsline {section}{\numberline {3.5}Conclusion}{19}{section.54}
+\contentsline {chapter}{\numberline {4}Two-stage Classification Method for Automatic Reading Comprehension }{21}{chapter.55}
+\contentsline {section}{\numberline {4.1}Introduction}{21}{section.56}
+\contentsline {section}{\numberline {4.2}Related Work}{22}{section.57}
+\contentsline {section}{\numberline {4.3}Stage One: Selecting the Best Candidate Sentence}{23}{section.58}
+\contentsline {subsection}{\numberline {4.3.1}Feature Extraction}{23}{subsection.60}
+\contentsline {subsection}{\numberline {4.3.2}Training and Result}{25}{subsection.61}
+\contentsline {section}{\numberline {4.4}Stage Two: Predicting the Answer Span}{27}{section.64}
+\contentsline {section}{\numberline {4.5}Experiment and Error Analysis}{28}{section.66}
+\contentsline {section}{\numberline {4.6}Future Studies and Recommendations}{30}{section.68}
+\contentsline {section}{\numberline {4.7}Conclusion}{30}{section.69}
+\contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.70}
+\contentsline {section}{\numberline {5.1}Summary of Contributions}{32}{section.71}
+\contentsline {section}{\numberline {5.2}Recommendations and Future Work}{32}{section.72}
+\contentsline {chapter}{\numberline {A}Auxiliary Functions for Codes in Ch3\&4}{33}{appendix.73}
+\contentsline {chapter}{\numberline {B}Complete Code for Grammatical Detection System}{37}{appendix.253}
+\contentsline {chapter}{\numberline {C}Complete Code for Automatic Reading Comprehension}{41}{appendix.395}
+\contentsline {chapter}{Bibliography}{49}{appendix*.754}

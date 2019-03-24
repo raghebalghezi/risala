@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 MAR 2019 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  24 MAR 2019 08:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1888,39 +1888,36 @@ Package pdftex.def Info: Figures/../Figures/mlpipeline.png  used on input line
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 55.
- [4 <./Figures/../Figures/mlpipeline.png>] [5] [6]
-(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [7]
-[8]
+ [4 <./Figures/../Figures/mlpipeline.png>] [5] [6] [7]
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 229.
 
- (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
- [9]
+ [8] [9]
 [10]
-<Figures/../Figures/Confuse_Mat_Example.png, id=464, 586.69188pt x 451.18562pt>
+<Figures/../Figures/Confuse_Mat_Example.png, id=455, 586.69188pt x 451.18562pt>
 
 File: Figures/../Figures/Confuse_Mat_Example.png Graphic file (type png)
 <use Figures/../Figures/Confuse_Mat_Example.png>
 Package pdftex.def Info: Figures/../Figures/Confuse_Mat_Example.png  used on in
 put line 304.
 (pdftex.def)             Requested size: 293.34521pt x 225.59225pt.
- [11]) [12 <./Figures/../Figures/Confuse_Mat_Example.png>] [13]
+ [11]) [12 <./Figures/../Figures/Confuse_Mat_Example.png>]
 \openout2 = `Chapters/Chapter3.aux'.
 
 
-(./Chapters/Chapter3.tex [14
+(./Chapters/Chapter3.tex
+Chapter 3.
+1: section
+[13
 
 
 
 ]
-Chapter 3.
-1: section
-[15]
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -1936,34 +1933,34 @@ Package scrlayer-scrpage Warning: \headheight to low.
 Overfull \vbox (8.34636pt too high) has occurred while \output is active []
 
 
-[16] [17]
-<Figures/../Figures/pca_proj.png, id=552, 384.43625pt x 252.945pt>
+[14] [15]
+<Figures/../Figures/pca_proj.png, id=535, 384.43625pt x 252.945pt>
 File: Figures/../Figures/pca_proj.png Graphic file (type png)
 <use Figures/../Figures/pca_proj.png>
 Package pdftex.def Info: Figures/../Figures/pca_proj.png  used on input line 89
 .
 (pdftex.def)             Requested size: 315.61215pt x 207.67484pt.
- [18 <./Figures/../Figures/pca_proj.png>]
+ [16 <./Figures/../Figures/pca_proj.png>]
 Overfull \hbox (14.12315pt too wide) in paragraph at lines 106--107
 []\T1/ppl/m/n/10.95 To ap-ply the Newton-Raphson method, we need the sec-ond de
 riva-tive of the log-likelihood
  []
 
-[19]
-<Figures/../Figures/conf_matrix_iter1.png, id=564, 315.1775pt x 281.05pt>
+[17]
+<Figures/../Figures/conf_matrix_iter1.png, id=548, 315.1775pt x 281.05pt>
 File: Figures/../Figures/conf_matrix_iter1.png Graphic file (type png)
 <use Figures/../Figures/conf_matrix_iter1.png>
 Package pdftex.def Info: Figures/../Figures/conf_matrix_iter1.png  used on inpu
 t line 147.
 (pdftex.def)             Requested size: 315.61215pt x 281.45241pt.
- [20 <./Figures/../Figures/conf_matrix_iter1.png>]
-<Figures/../Figures/conf_matrix_iter2.png, id=578, 315.1775pt x 281.05pt>
+ [18 <./Figures/../Figures/conf_matrix_iter1.png>]
+<Figures/../Figures/conf_matrix_iter2.png, id=562, 315.1775pt x 281.05pt>
 File: Figures/../Figures/conf_matrix_iter2.png Graphic file (type png)
 <use Figures/../Figures/conf_matrix_iter2.png>
 Package pdftex.def Info: Figures/../Figures/conf_matrix_iter2.png  used on inpu
 t line 187.
 (pdftex.def)             Requested size: 315.61215pt x 281.45241pt.
-) [21] [22 <./Figures/../Figures/conf_matrix_iter2.png>]
+) [19] [20 <./Figures/../Figures/conf_matrix_iter2.png>]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
@@ -1973,12 +1970,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-
-LaTeX Warning: Reference `fig:arc-flowchart' on page 23 undefined on input line
- 13.
-
 1: section
-[23
+[21
 
 
 
@@ -2003,19 +1996,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[24]
-<Figures/../Figures/Flowchart.pdf, id=623, 208.78pt x 451.6875pt>
+[22]
+<Figures/../Figures/Flowchart.pdf, id=607, 208.78pt x 451.6875pt>
 File: Figures/../Figures/Flowchart.pdf Graphic file (type pdf)
 <use Figures/../Figures/Flowchart.pdf>
 Package pdftex.def Info: Figures/../Figures/Flowchart.pdf  used on input line 4
 3.
 (pdftex.def)             Requested size: 208.77946pt x 451.68639pt.
- [25] [26 <./Figures/../Figures/Flowchart.pdf>]
+ [23] [24 <./Figures/../Figures/Flowchart.pdf>]
 
-LaTeX Warning: Reference `table:mlr-stage1' on page 27 undefined on input line 
+LaTeX Warning: Reference `table:mlr-stage1' on page 25 undefined on input line 
 64.
 
-<Figures/Figure_1.png, id=653, 462.528pt x 346.896pt>
+<Figures/Figure_1.png, id=638, 462.528pt x 346.896pt>
 File: Figures/Figure_1.png Graphic file (type png)
 <use Figures/Figure_1.png>
 Package pdftex.def Info: Figures/Figure_1.png  used on input line 67.
@@ -2025,14 +2018,14 @@ Overfull \hbox (41.71065pt too wide) in paragraph at lines 67--68
  [][] 
  []
 
-[27] [28 <./Figures/Figure_1.png>]
-<Figures/../Figures/syntax_tree_example.png, id=663, 1208.515pt x 801.99625pt>
+[25] [26 <./Figures/Figure_1.png>]
+<Figures/../Figures/syntax_tree_example.png, id=648, 1208.515pt x 801.99625pt>
 File: Figures/../Figures/syntax_tree_example.png Graphic file (type png)
 <use Figures/../Figures/syntax_tree_example.png>
 Package pdftex.def Info: Figures/../Figures/syntax_tree_example.png  used on in
 put line 119.
 (pdftex.def)             Requested size: 241.69872pt x 160.39641pt.
- [29 <./Figures/../Figures/syntax_tree_example.png>]
+ [27 <./Figures/../Figures/syntax_tree_example.png>]
 
 ! LaTeX Error: Environment subfigure undefined.
 
@@ -2067,7 +2060,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Figures/../Figures/confmat_stg2a.pdf, id=675, 433.62pt x 289.08pt>
+<Figures/../Figures/confmat_stg2a.pdf, id=659, 433.62pt x 289.08pt>
 File: Figures/../Figures/confmat_stg2a.pdf Graphic file (type pdf)
 <use Figures/../Figures/confmat_stg2a.pdf>
 Package pdftex.def Info: Figures/../Figures/confmat_stg2a.pdf  used on input li
@@ -2120,7 +2113,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Figures/../Figures/confmat_stg2b.pdf, id=676, 433.62pt x 289.08pt>
+<Figures/../Figures/confmat_stg2b.pdf, id=660, 433.62pt x 289.08pt>
 File: Figures/../Figures/confmat_stg2b.pdf Graphic file (type pdf)
 <use Figures/../Figures/confmat_stg2b.pdf>
 Package pdftex.def Info: Figures/../Figures/confmat_stg2b.pdf  used on input li
@@ -2145,27 +2138,30 @@ Overfull \hbox (4.44382pt too wide) in paragraph at lines 160--162
 e-tween the ques-tions and phrases.
  []
 
-[30] [31 <./Figures/../Figures/confmat_stg2a.pdf> <./Figures/../Figures/confmat
+[28] [29 <./Figures/../Figures/confmat_stg2a.pdf> <./Figures/../Figures/confmat
 _stg2b.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/../Figures/confmat
 _stg2b.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->]) [32]
+>]) [30]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex
 Chapter 5.
 1: section
-[33
+[31
 
 
 
-]) [34]
+]) [32]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (./Appendices/AppendixA.tex
 Appendix A.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 (./Appendices/aux_functions.py
 LaTeX Font Info:    Font shape `OMS/ppl/m/it' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
@@ -2173,7 +2169,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 8.
 
 1: section
-[35
+[33
 
 
 
@@ -2188,7 +2184,7 @@ Overfull \hbox (156.98967pt too wide) in paragraph at lines 94--95
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[36]
+[34]
 Overfull \hbox (248.7906pt too wide) in paragraph at lines 110--112
 [][][][][][][] 
  []
@@ -2198,7 +2194,7 @@ Overfull \hbox (27.38835pt too wide) in paragraph at lines 146--147
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[37]
+[35]
 Overfull \hbox (32.7884pt too wide) in paragraph at lines 158--159
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2208,7 +2204,7 @@ Overfull \hbox (0.38808pt too wide) in paragraph at lines 169--170
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [38]
+)) [36]
 \openout2 = `Appendices/AppendixB.aux'.
 
  (./Appendices/AppendixB.tex
@@ -2241,7 +2237,7 @@ Overfull \hbox (48.98857pt too wide) in paragraph at lines 38--39
  []
 
 1: section
-[39
+[37
 
 
 
@@ -2290,7 +2286,7 @@ Overfull \hbox (43.58852pt too wide) in paragraph at lines 84--86
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[40]
+[38]
 Overfull \hbox (27.38835pt too wide) in paragraph at lines 100--102
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
@@ -2333,10 +2329,10 @@ Overfull \hbox (156.98967pt too wide) in paragraph at lines 137--138
 ][][][] 
  []
 
-)) [41]
+)) [39]
 \openout2 = `Appendices/AppendixC.aux'.
 
- (./Appendices/AppendixC.tex [42
+ (./Appendices/AppendixC.tex [40
 
 
 
@@ -2348,7 +2344,7 @@ Overfull \hbox (70.58879pt too wide) in paragraph at lines 37--38
  []
 
 1: section
-[43]
+[41]
 Overfull \hbox (140.7895pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2373,7 +2369,7 @@ Overfull \hbox (124.58934pt too wide) in paragraph at lines 68--69
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[44]
+[42]
 Overfull \hbox (135.38945pt too wide) in paragraph at lines 124--126
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
@@ -2410,7 +2406,7 @@ Overfull \hbox (27.38835pt too wide) in paragraph at lines 143--145
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (./Appendices/ch4_stage1.py [45]
+) (./Appendices/ch4_stage1.py [43]
 Overfull \hbox (27.38835pt too wide) in paragraph at lines 23--25
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2425,7 +2421,7 @@ Overfull \hbox (32.7884pt too wide) in paragraph at lines 29--30
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[46]
+[44]
 Overfull \hbox (178.58989pt too wide) in paragraph at lines 67--68
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2466,7 +2462,7 @@ Overfull \hbox (119.18929pt too wide) in paragraph at lines 40--41
 ] 
  []
 
-[47]
+[45]
 Overfull \hbox (124.58934pt too wide) in paragraph at lines 45--46
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
@@ -2487,7 +2483,7 @@ Overfull \hbox (129.9894pt too wide) in paragraph at lines 88--91
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[48]
+[46]
 Overfull \hbox (86.78896pt too wide) in paragraph at lines 127--128
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2497,7 +2493,7 @@ Overfull \hbox (27.38835pt too wide) in paragraph at lines 133--13
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [49] [50
+) [47] [48
 
 
 ]
@@ -2512,7 +2508,7 @@ Overfull \hbox (3.84111pt too wide) in paragraph at lines 296--296
  []
 
 1: section
-[51] [52]
+[49] [50]
 Overfull \hbox (11.08205pt too wide) in paragraph at lines 296--296
 [][]\T1/ppl/m/n/10.95 Rocchio, Joseph John (1971). ^^P  Rel-e-vance feed-back i
 n in-for-ma-tion re-trieval^^Q. In: \T1/ppl/m/it/10.95 The SMART
@@ -2524,14 +2520,14 @@ Overfull \hbox (4.7891pt too wide) in paragraph at lines 296--296
 to em-pir-i-cally es-ti-mate term weights
  []
 
-[53]
+[51]
 Overfull \hbox (38.64131pt too wide) in paragraph at lines 296--296
 \T1/ppl/m/n/10.95 sion net-works for read-ing com-pre-hen-sion and ques-tion an
 -swer-ing^^Q. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1811.11934.
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
-[54]
+[52]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
@@ -2540,7 +2536,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 56050B6FC5DFFC9A1F721641066667C6;8366.
+(rerunfilecheck)             Checksum: 80973EBA7E630788486810D6EE644318;8366.
 
 
 LaTeX Warning: There were undefined references.
@@ -2553,13 +2549,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38785 strings out of 492649
- 765540 string characters out of 6129622
- 1191263 words of memory out of 5000000
- 41287 multiletter control sequences out of 15000+600000
+ 38767 strings out of 492649
+ 765335 string characters out of 6129622
+ 1190263 words of memory out of 5000000
+ 41279 multiletter control sequences out of 15000+600000
  602306 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,21n,84p,10377b,3608s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,21n,84p,10377b,3677s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
@@ -2575,10 +2571,10 @@ s/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/p
 alatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino
 /uplri8a.pfb>
-Output written on main.pdf (68 pages, 957785 bytes).
+Output written on main.pdf (66 pages, 956515 bytes).
 PDF statistics:
- 1843 PDF objects out of 2073 (max. 8388607)
- 1644 compressed objects within 17 object streams
- 886 named destinations out of 1000 (max. 500000)
+ 1825 PDF objects out of 2073 (max. 8388607)
+ 1628 compressed objects within 17 object streams
+ 876 named destinations out of 1000 (max. 500000)
  448 words of extra memory for PDF output out of 10000 (max. 10000000)
 

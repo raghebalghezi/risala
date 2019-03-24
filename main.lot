@@ -2,12 +2,12 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Bag-of-words feature example\relax }}{5}{table.caption.20}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Bag-of-Words Feature Vectorization Example\relax }}{5}{table.caption.20}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Example of CEFR Grammatical Rules\relax }}{16}{table.caption.48}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of Logistic Regression Performance Using Multiple Feature Extraction Methods\relax }}{20}{table.caption.59}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Example of CEFR Grammatical Rules\relax }}{14}{table.caption.40}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of Logistic Regression Performance Using Multiple Feature Extraction Methods\relax }}{18}{table.caption.51}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces This table shows the results of running a multinomial regularized logistic regression. The class column represents the index of sentences within the paragraph, and -1 represents the unanswerable question case. Unpredicted classes are removed.\relax }}{27}{table.caption.71}
+\contentsline {table}{\numberline {4.1}{\ignorespaces This table shows the results of running a multinomial regularized logistic regression. The class column represents the index of sentences within the paragraph, and -1 represents the unanswerable question case. Unpredicted classes are removed.\relax }}{25}{table.caption.63}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

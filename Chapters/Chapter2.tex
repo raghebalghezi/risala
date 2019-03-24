@@ -73,7 +73,7 @@ the document.  To illustrate, the BOW vector representations of a data set of tw
 
 \begin{table}
 \centering
-\caption {Bag-of-words feature example}
+\caption {Bag-of-Words Feature Vectorization Example}
 \begin{tabular}{l|l|l|l|l|l|l|l|l|l|l}
  & the & apple & is & better & than & orange & summer & winter \\
 Vector 1 & 2 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\
@@ -199,22 +199,22 @@ There are a number of linguistic and non-linguistic ways to reduce the number of
 
 In some cases, we may need to treat morphologically variant words similarly. For example, words such as play, player, players, plays, and played will be replaced by \emph{play}. Lemmatization and stemming are the two techniques used to find the canonical form of a word. Lemmatization uses a knowledge base containing the different inflected forms corresponding to the different possible lemmas. Thus, the inflected forms of a noun will be replaced by the singular masculine form while the infinitive form will replace the different inflected forms of a verb. Lemmatization requires the use of a dictionary of inflected forms of language as well as a grammar labeler. Stemming uses a knowledge base of syntactic and morphological rules and to transform words into their roots. One of the most well-known stemming algorithms for the English language is Porter's algorithm \citep{porter1980algorithm}. Lemmatization is more complicated to implement since it depends on the grammatical labelers. In addition, it is more sensitive to misspellings than stemming.
 
-\begin{lstlisting}[language=Python, caption=An example of simple Stemmer Written in Python]
-def stem(word):
-    Suffix_list = ["ing","ly","ed","ious",\
-                "ies","ive","es","s","ment"]
-    for suffix in Suffix_list:
-        if word.endswith(suffix):
-            return word[:-len(suffix)]
-    return word
-\end{lstlisting}
+%\begin{lstlisting}[language=Python, caption=An example of simple Stemmer Written in Python]
+%def stem(word):
+%    Suffix_list = ["ing","ly","ed","ious",\
+%                "ies","ive","es","s","ment"]
+%    for suffix in Suffix_list:
+%        if word.endswith(suffix):
+%            return word[:-len(suffix)]
+%    return word
+%\end{lstlisting}
 
 Dimensionality reduction can also be done using probabilistic and linear algebraic techniques such as principal component analysis (PCA) and linear discriminant analysis (LDA) that aim to project highly dimensional data into lower dimension space. However, we limit the discussion to only two methods: clustering and Latent Semantic Allocation. 
 
 Clustering \citep{baker1998distributional, sable2001using, slonim2001power} can be used to reduce dimensionality. It consists of representing the documents in a new representation space other than the original one — each dimension of the new representation space groups terms that share the same meaning. Thus, the documents will no longer be represented by terms but rather by groupings of terms representing semantic concepts. This new space of representation offers the advantage of managing the synonymy since the synonymous terms will appear in the same groupings. Likewise, the fact that a term can be included in several groupings also makes it possible to manage the polysemy. Another exciting method to reduce dimensionality, proposed by \cite{deerwester1990indexing} is Latent Semantic Allocation (LSA). It uses singular value decomposition of the document's $x$ term matrix to change the representation by keeping only the $k$ axes of the strongest singular values. However, LSA is very expensive in terms of calculation time during learning as it relies on a matrix factorization method called Singular Value Decomposition (SVD), which runs computationally in cubic size. Likewise, with each new document, it is necessary to redo the whole grouping process.
 
 \subsection{Distributional Method}
-An alternative approach for text representation in natural language of processing is the distributional similarity, which represents the meaning of a word using words that co-occur in the same context. For example, the words 'dog' and 'cat' have the same meaning in the following two sentences: \emph{I have a cat}; \emph{I have a dog}. While this idea might not be adequate to capture or account for the complexity or the sophistication of human language, it has succeeded tremendously in a variety of lexicalized NLP tasks. It has become the de facto representation method of text. The need for such a method does not only come from the need for more accurate numerical representation, but its density compared to other methods makes it less computationally expensive. Word2Vec \citep{mikolov2013distributed} and GloVe \citep{pennington2014glove} are two famous algorithms for creating word embedding. 
+An alternative approach for text representation in natural language of processing is distributional similarity, which represents the meaning of a word using words that co-occur in the same context. For example, the words 'dog' and 'cat' have the same meaning in the following two sentences: \emph{I have a cat}; \emph{I have a dog}. While this idea might not be adequate to capture or account for the complexity or the sophistication of human language, it has succeeded tremendously in a variety of lexicalized NLP tasks. It has become the de facto representation method of text. The need for such a method does not only come from the need for more accurate numerical representation, but its density compared to other methods makes it less computationally expensive. Word2Vec \citep{mikolov2013distributed} and GloVe \citep{pennington2014glove} are two famous algorithms for creating word embedding. 
 
 The intuition of word2vec is to train a classifier on a binary prediction task: “Is
 word $w$ likely to show up near X?”, where $X$ is the word to which we want to find embeddings. Then, we use the weights learned by the classifier as embeddings. Skip-gram algorithm \citep{mikolov2013distributed} , first, initializes embeddings randomly. Then, it iteratively updates the embeddings of each word $w$ to be equal to the words they occur within the same context. Finally, it injects a, $k$, number of non-neighbor words as negative examples. 
