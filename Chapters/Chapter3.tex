@@ -12,7 +12,7 @@ Common European Framework Reference (CEFR) is a standard for describing language
 
 The English Grammar Profile (EGP) \citep{o2017english} is a finite list of (1222) grammar features compiled from the Cambridge Learner Corpus, which comprises over 250,000 scripts from Cambridge English Exams at all levels. The purpose of EGP is to establish which grammatical features characterizes learners' output at each level of CEFR. \citep{o2017english} The list contains structural features, their corresponding CEFR levels and example sentences \ref{tab:cefr}
 
-Our goal in this chapter is to train a multinomial logistic regression classifier on the example sentences derived from EPG to predict the CEFR difficulty level. Due to the limited number of examples sentences (around 3000), we combine each two levels into one class, so we end up with three super-levels: A, B, and C , which correspond to  elementary, intermediate, and advanced levels, respectively. We also improve the performance of the classification by applying a bootstrapping technique \citep{yarowsky_unsupervised_1995} to fetch data from external sources to supplement the training data. Finally, we evaluate the performance of the classification before and after the bootstrapping against a random classifier.
+Our goal in this chapter is to train a multinomial logistic regression classifier on the example sentences derived from EPG to predict the CEFR difficulty level. Due to the limited number of examples sentences (around 3000), we combine each two levels (e.g. A1,A2) into one class (A), so we end up with three super-levels: A, B, and C , which correspond to  elementary, intermediate, and advanced levels, respectively. We also improve the performance of the classification by applying a bootstrapping technique \citep{yarowsky_unsupervised_1995} to fetch data from external sources to supplement the training data. Finally, we evaluate the performance of the classification before and after the bootstrapping against a random classifier.
 
 %In this chapter, we examine the use of multinomial logistic regression classifier in a semi-supervised manner to automatically categorize English sentences based on difficulty to second language learners using the Common European Framework Reference. We also compare some of text representation techniques introduced in the previous chapter and determine the best one to use in this task. Finally, we evaluate the overall performance of the classifier before and the semi-supervised data augmentation. 
 %
@@ -110,7 +110,7 @@ $$\frac { \partial ^ { 2 } L ( \beta ) } { \partial \beta _ { k j } \partial \be
 The formula for updating $\beta_{new}$ for multiclass is:
 $$\beta ^ { \text { new } } = \beta ^ { \text { old } } + \left( \tilde { \mathbf { X } } ^ { T } \mathbf { W } \tilde { \mathbf { X } } \right) ^ { - 1 } \tilde { \mathbf { X } } ^ { T } ( \mathbf { y } - \mathbf { p } )$$
 
-where $y$ is the concatenated indicator vector of dimension $N \times (K-1)$, $p$ is the concatenated vector of fitted probabilities of dimension $N \times (K-1)$, $\tilde{X}$ is an $N(K-1)\times (p+1)(K-1)$ matrix; and Matrix $W$ is an $N(K-1)\times N(K-1)$ square matrix.
+where $y$ is the concatenated indicator vector of dimension $N \times (K-1)$, $p$ is the concatenated vector of fitted probabilities of dimension $N \times (K-1)$, $\tilde{X}$ is an $N(K-1)\times (p+1)(K-1)$ matrix; and Matrix $W$ is an $N(K-1)\times N(K-1)$ square matrix. \citep{friedman2001elements}
 
 \subsection{Feature Design}
 

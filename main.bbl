@@ -625,6 +625,44 @@
     \field{year}{1965}
   \endentry
 
+  \entry{friedman2001elements}{book}{}
+    \name{author}{3}{}{%
+      {{hash=FJ}{%
+         family={Friedman},
+         familyi={F\bibinitperiod},
+         given={Jerome},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hastie},
+         familyi={H\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tibshirani},
+         familyi={T\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer series in statistics New York}%
+    }
+    \strng{namehash}{FJHTTR1}
+    \strng{fullhash}{FJHTTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{10}
+    \field{title}{The elements of statistical learning}
+    \field{volume}{1}
+    \field{year}{2001}
+  \endentry
+
   \entry{fuhr1991probabilistic}{article}{}
     \name{author}{2}{}{%
       {{hash=FN}{%

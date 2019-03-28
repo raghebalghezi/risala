@@ -54,14 +54,12 @@ The first step in any machine learning task is feature extraction where a text i
 
 \subsection{Frequency-based Methods}
 
-Frequency-based methods such as Bag-of-Words (BOW) and Term Frequency Inverse Document Frequency (TF-IDF) rely on the number of token occurrences in the text. They have been used extensively in a wide range of NLP applications, and each of them has advantages and disadvantages. 
+Frequency-based methods such as Bag-of-Words (BOW) and Term Frequency Inverse Document Frequency (TF-IDF) rely on the number of token occurrences in the text\citet{jurafsky2014speech}. They have been used extensively in a wide range of NLP applications, and each of them has advantages and disadvantages. 
 % Representing a text computationally requires decision-making from the feature designer due to the complicated nature of human langauge language. 
 \subsubsection*{Bag-of-Words Representation}
 
 The bag-of-words (BOW) representation is the most straightforward and most intuitive
-representation. It represents each document by a vector
-whose component corresponds to the number of occurrences of a word in
-the document.  To illustrate, the BOW vector representations of a data set of two documents (1) and (2) are shown in table \ref{tb:bow}:
+representation. It represents each document by a vector of word counts in the document.  To illustrate, the BOW vector representations of a data set of two documents (1) and (2) are shown in table \ref{tb:bow}:
 
 \begin{enumerate}
 \item The apple is better than the orange.
@@ -83,7 +81,7 @@ Vector 2 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 1 \\
 \end{table}
 
 
-Despite the simplicity of the BOW method,  it has two main disadvantages. One major disadvantage is that the BOW method pays no respect to the order of tokens in the document, and this can give similar representations to semantically different documents. For instance, the sentences \emph{The wolf eats the goat} and \emph{The goat eats the wolf} have similar vector representation , for they contain the exact same words. Another downside to BOW is that high frequency features are more important than low frequency ones. We can see in \ref{tb:bow} that the component corresponding to the first dimension (the) of vector 1 is bigger than in that of vector 2 because document 1 has two occurrence of the word \emph{the} while the document 2 has only one occurrence. 
+Despite the simplicity of the BOW method,  it has two main disadvantages. One major disadvantage is that the BOW method pays no respect to the order of tokens in the document, and this can give similar representations to semantically different documents. For instance, the sentences \emph{The wolf eats the goat} and \emph{The goat eats the wolf} have identical vector representations, for they contain the exact same words. Another downside to BOW is that high frequency features are more important than low frequency ones. We can see in \ref{tb:bow} that the component corresponding to the first dimension (the) of vector 1 is bigger than in that of vector 2 because document 1 has two occurrence of the word \emph{the} while the document 2 has only one occurrence. 
 
 To address the problem of order, several studies have attempted to count the occurrence of sentences instead of words \citep{fuhr1991probabilistic, tzeras1993automatic}. Although the sentences offer the advantage of better preserving the semantic relationship of the words, their use as features failed in practice. According to Lewis \citeyear{lewis1992representation}, this representation is penalized by a large number of possible combinations which leads to low and highly
 random frequencies. A more practical approach is representation by n-grams. It consists of breaking the text into moving sequences of $n$ consecutive tokens. For example, the trigram segmentation of the word "language" gives the following 3-grams: lan, ang, ngu, gua, uag, age. \citep{shannon1948mathematical}, who was interested in predicting the appearance of certain characters according to the other characters introduced the notion of n-grams. Since then, n-grams have been used in many areas such as speech recognition and information retrieval. Using n-gram on a character-level or word-level gives a contextual representation of the text. A modification to BOW to overcome the bias of high frequency tokens resulted in devising a method called Term Frequency Inverse Document Frequency (TF-IDF). 
@@ -252,7 +250,7 @@ What we have discussed so far gives us a method to numerically translate languag
 
 $$Sig ( x ) = \frac { 1 } { 1 + e ^ { - (w \cdot x +b)} }$$ 
 
-where $x$ represent the input vector, $w$ is the learned weights, and $b$ is the bias term or the intercept of the linear equation. One mathematical property of the Sigmoid function is that it maps any input between 0 and 1, and to make it as probability we need to make the sum of $P(y=1)$ and $P(y=0)$ equals to 1. 
+where $x$ represent the input vector, $w$ is the learned weights, and $b$ is the bias term or the intercept of the linear equation. One mathematical property of the Sigmoid function is that it maps any input between 0 and 1, so the output can be interpreted as probability. 
 
 $$ P ( y = 1 ) = \sigma ( w \cdot x + b ) $$
 $$ P ( y = 0 ) = 1 - \sigma ( w \cdot x + b ) $$
@@ -283,7 +281,7 @@ $$ L _ { C E } ( \hat { y } , y ) = - \sum _ { k = 1 } ^ { K } 1 \{ y = k \} \lo
 
 \subsection{Optimization}
 
-The objective functions derived in the previous section is optimized using numerical methods. Several algorithms are used for this purpose, such as Stochastic Gradient Descent, which uses first derivative (gradient) information to find a minimum of a function, and Newton-Raphson algorithm, which uses Second derivative information to find a minimum of a function. Discussing the details of how these algorithms work and the mathematical derivation of gradients is beyond the scope of this work. (See \citep{jurafsky2014speech} for more details on the derivation of Stochastic Gradient Descent.) 
+The objective functions derived in the previous section are optimized using numerical methods. Several algorithms are used for this purpose, such as Stochastic Gradient Descent, which uses first derivative (gradient) information to find a minimum of a function, and Newton-Raphson algorithm, which uses Second derivative information to find a minimum of a function. Discussing the details of how these algorithms work and the mathematical derivation of gradients is beyond the scope of this work. (See \citep{jurafsky2014speech} for more details on the derivation of Stochastic Gradient Descent.) 
 
 \section{Evaluation Metrics}
 \subsection{Confusion Matrix}
@@ -306,7 +304,7 @@ A confusion matrix is a method to visualize the results of a classification algo
 
 \subsection{Precision, Recall, and F-Score}
 
-Precision and Recall are two popular measurements used to evaluate the performance of supervised classification methods. Precision is defined as follows:
+Precision and Recall are two popular measurements used to evaluate the performance of classification methods. Precision is defined as follows:
 
 $$\text { Precision } = \frac { True Postive } { True Postive + False Positive }$$
 

@@ -61,7 +61,7 @@ where Q and S are sets of words in question and sentence respectively.
 Using the three features above, every question-sentence pair will have three scores and an additional binary feature indicating whether or not the question is answerable. 
 
 \subsection{Training and Result} 
- We get the results shown in \ref{table:mlr-stage1}. Numbers in the class column represents the index of the sentence in the paragraph containing the answer, and -1 indicates that the question has no answer in the paragraph. We also limit the number of sentences to 10. The results show that with simple features, we get an F1 score of 0.71.
+ We get the results shown in \ref{tb:stg1_lr}. Numbers in the class column represents the index of the sentence in the paragraph containing the answer, and -1 indicates that the question has no answer in the paragraph. We also limit the number of sentences to 10. The results show that with simple features, we get an F1 score of 0.71.
 
 \begin{figure}
   \includegraphics[scale=1]{Figure_1.png}\centering
@@ -106,6 +106,7 @@ Using the three features above, every question-sentence pair will have three sco
 avg / total      & 0.72                & 0.71             & 0.71                \\
 \hline
 \end{tabular}
+\label{tb:stg1_lr}
 \end{table}
 
 \newpage
