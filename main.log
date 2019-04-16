@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  28 MAR 2019 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 APR 2019 17:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1818,12 +1818,26 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 --------------------
  Acknowledgements
 --------------------
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 I
+        would like to thank the Fulbright team, represented by the Amideast ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 1: section
 [5] [6
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 210.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 222.
  (./main.toc
 1: section
 [7])
@@ -2201,13 +2215,13 @@ Appendix C.
 
 ] [42] [43]) (./Appendices/ch4_stage1.py [44]) (./Appendices/ch4_stage2.py
 [45] [46] [47])) [48]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 296.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 308.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (3.84111pt too wide) in paragraph at lines 296--296
+Overfull \hbox (3.84111pt too wide) in paragraph at lines 308--308
 [][]\T1/ppl/m/n/10.95 Bird, Steven, Ewan Klein, & Ed-ward Loper (2009). \T1/ppl
 /m/it/10.95 Nat-u-ral lan-guage pro-cess-ing with Python:
  []
@@ -2217,32 +2231,32 @@ Overfull \hbox (3.84111pt too wide) in paragraph at lines 296--296
 
 
 ] [50]
-Overfull \hbox (11.08205pt too wide) in paragraph at lines 296--296
+Overfull \hbox (11.08205pt too wide) in paragraph at lines 308--308
 [][]\T1/ppl/m/n/10.95 Rocchio, Joseph John (1971). ^^P  Rel-e-vance feed-back i
 n in-for-ma-tion re-trieval^^Q. In: \T1/ppl/m/it/10.95 The SMART
  []
 
 
-Overfull \hbox (4.7891pt too wide) in paragraph at lines 296--296
+Overfull \hbox (4.7891pt too wide) in paragraph at lines 308--308
 [][]\T1/ppl/m/n/10.95 Sable, Carl & Ken-neth W Church (2001). ^^P  Us-ing bins 
 to em-pir-i-cally es-ti-mate term weights
  []
 
 [51]
-Overfull \hbox (38.64131pt too wide) in paragraph at lines 296--296
+Overfull \hbox (38.64131pt too wide) in paragraph at lines 308--308
 \T1/ppl/m/n/10.95 sion net-works for read-ing com-pre-hen-sion and ques-tion an
 -swer-ing^^Q. In: \T1/ppl/m/it/10.95 CoRR \T1/ppl/m/n/10.95 abs/1811.11934.
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
 [52]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Appendices/AppendixA.aux) (./Appendices/AppendixB.aux)
 (./Appendices/AppendixC.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 80973EBA7E630788486810D6EE644318;8366.
 
@@ -2276,7 +2290,7 @@ s/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/urw/palatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/p
 alatino/uplr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino
 /uplri8a.pfb>
-Output written on main.pdf (66 pages, 957523 bytes).
+Output written on main.pdf (66 pages, 958019 bytes).
 PDF statistics:
  1830 PDF objects out of 2073 (max. 8388607)
  1633 compressed objects within 17 object streams
